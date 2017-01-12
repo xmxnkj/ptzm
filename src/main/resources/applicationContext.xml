@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:jee="http://www.springframework.org/schema/jee"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xmlns:task="http://www.springframework.org/schema/task"
+    
+    xsi:schemaLocation="
+    http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+    http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd
+    http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.5.xsd
+    http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+    http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd">
+    <!-- Action -->
+    <!-- <bean id="loginAction" scope="prototype" class="action.LoginAction"></bean> -->
+    
+    <!-- 指定使用cglib -->
+    <aop:aspectj-autoproxy proxy-target-class="true" />
+    
+    <context:component-scan base-package="com.xmszit,com.hsit,com.szit">
+    	<context:exclude-filter expression="org.springframework.stereotype.Controller" type="annotation" />
+    </context:component-scan>
+    
+    <context:property-placeholder location="classpath:persistence-mysql.properties" />
+    
+    <bean id="carProperties" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+        <property name="locations">
+            <list>
+                <value>classpath*:car.properties</value>
+            </list>
+        </property>
+    </bean>
+    
+    <bean id="sessionFactory" 
+        class="com.hsit.common.spring.ExtLocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+        <property name="configMappingPattern" value="classpath*:**/*.hbm.xml" />
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.hbm2ddl.auto">${hibernate.hbm2ddl.auto}</prop>
+                <prop key="hibernate.dialect">${hibernate.dialect}</prop>
+                <prop key="hibernate.show_sql">${hibernate.show_sql}</prop>
+                <prop key="hibernate.connection.requireSSL">false</prop>
+                <prop key="hibernate.connection.useSSL">false</prop>
+                <prop key="hibernate.current_session_context_class">org.springframework.orm.hibernate4.SpringSessionContext</prop>
+                
+                <!-- <prop key="hibernate.connection.provider_class">org.hibernate.connection.C3P0ConnectionProvider</prop> -->
+                <prop key="connection.pool_size">200</prop>
+                <prop key="hibernate.c3p0.maxsize">200</prop>
+			    <prop key="hibernate.cp30.minsize">1</prop>
+			    <prop key="hibernate.cp30.timeout">5000</prop>
+			    <prop key="hibernate.cp30.max_statements">100</prop>
+			    <prop key="hibernate.cp30.idle_test_period">3000</prop>
+			    <prop key="hibernate.cp30.acquire_increment">2</prop>
+			    <prop key="hibernate.cp30.validate">true</prop>
+            </props>
+        </property>
+    </bean>
+    <!-- 数据库映射 -->
+   <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+      <property name="driverClassName" value="${jdbc.driverClassName}" />
+      <property name="url" value="${jdbc.url}" />
+      <property name="username" value="${jdbc.user}" />
+      <property name="password" value="${jdbc.pass}" />
+   </bean>
+   
+    <!-- 配置Hibernate事务管理器 -->
+    <bean id="transactionManager"
+        class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+      <property name="sessionFactory" ref="sessionFactory" />
+   </bean>
+   <tx:annotation-driven transaction-manager="transactionManager" proxy-target-class="true"/>
+    
+    <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+        <!-- <property name="webBindingInitializer">
+            <bean class="org.springframework.web.bind.support.ConfigurableWebBindingInitializer">
+                <property name="conversionService" ref="conversionService"/>
+            </bean>
+        </property> -->
+        <property name="messageConverters">
+            <list>
+                <bean class="org.springframework.http.converter.ByteArrayHttpMessageConverter" />
+                <bean class="org.springframework.http.converter.StringHttpMessageConverter" >
+                    <property name = "supportedMediaTypes">
+                           <list>
+                                   <value>text/plain;charset=UTF-8</value>
+                          </list>
+                     </property> 
+                </bean>
+                <bean class="org.springframework.http.converter.ResourceHttpMessageConverter" />
+                <!-- 注：开启此类需相关jar包持：javax.xml.bind.JAXBException
+                <bean class="org.springframework.http.converter.xml.SourceHttpMessageConverter" />
+                <bean class="org.springframework.http.converter.xml.XmlAwareFormHttpMessageConverter" />
+                <bean class="org.springframework.http.converter.xml.Jaxb2RootElementHttpMessageConverter" />
+                 -->
+                <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter"/>
+            </list>
+        </property>
+    </bean>
+    <!-- <bean id="taskSchedule" class="com.xmszit.voip.web.timerFuntion.TaskSchedule"/> -->
+	<!-- <task:scheduled-tasks>
+		<task:scheduled ref="taskSchedule" method="tessss" cron="0/5 * * * * ?"/>
+		<task:scheduled ref="taskSchedule" method="tessss" cron="0 48 22 ? * *"/> 
+       <task:scheduled ref="taskSchedule" method="scheduleIsCard" cron="0 30 01 ? * *"/>
+       <task:scheduled ref="taskSchedule" method="scheduleSale" cron="0 30 20 ? * *"/>
+       <task:scheduled ref="taskSchedule" method="scheduleCard" cron="0 25 20 ? * *"/>
+       <task:scheduled ref="taskSchedule" method="scheduleYearCheck" cron="0 20 20 ? * *"/>
+       <task:scheduled ref="taskSchedule" method="scheduleCare" cron="0 15 20 ? * *"/>
+       <task:scheduled ref="taskSchedule" method="scheduleInsurance" cron="0 10 20 ? * *"/> 
+ 	</task:scheduled-tasks> -->
+	<!-- <task:annotation-driven/> -->
+    
+    <!-- <bean id="hibernateTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate">
+    	<property name="sessionFactory" ref="sessionFactory"></property>
+    </bean> -->
+    
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver"/>
+
+	<bean id="SpringApplicationContext" class="com.hsit.common.spring.ApplicationContextHelper"></bean>  
+	<bean id ="applicationContextUtil"  class ="com.xmszit.voip.web.servletListener.ApplicationContextUtil" ></bean>
+	
+	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">  
+        <property name = "dataSource" ref="dataSource" /> 
+	</bean>
+
+</beans>

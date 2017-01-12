@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	 <jmxConfigurator /> 
+	<!-- 控制台输出 -->
+	<appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>
+				%d [%thread] [%X{ip}] %-5level %logger{36} - %msg%n
+			</pattern>
+		</encoder>
+	</appender>
+	<appender name="console2" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>
+				%d [%X{ip}] - %msg%n
+			</pattern>
+		</encoder>
+	</appender>
+	
+	<appender name="rollingFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>
+			logs/log.log
+		</file>
+		<!-- 每天生成一个日志文件 -->
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>
+				logs/hctj.%d{yyyy-MM-dd}.log
+			</fileNamePattern>
+		</rollingPolicy>
+		<encoder>
+			<pattern>
+				%d [%thread] [%X{ip}] %-5level %logger{36} - %msg%n
+			</pattern>
+		</encoder>
+	</appender>
+	
+	<appender name="businessLogFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>
+			logs/business.log
+		</file>
+		<!-- 每天生成一个日志文件 -->
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>
+				logs/business.%d{yyyy-MM-dd}.log
+			</fileNamePattern>
+		</rollingPolicy>
+		<!-- 独立的pattern -->
+		<encoder>
+			<pattern>
+				%d [%thread] [%X{ip}] - %msg%n
+			</pattern>
+		</encoder>
+	</appender>
+	
+<!-- 	<appender name="smscodeutilLogFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>
+			logs/smscodeutil.log
+		</file>
+		每天生成一个日志文件
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>
+				logs/smscodeutil.%d{yyyy-MM-dd}.log
+			</fileNamePattern>
+		</rollingPolicy>
+		独立的pattern
+		<encoder>
+			<pattern>
+				%d [%thread] [%X{ip}] - %msg%n
+			</pattern>
+		</encoder>
+	</appender> -->
+	
+	<appender name="operateLogFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>
+			logs/operate.log
+		</file>
+		<!-- 每天生成一个日志文件 -->
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>
+				logs/operate.%d{yyyy-MM-dd}.log
+			</fileNamePattern>
+		</rollingPolicy>
+		<!-- 独立的pattern -->
+		<encoder>
+			<pattern>
+				%d [%X{ip}] - %msg%n
+			</pattern>
+		</encoder>
+	</appender>
+	
+	<appender name="allerrorLogFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>
+			logs/allerror.log
+		</file>
+		<!-- 每天生成一个日志文件 -->
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>
+				logs/allerror.%d{yyyy-MM-dd}.log
+			</fileNamePattern>
+		</rollingPolicy>
+		<!-- 独立的pattern -->
+		<encoder>
+			<pattern>
+				%d [%thread] [%X{ip}] - %msg%n
+			</pattern>
+		</encoder>
+	</appender>
+	
+	<root level="INFO">
+		<appender-ref ref="console" />
+		<appender-ref ref="rollingFile" />
+	</root>
+	<logger name="business" level="INFO" additivity="false">
+		<appender-ref ref="console2" />
+		<appender-ref ref="businessLogFile" />
+	</logger>
+	<logger name="operate" level="INFO" additivity="false">
+		<appender-ref ref="console2" />
+		<appender-ref ref="operateLogFile" />
+	</logger>
+<!-- 	<logger name="com.wooyee.commons.utils.alidayu.SmsCodeUtil" level="INFO" additivity="false">
+		<appender-ref ref="console2" />
+		<appender-ref ref="smscodeutilLogFile" />
+	</logger> -->
+	<logger name="allerror" level="INFO" additivity="false">
+		<appender-ref ref="console2" />
+		<appender-ref ref="errorLogFile" />
+	</logger>
+	
+</configuration>
