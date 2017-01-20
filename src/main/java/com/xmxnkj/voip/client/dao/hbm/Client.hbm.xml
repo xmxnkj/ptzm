@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping package="com.xmszit.voip.client.entity">
+
+    <class name="Client" table="CT_CLIENT">
+        <id name="id" column="ID">
+            <generator class="uuid2"/>
+        </id>
+        <property name="deleted" column="DELETED"/>
+        <property name="idNumber" column="ID_NUMBER"/>
+        <property name="loginName" column="LOGIN_NAME"/>
+        <property name="password" column="PASSWORD"/>
+        <property name="name" column="NAME"/>
+        <property name="cellPhone" column="CELL_PHONE"/>
+        <property name="divisionCode" column="DIVISION_CODE"/>
+        <property name="division" column="DIVISION"/>
+        <property name="createTime" column="CREATE_TIME"/>
+        <property name="createUser" column="CREATE_USER"/>
+        <property name="updateTime" column="UPDATE_TIME"/>
+        <property name="updateUser" column="UPDATE_USER"/>
+        <property name="state" column="STATE"/>
+        
+        <property name="province" column="PROVINCE"/>
+        <property name="city" column="CITY"/>
+        <property name="county" column="COUNTY"/>
+        <property name="responsibleUser" column="RESPONSIBLE_USER"/>
+        <property name="effectiveDate" column="EFFECTIVE_DATE"/>
+        <property name="description" column="DESCRIPTION"/>
+         <property name="address" column="ADDRESS"/>
+         <property name="useDate" column="USE_DATE"/>
+        
+     	<many-to-one name="addUser" column="ADD_USER" fetch="select"
+          class="com.hsit.common.uac.entity.User" lazy="false" not-found="ignore">
+        </many-to-one>
+        <many-to-one name="clientMeal" column="CLIENT_MEAL" fetch="select"
+          class="com.xmszit.voip.system.entity.ClientMeal" lazy="false" not-found="ignore">
+        </many-to-one>
+        
+         <many-to-one name="area" column="AREA" fetch="select"
+          class="com.xmszit.voip.system.entity.BaseArea" lazy="false" not-found="ignore">
+        </many-to-one>
+    </class>
+
+</hibernate-mapping>
