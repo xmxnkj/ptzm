@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping package="com.xmszit.voip.ivr.entity">
+
+    <class name="Flow" table="AI_FLOW">
+        <id name="id" column="ID">
+            <generator class="uuid2"/>
+        </id>
+
+      	<property name="flowTemplateId" column="FLOW_TEMPLATE_ID"/>
+      	
+      	<property name="name" column="NAME"/>
+      	
+      	<property name="code" column="CODE"/>
+      	
+      	<property name="answer" column="ANSWER"/>
+      	
+      	<property name="sound" column="SOUND"/>
+      	
+      	<property name="isMainFlow" column="IS_MAIN_FLOW"/>
+      	
+    	<property name="remainOriginal" column="REMAIN_ORIGINAL"/>
+    	
+    	<property name="keywordsString" column="KEYWORDS_STRING"/>
+
+      	<property name="deleted" column="DELETED"/>
+      	
+      	<property name="clientId" column="CLIENT_ID"/>
+      	
+      	<property name="blockAsr" column="BLOCK_ASR"/>
+      	
+      	<many-to-one name="flowTemplate" class="com.xmszit.voip.ivr.entity.FlowTemplate" column="FLOW_TEMPLATE_ID" insert="false" lazy="false" update="false" unique="true"></many-to-one>
+    </class>
+</hibernate-mapping>
