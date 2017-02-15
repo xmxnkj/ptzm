@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping package="com.xmszit.voip.outBound.entity">
+    <class name="AutodialerTask" table="autodialer_task">
+        <id name="uuid" column="UUID">
+            <generator class="uuid.hex"/>
+        </id>
+        
+        <property name="callPlanId" column="CALL_PLAN_ID"/>
+        
+        <many-to-one name="callPlan" class="com.xmszit.voip.customer.entity.CallPlan" column="CALL_PLAN_ID" insert="false" lazy="false" update="false" unique="true"></many-to-one>
+        
+        <property name="name" column="name"/>
+		<property name="createDatetime" column="create_datetime"/>
+		<property name="alterDatetime" column="alter_datetime"/>
+		
+		<property name="start" column="start"/>
+		<property name="callPerSecond" column="call_per_second"/>
+		<property name="maximumcall" column="maximumcall"/>
+		<property name="recycleLimit" column="recycle_limit"/>
+		
+		<property name="cacheNumberCount" column="cache_number_count"/>
+		<property name="callLimit" column="call_limit"/>
+		<property name="callLimitCycle" column="call_limit_cycle"/>
+		<property name="callPauseSecond" column="call_pause_second"/>
+		<property name="randomAssignmentNumber" column="random_assignment_number"/>
+		<property name="disableDialTimegroup" column="disable_dial_timegroup"/>
+		<property name="destinationExtension" column="destination_extension"/>
+	
+		<property name="destinationDialplan" column="destination_dialplan"/>
+		<property name="destinationContext" column="destination_context"/>
+		<property name="schedulingPolicyRatio" column="scheduling_policy_ratio"/>
+		<property name="schedulingQueue" column="scheduling_queue"/>
+		<property name="dialFormat" column="dial_format"/>
+		
+		
+		<property name="domain" column="domain"/>
+		<property name="remark" column="remark"/>
+		<property name="callNotifyUrl" column="call_notify_url"/>
+		<property name="callNotifyType" column="call_notify_type"/>
+		<property name="originateVariables" column="originate_variables"/>
+		<property name="originateTimeout" column="_originate_timeout"/>
+		
+		<property name="originationCallerIdNumber" column="_origination_caller_id_number"/>
+		<property name="ignoreEarlyMedia" column="_ignore_early_media"/>
+		
+		
+		<property name="deleted" column="DELETED"/>
+      	<property name="clientId" column="CLIENT_ID"/>
+      	      	
+    </class>
+</hibernate-mapping>
