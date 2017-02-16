@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping
+	package="com.xmszit.voip.voice.entity">
+	<class name="CallTimeSet" table="CS_CALL_TIME_SET">
+		<id name="id" column="ID">
+			<generator class="uuid2" />
+		</id>
+		<property name="clientId" column="CLIENTID" />
+		<property name="deleted" column="DELETED" />
+		<property name="name" column="NAME" />
+		<property name="startTime" column="START_TIME" />
+		<property name="endTime" column="END_TIME" />
+		<property name="createTime" column="CREATE_TIME" />
+		<property name="state" column="STATE">
+			<type name="org.hibernate.type.EnumType">
+				<param name="enumClass">com.xmszit.voip.voice.entity.emun.CallTimeState</param>
+				<param name="type">4</param>
+			</type>
+		</property>
+		<property name="operation" column="OPERATION">
+			<type name="org.hibernate.type.EnumType">
+				<param name="enumClass">com.xmszit.voip.voice.entity.emun.OperationState</param>
+				<param name="type">4</param>
+			</type>
+		</property>
+		
+		<property name="clientUserId" column="CLIENT_USER_ID"/>
+		
+		 <many-to-one name="clientUser" column="CLIENT_USER_ID" fetch="select" 
+        	class="com.xmszit.voip.client.entity.ClientUser" lazy="false" not-found="ignore"  insert="false" update="false"/> 
+        	
+
+	</class>
+
+</hibernate-mapping>
