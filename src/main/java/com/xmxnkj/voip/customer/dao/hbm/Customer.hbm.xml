@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping package="com.xmszit.voip.customer.entity">
+
+    <class name="Customer" table="CUT_CUSTOMER">
+        <id name="id" column="ID">
+            <generator class="uuid2"/>
+        </id>
+        <property name="clientId" column="CLIENT_ID"/>
+        <property name="deleted" column="DELETED"/>
+        <property name="name" column="NAME"/>
+        <property name="companyName" column="COMPANY_NAME"/>
+        <property name="contactUser" column="CONTACT_USER"/>
+        <property name="mobile" column="MOBILE"/>
+        <property name="lastCallDate" column="LAST_CALL_DATE"/>
+        <property name="talkTime" column="TALK_TIME"/>
+        <property name="type" column="TYPE"/>
+        <property name="createDate" column="CREATE_DATE"/>
+        <property name="isImport" column="IS_IMPORT"/>
+        <property name="comCustTypeDate" column="COM_CUST_TYPE_DATE"/>
+        <property name="isPrivate" column="IS_PRIVATE"/>
+        
+         <property name="customerType" column="CUSTOMER_TYPE" >
+        	<type name="org.hibernate.type.EnumType">
+        		<param name="enumClass">com.xmszit.voip.customer.entity.CustomerType</param>
+        		<param name="type">4</param>
+        	</type>
+        </property>
+        
+        <property name="contactState" column="CONTACT_STATE" >
+        	<type name="org.hibernate.type.EnumType">
+        		<param name="enumClass">com.xmszit.voip.customer.entity.ContactState</param>
+        		<param name="type">4</param>
+        	</type>
+        </property>
+        <property name="planState" column="PLAN_STATE" >
+        	<type name="org.hibernate.type.EnumType">
+        		<param name="enumClass">com.xmszit.voip.customer.entity.PlanState</param>
+        		<param name="type">4</param>
+        	</type>
+        </property>
+        <property name="receivingState" column="RECEIVING_STATE" >
+        	<type name="org.hibernate.type.EnumType">
+        		<param name="enumClass">com.xmszit.voip.customer.entity.ReceivingState</param>
+        		<param name="type">4</param>
+        	</type>
+        </property>
+       <!--  <many-to-one name="voiceTemplate" column="VOICE_TEMPLATE" fetch="select" 
+        	class="com.xmszit.voip.voice.entity.VoiceTemplate" lazy="false" not-found="ignore"
+        	/> -->
+        <many-to-one name="clientUser" column="CLIENT_USER" fetch="select" 
+        	class="com.xmszit.voip.client.entity.ClientUser" lazy="false" not-found="ignore"
+        	/>
+        <many-to-one name="callPlan" column="CALL_PLAN" fetch="select" 
+        	class="com.xmszit.voip.customer.entity.CallPlan" lazy="false" not-found="ignore"
+        	/>
+       <!-- 	<many-to-one name="callRecord" column="CALL_RECORD" fetch="select" 
+       		class="com.xmszit.voip.customer.entity.CallRecord" lazy="false" not-found="ignore"
+       		/> -->
+	</class>
+
+</hibernate-mapping>
