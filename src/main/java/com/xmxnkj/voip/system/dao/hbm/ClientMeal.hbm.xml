@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping package="com.xmszit.voip.system.entity">
+    <class name="ClientMeal" table="UAC_CLIENT_MEAL">
+        <id name="id" column="ID">
+            <generator class="uuid2"/>
+        </id>
+        <property name="name" column="NAME"/>
+        <property name="useAmount" column="USE_AMOUNT"/>
+        <property name="yearPrice" column="YEAR_PRICE"/>
+        <property name="mealState" column="MEAL_STATE"/>
+        <property name="addDate" column="ADD_DATE"/>
+        <property name="mealContent" column="MEAL_CONTENT" type="text"/>
+        <property name="shopAmount" column="SHOP_AMOUNT"/>
+        <property name="deleted" column="DELETED"/>
+        <many-to-one name="addUser" column="ADD_USER" fetch="select"
+           class="com.hsit.common.uac.entity.User" lazy="false" not-found="ignore"></many-to-one>
+    </class>
+</hibernate-mapping>

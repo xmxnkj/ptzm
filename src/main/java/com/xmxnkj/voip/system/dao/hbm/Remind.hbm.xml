@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping package="com.xmszit.voip.system.entity">
+    <class name="Remind" table="UAC_REMIND">
+        <id name="id" column="ID">
+            <generator class="uuid2"/>
+        </id>
+        <property name="date" column="DATE_S"/>
+        <property name="amount" column="AMOUNT"/>
+       <property name="content" column="CONTENT" type="text"/>
+       <property name="deleted" column="DELETED"/>
+       
+       <property name="merchantId" column="MERCHANT_ID"/>
+       <property name="payKey" column="PAY_KEY"/>
+       <property name="appId" column="APP_ID"/>
+       <property name="secert" column="SECERT"/>
+       <property name="token" column="TOKEN"/>
+       <property name="isAdmin" column="IS_ADMIN"/>
+    </class>
+</hibernate-mapping>

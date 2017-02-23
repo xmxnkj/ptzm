@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping package="com.xmszit.voip.system.entity">
+    <class name="BaseArea" table="UAC_BASE_AREA">
+        <id name="id" column="ID">
+            <generator class="uuid2"/>
+        </id>
+        <property name="name" column="NAME"/>
+        <property name="clientId" column="CLIENT_ID"/>
+       <property name="parentId" column="PARENT_ID"/>
+       <property name="areaContentId" column="AREA_CONTENT_ID" type="text"/>
+       <property name="areaContent" column="AREA_CONTENT" type="text"/>
+       <property name="deleted" column="DELETED"/>
+    </class>
+</hibernate-mapping>

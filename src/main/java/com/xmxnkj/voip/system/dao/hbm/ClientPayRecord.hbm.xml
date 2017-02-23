@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping package="com.xmszit.voip.system.entity">
+    <class name="ClientPayRecord" table="UAC_CLIENT_PAY_RECORD">
+        <id name="id" column="ID">
+            <generator class="uuid2"/>
+        </id>
+        <property name="payDate" column="PAY_DATE"/>
+        <property name="nextExpireDate" column="NEXT_EXPIRE_DATE"/>
+         <property name="lastExpireDate" column="LAST_EXPIRE_DATE"/>
+        <property name="payAmount" column="PAY_AMOUNT"/>
+        <property name="money" column="MONEY"/>
+        <property name="giftMoney" column="GIFT_MONEY"/>
+        <property name="description" column="DESCRIPTION"/>
+         <property name="cancel" column="CANCEL"/>
+         <property name="cancelDate" column="CANCEL_DATE"/>
+         <property name="payCode" column="PAY_CODE"/>
+         <property name="isPay" column="IS_PAY"/>
+         <property name="sid" column="SID"/>
+        
+        <property name="deleted" column="DELETED"/>
+        <many-to-one name="user" column="USER" fetch="select"
+         	class="com.hsit.common.uac.entity.User" lazy="false" not-found="ignore">
+         </many-to-one>
+         <many-to-one name="cancelUser" column="CANCEL_USER" fetch="select"
+         	class="com.hsit.common.uac.entity.User" lazy="false" not-found="ignore">
+         </many-to-one>
+         <many-to-one name="client" column="CLIENT" fetch="select"
+         	class="com.xmszit.voip.client.entity.Client" lazy="false" not-found="ignore">
+         </many-to-one>
+          <property name="payType" column="PAY_TYPE">
+        	<type name="org.hibernate.type.EnumType">
+        		<param name="enumClass">com.xmszit.voip.system.entity.PayType</param>
+        		<param name="type">4</param>
+        	</type>
+        </property>
+    </class>
+</hibernate-mapping>

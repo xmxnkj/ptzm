@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping package="com.xmszit.voip.system.entity">
+    <class name="ModifyClientRecord" table="UAC_MODIFY_CLIENT_RECORD">
+        <id name="id" column="ID">
+            <generator class="uuid2"/>
+        </id>
+        <property name="area" column="AREA"/>
+        <property name="address" column="ADDRESS"/>
+        <property name="loginAccount" column="LOGIN_ACCOUNT"/>
+        <property name="responsibleUser" column="RESPONSIBLE_USER"/>
+        <property name="mobile" column="MOBILE"/>
+        <property name="name" column="NAME"/>
+        <property name="clientMeal" column="CLIENT_MEAL"/>
+        <property name="accountState" column="ACCOUNT_STATE"/>
+        <property name="effectiveDate" column="EFFECTIVE_DATE"/>
+        <property name="addUser" column="ADD_USER"/>
+        <property name="modifyUser" column="MODIFY_USER"/>
+        <property name="delUser" column="DEL_USER"/>
+        <property name="modifyDate" column="MODIFY_DATE"/>
+        <property name="remark" column="REMARK"/>
+        <property name="useDate" column="USE_DATE"/>
+        <property name="deleted" column="DELETED"/>
+       	
+    </class>
+</hibernate-mapping>
