@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping package="com.xmszit.voip.common.entity">
+
+    <class name="Images" table="CM_IMAGES">
+         <id name="id" column="ID">
+            <generator class="assigned"/>
+        </id>
+        <property name="name" column="NAME"/>
+        <property name="deleted" column="DELETED"/>
+        <property name="fileName" column="FILE_NAME"/>
+        <property name="objectId" column="OBJECT_ID"/>
+        <property name="objectName" column="OBJECT_NAME"/>
+        <property name="originalFileName" column="ORIGINAL_FILE_NAME"/>
+        <property name="filePath" column="FILE_PATH"/>
+        <property name="fileType" column="FILE_TYPE">
+        	<type name="org.hibernate.type.EnumType">
+        		<param name="enumClass">com.hsit.common.kfbase.entity.FileType</param>
+        		<param name="type">4</param>
+        	</type>
+        </property>
+    </class>
+
+</hibernate-mapping>
