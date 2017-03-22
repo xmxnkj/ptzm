@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping package="com.xmszit.voip.client.entity">
+
+    <class name="ClientUser" table="CT_CLIENT_USER">
+        <id name="id" column="ID">
+            <generator class="uuid2"/>
+        </id>
+        <property name="name" column="NAME"/>
+        <property name="sex" column="SEX"/>
+        <property name="birthday" column="BIRTHDAY"/>
+        <property name="idCard" column="IDCARD"/>
+        <property name="address" column="ADDRESS"/>
+        <property name="phone" column="PHONE"/>
+        <property name="remark" column="REMARK"/>
+        <property name="account" column="ACCOUNT"/>
+        <property name="md5Passwd" column="MD5_PASSWD"/>
+         <property name="roleIds" column="ROLE_IDS"/>
+          <property name="roleNames" column="ROLE_NAMES"/>
+		
+		<property name="email" column="EMAIL"/>
+		<property name="privateSea" column="PRIVATE_SEA"/>
+		<property name="aiCount" column="AI_COUNT"/>
+		<property name="deptId" column="DEPT_ID"/>
+		<property name="seatId" column="SEAT_ID"/>
+		<property name="notLimit" column="NOT_LIMIT"/>
+		<property name="isUser" column="IS_USER"/>
+        <property name="isManager" column="IS_MANAGER"/>
+		
+		<many-to-one name="dept" class="com.xmszit.voip.client.entity.Dept" insert="false" update="false" column="DEPT_ID" lazy="false"></many-to-one>
+		
+		<property name="isOnSeatGroup" column="IS_ON_SEAT_GROUP"> 
+	        <type name="org.hibernate.type.EnumType">
+	            <param name="enumClass">com.xmszit.voip.client.entity.en.IsOnSeatGroup</param> 
+	            <param name="type">4</param>
+	        </type>
+    	</property>
+    
+		
+		<property name="deleted" column="DELETED"/>
+		<property name="clientId" column="CLIENT_ID"/>
+    </class>
+
+</hibernate-mapping>

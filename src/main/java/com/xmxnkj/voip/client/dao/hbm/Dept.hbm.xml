@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping package="com.xmszit.voip.client.entity">
+
+    <class name="Dept" table="CT_DEPT">
+        <id name="id" column="ID">
+            <generator class="uuid2"/>
+        </id>
+        
+        <property name="name" column="NAME"/>
+        <property name="clientUserId" column="CLIENT_USER_ID"/>
+        
+        <property name="clientUserNames" column="CLIENT_USER_NAMES"/>
+       <!--  <many-to-one name="clientUser" class="ClientUser" unique="true" lazy="false" column="CLIENT_USER_ID" insert="false" update="false"></many-to-one> -->
+        
+      	<property name="deleted" column="DELETED"/>
+      	
+      	<property name="privateSea" column="PRIVATE_SEA"/>
+      	
+      	<property name="aiCount" column="AI_COUNT"/>
+      	
+        <property name="clientId" column="CLIENT_ID"/>
+        
+        <property name="code" column="CODE"/>
+        
+        <property name="level" column="LEVEL"/>
+        
+        <property name="dpid" column="D_PID"/>
+        
+        <property name="remarks" column="REMARKS"/>
+        
+    </class>
+
+</hibernate-mapping>
