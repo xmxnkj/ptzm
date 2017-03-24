@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping package="com.xmszit.voip.client.entity">
+
+    <class name="Operate" table="CT_OPERATE">
+        <id name="id" column="ID">
+            <generator class="uuid2"/>
+        </id>
+        <property name="clientId" column="CLIENT_ID"></property>
+        <property name="deleted" column="DELETED"></property>
+		<property name="url" column="URL"></property>
+		<property name="text" column="TEXT"></property>
+		<property name="pid" column="PID"></property>
+		<property name="grade" column="grade"></property>
+		<property name="isShow" column="IS_SHOW"></property>
+		<property name="code" column="CODE"></property>
+		<property name="isScript" column="IS_SCRIPT"></property>
+		<property name="displayOrder" column="DISPLAY_ORDER"></property>
+		<property name="css" column="CSS"></property>
+        
+    </class>
+
+</hibernate-mapping>

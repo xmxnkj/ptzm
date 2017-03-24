@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping package="com.xmszit.voip.client.entity">
+
+    <class name="SeatGroup" table="CT_SEAT_GROUP">
+        <id name="id" column="ID">
+            <generator class="uuid2"/>
+        </id>
+        
+        <property name="name" column="NAME"/>
+        
+        <property name="deptId" column="DEPT_ID"/>
+        
+        <property name="clientId" column="CLIENT_ID" />
+        
+         <property name="deleted" column="DELETED"/>    
+    </class>
+
+</hibernate-mapping>
