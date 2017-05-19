@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping package="com.xmszit.voip.customer.entity">
+
+    <class name="CallRecordDetail" table="CUT_CALL_RECORD_DETAIL">
+        <id name="id" column="ID">
+            <generator class="uuid2"/>
+        </id>
+        <property name="clientId" column="CLIENT_ID"/>
+        <property name="deleted" column="DELETED"/>
+        <property name="name" column="NAME"/>
+        <property name="voiceRecord" column="VOICE_RECORD"/>
+        <property name="textRecord" column="TEXT_RECORD" type="text"/>
+        <property name="callDate" column="CALL_DATE"/>
+        <property name="talkTime" column="TALK_TIME"/>
+        <property name="delay" column="DELAY"/>
+        <property name="isVaild" column="IS_VAILD"/>
+        <property name="callRecordId" column="CALL_RECORD_ID"/>
+       <!--  
+             <many-to-one name="callRecord" column="CALL_RECORD_ID" fetch="select" 
+        	class="com.xmszit.voip.customer.entity.CallRecord" lazy="false" insert="false" update="false" not-found="ignore"
+        	/> -->
+
+        <property name="flowId" column="FLOW_ID"/>
+        <many-to-one name="autodialerTask" column="FLOW_ID" fetch="select" 
+        	class="com.xmszit.voip.outBound.entity.AutodialerTask" lazy="false" insert="false" update="false" not-found="ignore"
+        	/>
+
+        <property name="displayOrder" column="DISPLAY_ORDER"/>
+
+        <property name="asrElapse" column="ASR_ELAPSE"/>
+        <property name="asrTextAll" column="ASR_TEXT_ALL"/>
+        <property name="asrType" column="ASR_TYPE"/>
+        <property name="calleeId" column="CALLEE_ID"/>
+        <property name="callerId" column="CALLER_ID"/>
+        <property name="callId" column="CALL_ID"/>
+        <property name="duration" column="DURATION"/>
+        <property name="errorCode" column="ERROR_CODE"/>
+        <property name="flowData" column="FLOW_DATA"/>
+        <property name="gender" column="GENDER"/>
+        <property name="message" column="MESSAGE"/>
+        <property name="notify" column="NOTIFY"/>
+        <property name="origCallerId" column="ORIG_CALLER_ID"/>
+        <property name="playms" column="PLAYMS"/>
+        <property name="recordFile" column="RECORD_FILE"/>
+        <property name="recordIndex" column="RECORD_INDEX"/>
+        <property name="recordms" column="RECORDMS"/>
+        <property name="volumeGain" column="VOLUME_GAIN"/>
+        
+        
+       <!--  <property name="receivingState" column="RECEIVING_STATE" >
+        	<type name="org.hibernate.type.EnumType">
+        		<param name="enumClass">com.xmszit.voip.customer.entity.ReceivingState</param>
+        		<param name="type">4</param>
+        	</type>
+        </property>-->
+        <many-to-one name="customer" column="CUSTOMER" fetch="select" 
+        	class="com.xmszit.voip.customer.entity.Customer" lazy="false" not-found="ignore"
+        	/>
+        	
+   
+        
+        
+        
+	</class>
+
+</hibernate-mapping>

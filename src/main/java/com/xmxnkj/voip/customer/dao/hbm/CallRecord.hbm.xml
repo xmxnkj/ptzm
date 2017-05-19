@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping package="com.xmszit.voip.customer.entity">
+
+    <class name="CallRecord" table="CUT_CALL_RECORD">
+        <id name="id" column="ID">
+            <generator class="uuid2"/>
+        </id>
+        <property name="clientId" column="CLIENT_ID"/>
+        <property name="deleted" column="DELETED"/>
+        <property name="name" column="NAME"/>
+        
+        <property name="voiceRecord" column="VOICE_RECORD"/>
+        <property name="textRecord" column="TEXT_RECORD" type="text"/>
+        <property name="callDate" column="CALL_DATE"/>
+        <property name="talkTime" column="TALK_TIME"/>
+        <property name="delay" column="DELAY"/>
+        <property name="isVaild" column="IS_VAILD"/>
+        <property name="callId" column="CALL_ID"/>
+        
+       <!--  <property name="receivingState" column="RECEIVING_STATE" >
+        	<type name="org.hibernate.type.EnumType">
+        		<param name="enumClass">com.xmszit.voip.customer.entity.ReceivingState</param>
+        		<param name="type">4</param>
+        	</type>
+        </property>-->
+        <many-to-one name="customer" column="CUSTOMER" fetch="select" 
+        	class="com.xmszit.voip.customer.entity.Customer" lazy="false" not-found="ignore"
+        	/> 
+      
+	</class>
+
+</hibernate-mapping>
