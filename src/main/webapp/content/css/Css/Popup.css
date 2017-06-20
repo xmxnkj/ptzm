@@ -1,0 +1,137 @@
+.wrap {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 12px;
+}
+
+nav {
+    position: relative;
+    width: 100%;
+    height: 78px;
+    border-bottom: 1px solid #e3e3e3;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 0px 30px
+}
+
+nav span {
+    font-weight: bold;
+    color: #555555;
+    font-size: 18px;
+}
+
+nav .decorate {
+    width: 4px;
+    height: 18px;
+    background-color: #10c55b;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+}
+
+nav img {
+    cursor: pointer;
+}
+
+.main {
+}
+
+.main .title {
+    height: 44px;
+    width: 100%;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    padding-left: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+}
+
+.main .title span {
+    font-weight: bold;
+    color: #555555;
+    font-size: 16px;
+}
+
+.main .title a {
+    font-weight: bold;
+    color: #15dd68;
+    font-size: 16px;
+}
+.main .Input .btn{
+	    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+.main .title a:hover{
+    text-decoration: underline
+}
+.main .Input {
+    box-sizing: border-box;
+    padding: 25px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.main .Input {
+    width: 100%;
+   	margin-bottom:2px;
+}
+.main .Input .InputContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 10px;
+    width: 300px;
+    height: 40px;
+}
+
+.main .Input .InputContent p {
+    width: 95px;
+    font-size: 14px;
+    color: #555555;
+    text-align: right;
+    box-sizing: border-box;
+    padding-right: 10px;
+}
+
+.main .Input .InputContent input {
+    height: 40px;
+    border: 1px solid #e3e3e3;
+    width: 196px;
+    box-sizing: border-box;
+    padding-left: 5px;
+
+}
+.main .Input .InputContent input[type="radio"]{
+	    width: 15px;
+    height: 15px;
+}
+.main .Input .InputContent select {
+    height: 40px;
+    border: 1px solid #e3e3e3;
+    width: 196px;
+    box-sizing: border-box;
+    padding-left: 5px;
+}
+
+.main .Button {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main .Button a {
+}
