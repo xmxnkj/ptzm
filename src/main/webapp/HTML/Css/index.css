@@ -1,0 +1,291 @@
+.nav{
+    width: 100%;
+    height:76px;
+    background: #525252;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 16px;
+    align-items: center;
+    align-content: center;    padding-left: 20px;
+}
+.nav-content{
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-module{
+    display: flex;
+    justify-content: flex-start;
+    height: 76px;
+    line-height: 76px;
+}
+.nav-module-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 76px;
+    line-height: 76px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.nav-module-box img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.nav-user-help{
+    width: 235px;
+    height: 76px;
+    line-height: 76px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    margin-left: 20px;
+}
+.nav-user{
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+.nav-user *{
+    margin-right: 10px;
+}
+.nav-user img:first-child{
+    width: 40px;
+    height: 40px;
+}
+.nav-user img:last-child{
+    width: 10px;
+    height: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+ }
+.nav-help{
+    font-size: 13px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+.nav-help img{
+    width: 18px;
+    height: 18px;
+    margin-left: 14px;
+    margin-right: 8px;
+}
+.line{
+    width: 1px;
+    height: 13px;
+    background: #fff;
+    position: absolute;
+    top: 31.5px;
+    right: 83px;
+}
+.home{
+    height:-moz-calc(100% - 76px);
+    height:-webkit-calc(100% - 76px);
+    height: calc(100% - 76px);
+    padding: 20px 0;
+    display: flex;
+}
+.aside{
+    width: 185px;
+    height:100%;
+    background: #fff;
+    border-left:1px solid #f1f1f1;
+    border-right:1px solid #f1f1f1;
+    border-top:5px solid #10c55b;
+    box-sizing: border-box;
+    margin-right: 20px;
+}
+.aside-box{
+    height: 70px;
+    border-bottom: 1px solid #f1f1f1;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #555;
+}
+.active{
+    color: #10c55b;
+    font-weight: bold;
+}
+.aside-box-text{
+    margin-left: 27px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.aside-box img:first-child{
+
+    margin-right: 9px;
+}
+.aside-box img:last-child{
+    text-align: right;
+    width: 4px;
+    height: 8px;
+    margin-right: 21px;
+}
+.content{
+    height: 100%;
+    width:-moz-calc(100% - 205px);
+    width: -webkit-calc(100% - 205px);
+    width: calc(100% - 205px);
+    background: #fff;
+    border: 1px solid #f1f1f1;
+    box-sizing: border-box;
+    color: #555;
+    padding: 0 30px;
+}
+.welcome{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.alarm{
+    font-size: 14px;
+    margin-top: 20px;
+}
+.alarm p{
+    width: 40px;
+    height: 17px;
+    line-height: 17px;
+    font-size: 12px;
+    font-weight: bold;
+    background: #e4e4e4;
+    display: inline-block;
+    text-align: center;
+    margin-right: 1px;
+}
+.alarm .active2{
+    background: #ed1c24;
+    color: #fff;
+    -webkit-animation-name: magentaPulse;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    box-shadow: 0px 0px 40px #ed1c24;
+}
+.note{
+    margin-top: 18px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #fbe4b2;
+    background: #fffbea;
+    font-size: 14px;
+    color: #9a642a;
+    padding-left: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+.user-connect{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+.user-box{
+    height: 108px;
+    width:-moz-calc((100% - 60px)/4);
+    width: -webkit-calc((100% - 60px)/4);
+    width: calc((100% - 60px)/4);
+    box-sizing: border-box;
+    border: 1px solid #e3e3e3;
+    border-radius: 10px;
+    background: #f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.user-box img{
+    width: 56px;
+    height: 61px;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+.user-box-num{
+    height: 64px;
+}
+.user-box-num p:first-child{
+    font-size: 14px;
+    color: #999999;
+    margin-left: 2px;
+}
+.user-box-num p:last-child{
+    font-size: 32px;
+    color: #555;
+}
+.chart{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px 0;
+    height: -moz-calc(100% - 327px);
+    height: -webkit-calc(100% - 327px);
+    height: calc(100% - 327px);
+}
+.chart-box{
+    height: 100%;
+    width:-moz-calc((100% - 20px)/2);
+    width: -webkit-calc((100% - 20px)/2);
+    width: calc((100% - 20px)/2);
+    box-sizing: border-box;
+    border: 1px solid #e3e3e3;
+    border-radius: 10px;
+    background: #f6f6f6;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.chart-box-increase{
+    width: 100%;
+    margin-top: 25px;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 30px;
+    display: flex;
+    box-sizing: border-box;
+    border-left: 4px solid #10c55b;
+}
+.chart-box-txt{
+    font-size: 18px;
+    font-weight: bold;
+}
+.chart-box-increase div{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 14px;
+    color: #999;
+}
+.chart-box-increase div p{
+    width: 70px;
+    text-align: center;
+    cursor: pointer;
+}
+.chart-box-increase div p:first-child{
+    border-right: 1px solid #dfdfdf;
+}
+.chart-box-increase div p:nth-child(2){
+    border-right: 1px solid #dfdfdf;
+}
+.active3{
+    color: #555;
+}
+.private-chart{
+    padding: 20px 30px;
+    width: 100%;
+    height: -moz-calc(100% - 45px);
+    height: -webkit-calc(100% - 45px);
+    height: calc(100% - 45px);
+}
+@-webkit-keyframes magentaPulse {
+    from { background-color: #ff4463; -webkit-box-shadow: 0 0 9px #333; }
+    50% { background-color: #ed1c24; -webkit-box-shadow: 0 0 18px #ed1c24; }
+    to { background-color: #ff4463; -webkit-box-shadow: 0 0 9px #333; }
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<decorators defaultdir="/WEB-INF/pages/templates">
+	<!-- Any urls that are excluded will never be decorated by Sitemesh -->
+	<excludes>
+		<pattern>/*.jsp</pattern>
+		<pattern>/client/clientUser/login</pattern>
+		<pattern>/client/clientUser/logout</pattern>
+		<pattern>/system/user/showLogin</pattern>
+		<pattern>/system/user/logoutUser</pattern>
+		<pattern>/customer/callRecord/showList**</pattern>
+		<pattern>/customer/callRecordDetail/showList**</pattern>
+		<!-- <pattern>/system/spmClient/spmNewsEdit</pattern> -->
+	</excludes>
+	
+	<decorator name="form" page="form.jsp">
+		<!-- <pattern>/client/*</pattern> -->
+		<pattern>/customer/*</pattern>
+		<pattern>/voice/*</pattern>
+		<pattern>/client/*</pattern>
+		<pattern>/ivr/*</pattern>
+		<pattern>/outBound/*</pattern>
+	</decorator>
+	<decorator name="systemForm" page="systemForm.jsp">
+		<pattern>/system/client/*</pattern>
+		<pattern>/system/clientMeal/*</pattern>
+		<pattern>/system/user/*</pattern>
+		<pattern>/system/modifyClientRecord/*</pattern>
+		<pattern>/system/clientPayRecord/*</pattern>
+		<pattern>/system/remind/*</pattern>
+		<pattern>/system/publishNotice/*</pattern>
+		<pattern>/system/baseArea/*</pattern>
+		<pattern>/system/spmClient/*</pattern>
+	</decorator>
+
+</decorators>

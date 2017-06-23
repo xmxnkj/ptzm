@@ -1,0 +1,244 @@
+.nav {
+    width: 100%;
+    height: 76px;
+    background: #525252;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 16px; align-items: center;
+    align-content: center;    padding-left: 20px;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-module {
+    display: flex;
+    justify-content: flex-start;
+    height: 76px;
+    line-height: 76px;
+}
+
+.nav-module-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 76px;
+    line-height: 76px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.nav-module-box img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.nav-user-help {
+    width: 235px;
+    height: 76px;
+    line-height: 76px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    margin-left: 20px;
+}
+
+.nav-user {
+    width: 135px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.nav-user img:first-child {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.nav-user img:last-child {
+    width: 10px;
+    height: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.nav-help {
+    font-size: 13px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-help img {
+    width: 18px;
+    height: 18px;
+    margin-left: 14px;
+    margin-right: 8px;
+}
+
+.line {
+    width: 1px;
+    height: 13px;
+    background: #fff;
+    position: absolute;
+    top: 31.5px;
+    right: 83px;
+}
+
+.home {
+    height: -moz-calc(100% - 76px);
+    height: -webkit-calc(100% - 76px);
+    height: calc(100% - 76px);
+    padding: 20px 0;
+    display: flex;
+}
+
+.aside {
+    width: 185px;
+    height: 100%;
+    background: #fff;
+    border-left: 1px solid #f1f1f1;
+    border-right: 1px solid #f1f1f1;
+    border-top: 5px solid #10c55b;
+    box-sizing: border-box;
+    margin-right: 20px;
+}
+
+.aside-box {
+    height: 70px;
+    border-bottom: 1px solid #f1f1f1;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #555;
+}
+
+.active {
+    color: #10c55b;
+    font-weight: bold;
+}
+
+.aside-box-text {
+    margin-left: 27px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.aside-box img:first-child {
+    margin-right: 9px;
+}
+
+.aside-box img:last-child {
+    text-align: right;
+    width: 4px;
+    height: 8px;
+    margin-right: 21px;
+}
+
+.content {
+    height: 100%;
+    width: -moz-calc(100% - 205px);
+    width: -webkit-calc(100% - 205px);
+    width: calc(100% - 205px);
+    box-sizing: border-box;
+    color: #555;
+}
+
+.tab {
+    background: #fff;
+    border: 1px solid #f1f1f1;
+    width: 100%;
+    padding: 0 30px;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    align-content: center;
+}
+
+.tab a{
+    margin-right: 10px;
+}
+
+.note {
+    height: 80px;
+    width: 100%;
+    border: 1px solid #fbe4b2;
+    background: #fffbea;
+    font-size: 14px;
+    color: #9a642a;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.table {
+    background: #fff;
+    border: 1px solid #f1f1f1;
+    width: 100%;
+    height: -moz-calc(100% - 50px);
+    height: -webkit-calc(100% - 50px);
+    height: calc(100% - 50px);
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+.table-function {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 0 30px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ddd;
+}
+
+.table-nav {
+    width: 100%;
+    height: 40px;
+    display: flex;
+}
+
+.table-nav ul {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+}
+
+.table-nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 16.66%;
+    font-size: 14px;
+}
+
+.table-content {
+    width: 100%;
+    height: -moz-calc(100% - 50px);
+    height: -webkit-calc(100% - 50px);
+    height: calc(100% - 50px);
+
+}
+

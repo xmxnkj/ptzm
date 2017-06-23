@@ -1,0 +1,228 @@
+.nav {
+    width: 100%;
+    height: 76px;
+    background: #525252;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 16px;
+    align-items: center;
+    align-content: center;
+    padding-left: 20px;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-module {
+    display: flex;
+    justify-content: flex-start;
+    height: 76px;
+    line-height: 76px;
+}
+
+.nav-module-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 76px;
+    line-height: 76px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.nav-module-box img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.nav-user-help {
+    width: 235px;
+    height: 76px;
+    line-height: 76px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    margin-left: 20px;
+}
+
+.nav-user {
+    width: 135px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.nav-user img:first-child {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.nav-user img:last-child {
+    width: 10px;
+    height: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.nav-help {
+    font-size: 13px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-help img {
+    width: 18px;
+    height: 18px;
+    margin-left: 14px;
+    margin-right: 8px;
+}
+
+.line {
+    width: 1px;
+    height: 13px;
+    background: #fff;
+    position: absolute;
+    top: 31.5px;
+    right: 83px;
+}
+
+.home {
+    height: -moz-calc(100% - 76px);
+    height: -webkit-calc(100% - 76px);
+    height: calc(100% - 76px);
+    padding: 20px 0;
+    display: flex;
+}
+
+.aside {
+    width: 185px;
+    height: 100%;
+    background: #fff;
+    border-left: 1px solid #f1f1f1;
+    border-right: 1px solid #f1f1f1;
+    border-top: 5px solid #10c55b;
+    box-sizing: border-box;
+    margin-right: 20px;
+}
+
+.aside-box {
+    height: 70px;
+    border-bottom: 1px solid #f1f1f1;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #555;
+}
+
+.active {
+    color: #10c55b;
+    font-weight: bold;
+}
+
+.aside-box-text {
+    margin-left: 27px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.aside-box img:first-child {
+    width: 25px;
+    height: 25px;
+    margin-right: 9px;
+}
+
+.aside-box img:last-child {
+    text-align: right;
+    width: 4px;
+    height: 8px;
+    margin-right: 21px;
+}
+
+.content {
+    height: 100%;
+    width: -moz-calc(100% - 205px);
+    width: -webkit-calc(100% - 205px);
+    width: calc(100% - 205px);
+    box-sizing: border-box;
+    color: #555;
+}
+
+.contentNav {
+    height: 50px;
+    width: 100%;
+    font-size: 16px;
+    background-color: #525252;
+}
+
+.contentNav ul {
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.contentNav ul li {
+    width: 120px;
+    padding-left: 35px;
+    color: #bbb;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    cursor: pointer;
+}
+
+.contentBtn {
+    height: 50px;
+    width: 100%;
+    font-size: 16px;
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.contentBtn a {
+    margin: 0px 10px;
+}
+
+.content-table {
+    width: 100%;
+    height: calc(100% - 100px);
+    background-color: #fff;
+}
+
+.content-Ftn {
+    display: flex;
+    width: 70px;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+.content-Ftn img {
+    width: 20px;
+    height: 20px;
+}
+
+.content-Ftn span {
+    color: #8a8a8a;
+}

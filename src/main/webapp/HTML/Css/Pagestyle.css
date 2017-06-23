@@ -1,0 +1,368 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    outline: 0px;
+    -webkit-box-sizing: border-box; /*内边边距属于宽的一部分*/
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    text-align: left;
+    font-family: "Microsoft Yahei", "sans-serif", "Helvetica", "Arial", "Lucida Grande", "Lucida Sans Unicode", "Verdana";
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.5;
+    display: block;
+    color: #555;
+}
+
+/*取消下划线 ,如果要设置下划线 ,将值设置为 underline 即可*/
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+a:active, a:hover, a:focus {
+    outline: 0;
+    text-decoration: none;
+}
+
+p {
+    width: 100%;
+}
+
+button, select, input[type="button"], input[type="reset"], input[type="submit"] {
+    cursor: pointer;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+/****************************************
+               手机响应式
+****************************************/
+#wrap{
+    background: url("../images/thunder.png");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+#wraper-body {
+    width: 100%;
+    margin: 0px auto;
+    box-sizing: border-box;
+}
+
+/* ======
+    工具样式设置
+   ======*/
+
+/*任何元素居中*/
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*居中居左居右*/
+.text-left {
+    text-align: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+/*浮动方向*/
+.pull-right {
+    float: right;
+}
+
+.pull-left {
+    float: left;
+}
+
+/*显示不显示*/
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: block !important;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+/*清楚浮动（不建议使用，可直接使用overflow）在尾部加DIV*/
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+/*直接加入当前区域，IE6、7加入第二条css*/
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+/*当没有高度是垂直居中*/
+.auto-height {
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    box-pack: center;
+    -webkit-box-align: center;
+    box-align: center;
+}
+
+/*ul.li变为一行使用display: inline-block;且清除间隔在父级使用font-size:0*/
+.disinlie-block {
+    display: inline-block;
+}
+
+.font-0 {
+    font-size: 0;
+}
+
+/*border默认属性*/
+.border-Tacitlyapprove {
+    border: 1px #b2b2b2 solid;
+}
+
+/*绝对定位，margin:0 auto，让元素竖直居中*/
+.position-auto {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/*
+  在IE6以及更低版本中 ,通过margin的方式来指定剧中是无效的
+  需要给句容元素的容器使用text-align:center;
+*/
+.center {
+    float: none;
+    margin: 0px auto;
+}
+
+/*只有上面三个属性都设置了才会实现:当行显示内容，且溢出的内容使用...表示*/
+.txtHide {
+    overflow: hidden; /*隐藏溢出的内容*/
+    text-overflow: ellipsis; /*将溢出的内容使用...表示*/
+    white-space: nowrap; /*禁止内容溢出后自动换行*/
+
+}
+
+/*高宽设置百分比*/
+.wp100 {
+    width: 100%;
+}
+
+.hp100 {
+    height: 100%;
+}
+
+.whp100 {
+    width: 100%;
+    height: 100%;
+}
+
+/*定位方式*/
+.psS {
+    position: static;
+}
+
+.psR {
+    position: relative;
+}
+
+.psA {
+    position: absolute;
+}
+
+.psF {
+    position: fixed;
+}
+
+/*z-index层级设置*/
+.zid_100 {
+    z-index: -100;
+}
+
+.zid0 {
+    z-index: 0;
+}
+
+.zid1 {
+    z-index: 100;
+}
+
+.zid2 {
+    z-index: 200;
+}
+
+.zid3 {
+    z-index: 300;
+}
+
+.zid4 {
+    z-index: 400;
+}
+
+.zid5 {
+    z-index: 500;
+}
+
+.zid6 {
+    z-index: 600;
+}
+
+.zid7 {
+    z-index: 700;
+}
+
+/*透明度设置*/
+.opt0 {
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0;
+}
+
+.opt1 {
+    filter: alpha(opacity=10);
+    -moz-opacity: 0.1;
+    -khtml-opacity: 0.1;
+    opacity: 0.1;
+}
+
+.opt2 {
+    filter: alpha(opacity=20);
+    -moz-opacity: 0.2;
+    -khtml-opacity: 0.2;
+    opacity: 0.2;
+}
+
+.opt3 {
+    filter: alpha(opacity=30);
+    -moz-opacity: 0.3;
+    -khtml-opacity: 0.3;
+    opacity: 0.3;
+}
+
+.opt4 {
+    filter: alpha(opacity=40);
+    -moz-opacity: 0.4;
+    -khtml-opacity: 0.4;
+    opacity: 0.4;
+}
+
+.opt5 {
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+}
+
+.opt6 {
+    filter: alpha(opacity=60);
+    -moz-opacity: 0.6;
+    -khtml-opacity: 0.6;
+    opacity: 0.6;
+}
+
+.opt7 {
+    filter: alpha(opacity=70);
+    -moz-opacity: 0.7;
+    -khtml-opacity: 0.7;
+    opacity: 0.7;
+}
+
+.opt8 {
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+}
+
+.opt9 {
+    filter: alpha(opacity=90);
+    -moz-opacity: 0.9;
+    -khtml-opacity: 0.9;
+    opacity: 0.9;
+}
+
+.opt95 {
+    filter: alpha(opacity=95);
+    -moz-opacity: 0.95;
+    -khtml-opacity: 0.95;
+    opacity: 0.95;
+}
+
+.opt97 {
+    filter: alpha(opacity=97);
+    -moz-opacity: 0.97;
+    -khtml-opacity: 0.97;
+    opacity: 0.97;
+}
+
+.opt99 {
+    filter: alpha(opacity=99);
+    -moz-opacity: 0.99;
+    -khtml-opacity: 0.99;
+    opacity: 0.99;
+}
+
+.mgb5{
+    margin-bottom: 5px;
+}
+/* scrollbar */
+::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+}
+::-webkit-scrollbar-track {
+	background-color: #e9e9e9;
+    -webkit-border-radius: 2px;
+       -moz-border-radius: 2px;
+            border-radius: 2px;
+}
+::-webkit-scrollbar-thumb {
+	background-color: #dad9d9;
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+}
+

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="../Css/index.css">
+    <link rel="stylesheet" href="../Css/Pagestyle.css">
+    <link rel="stylesheet" href="../Css/purge.css">
+</head>
+<body style="background: #f6f6f6">
+    <div class="nav">
+        <img src="../Images/system.png">
+        <div class="nav-content">
+            <div class="nav-module"  style="display: none">
+                <div class="nav-module-box">
+                    <img src="../Images/home.png">
+                    <p>首页</p>
+                </div>
+                <div class="nav-module-box">
+                    <img src="../Images/private.png">
+                    <p>坐席库</p>
+                </div>
+                <div class="nav-module-box">
+                    <img src="../Images/common.png">
+                    <p>客户库</p>
+                </div>
+                <div class="nav-module-box">
+                    <img src="../Images/manage.png">
+                    <p>用户管理</p>
+                </div>
+                <div class="nav-module-box">
+                    <img src="../Images/time.png">
+                    <p>拨号时间</p>
+                </div>
+                <div class="nav-module-box">
+                    <img src="../Images/voice.png">
+                    <p>语音模板</p>
+                </div>
+                <div class="nav-module-box">
+                    <img src="../Images/money.png">
+                    <p>电话卡余额</p>
+                </div>
+            </div>
+            <div class="nav-user-help">
+                <div class="nav-user">
+                    <img src="../Images/user3.png">
+                    <p>你好，<span>张三</span></p>
+                    <img src="../Images/more.png">
+                </div>
+                <div class="line"></div>
+                <div class="nav-help">
+                    <img src="../Images/help.png">
+                    <span>帮助</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="home">
+        <div class="aside">
+            <div class="aside-box active">
+                <div class="aside-box-text">
+                    <img src="../Images/home_icon_green.png">
+                    <span>首页</span>
+                </div>
+                <img src="../Images/more2.png">
+            </div>
+            <div class="aside-box">
+                <div class="aside-box-text">
+                    <img src="../Images/user_icon_gray.png">
+                    <span>坐席库</span>
+                </div>
+                <img src="../Images/more3.png">
+            </div>
+            <div class="aside-box">
+                <div class="aside-box-text">
+                    <img src="../Images/ccUsers_icon_gray.png">
+                    <span>客户库</span>
+                </div>
+                <img src="../Images/more3.png">
+            </div>
+            <div class="aside-box">
+                <div class="aside-box-text">
+                    <img src="../Images/userManage_icon_gray.png">
+                    <span>用户管理</span>
+                </div>
+                <img src="../Images/more3.png">
+            </div>
+            <div class="aside-box">
+                <div class="aside-box-text">
+                    <img src="../Images/time_icon_gray.png">
+                    <span>拨号时间</span>
+                </div>
+                <img src="../Images/more3.png">
+            </div>
+            <div class="aside-box">
+                <div class="aside-box-text">
+                    <img src="../Images/vocie_icon_gray.png">
+                    <span>语音模板</span>
+                </div>
+                <img src="../Images/more3.png">
+            </div>
+            <div class="aside-box">
+                <div class="aside-box-text">
+                    <img src="../Images/balance_icon_gray.png">
+                    <span>电话卡余额</span>
+                </div>
+                <img src="../Images/more3.png">
+            </div>
+        </div>
+        <div class="content">
+            <p class="welcome">Hi~欢迎回来！</p>
+            <div class="alarm">电话卡余额预警：<p class="active2">高</p><p>中</p><p>低</p></div>
+            <p class="note">注：首页统计数据30分钟更新一次。</p>
+            <div class="user-connect">
+                <div class="user-box">
+                    <img src="../Images/user2.png">
+                    <div class="user-box-num">
+                        <p>所有客户</p>
+                        <p>600</p>
+                    </div>
+                </div>
+                <div class="user-box">
+                    <img src="../Images/no.png">
+                    <div class="user-box-num">
+                        <p>未联系</p>
+                        <p>600</p>
+                    </div>
+                </div>
+                <div class="user-box">
+                    <img src="../Images/connect.png">
+                    <div class="user-box-num">
+                        <p>联系中</p>
+                        <p>600</p>
+                    </div>
+                </div>
+                <div class="user-box">
+                    <img src="../Images/already.png">
+                    <div class="user-box-num">
+                        <p>已联系</p>
+                        <p>600</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chart">
+                <div class="chart-box">
+                    <div class="chart-box-increase">
+                        <p class="chart-box-txt">坐席库</p>
+                        <div>
+                            <p class="active3">今日新增</p>
+                            <p>本周新增</p>
+                            <p>本月新增</p>
+                        </div>
+                    </div>
+                    <div class="private-chart" id="private-chart">
+
+                    </div>
+                </div>
+                <div class="chart-box">
+                    <div class="chart-box-increase">
+                        <p class="chart-box-txt">客户库</p>
+                        <div>
+                            <p class="active3">今日新增</p>
+                            <p>本周新增</p>
+                            <p>本月新增</p>
+                        </div>
+                    </div>
+                    <div class="private-chart" id="common-chart">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../JavaScript/echarts.min.js"></script>
+    <script type="text/javascript" src="../JavaScript/chart.js"></script>
+</body>
+</html>
