@@ -1,4 +1,4 @@
-package com.xmszit.futures.web.utils;
+package com.xmxnkj.voip.web.utils;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -21,7 +21,7 @@ import com.google.zxing.WriterException;
 import com.google.zxing.client.j2se.MatrixToImageWriter;
 import com.google.zxing.common.BitMatrix;
 import com.hsit.common.MD5Util;
-import com.xmszit.futures.system.entity.ClientUser;
+import com.xmxnkj.voip.system.entity.ClientUser;
 
 public class ZxingUtil {
 
@@ -42,7 +42,7 @@ public class ZxingUtil {
         }
        // String content = request.getScheme()+"://192.168.1.6/"+request.getContextPath()+"/"+"web/clientUser/resigstr"+"?commendCode="+clientUser.getCommendCode()+"&id="+UUID.randomUUID();
         //参数1  推荐码 （所属组织）参数2 leaderId （当前会员id）
-        String content = request.getScheme()+"://www.zhzbfx.com/futures/web/clientUser/resigstr?commendCode="+clientUser.getCommendCode()+"&leaderId="+clientUser.getId();
+        String content = request.getScheme()+"://www.zhzbfx.com/voip/web/clientUser/resigstr?commendCode="+clientUser.getCommendCode()+"&leaderId="+clientUser.getId();
         int width = 200; // 图像宽度  
         int height = 200; // 图像高度  
         String format = "png";// 图像类型 

@@ -1,4 +1,4 @@
-package com.xmszit.futures.web.utils;
+package com.xmxnkj.voip.web.utils;
 
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;

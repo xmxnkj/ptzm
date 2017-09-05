@@ -1,4 +1,4 @@
-package com.xmszit.futures.web.utils;
+package com.xmxnkj.voip.web.utils;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -13,8 +13,8 @@ import org.apache.commons.httpclient.HttpException;
 import org.apache.commons.httpclient.HttpMethod;
 import org.apache.commons.httpclient.methods.GetMethod;
 
-import com.xmszit.futures.system.controllers.ExitEntryController;
-import com.xmszit.futures.system.entity.emun.FutureTypeEnum;
+import com.xmxnkj.voip.system.controllers.ExitEntryController;
+import com.xmxnkj.voip.system.entity.emun.FutureTypeEnum;
 
 //新浪接口数据
 public class SinaJsonUtil {
@@ -23,15 +23,15 @@ public class SinaJsonUtil {
 	private static String actualTime = "http://hq.sinajs.cn/list=";
 	
 	//5分
-	private static String history5 = "http://stock2.finance.sina.com.cn/futures/api/json.php/IndexService.getInnerFuturesMiniKLine5m?symbol=";
+	private static String history5 = "http://stock2.finance.sina.com.cn/voip/api/json.php/IndexService.getInnervoipMiniKLine5m?symbol=";
 	//15分
-	private static String history15 = "http://stock2.finance.sina.com.cn/futures/api/json.php/IndexService.getInnerFuturesMiniKLine15m?symbol=";
+	private static String history15 = "http://stock2.finance.sina.com.cn/voip/api/json.php/IndexService.getInnervoipMiniKLine15m?symbol=";
 	//30分
-	private static String history30 = "http://stock2.finance.sina.com.cn/futures/api/json.php/IndexService.getInnerFuturesMiniKLine30m?symbol=";
+	private static String history30 = "http://stock2.finance.sina.com.cn/voip/api/json.php/IndexService.getInnervoipMiniKLine30m?symbol=";
 	//60分
-	private static String history60 = "http://stock2.finance.sina.com.cn/futures/api/json.php/IndexService.getInnerFuturesMiniKLine60m?symbol=";
+	private static String history60 = "http://stock2.finance.sina.com.cn/voip/api/json.php/IndexService.getInnervoipMiniKLine60m?symbol=";
 	//日K
-	private static String historyDay = "http://stock2.finance.sina.com.cn/futures/api/json.php/IndexService.getInnerFuturesDailyKLine?symbol=";
+	private static String historyDay = "http://stock2.finance.sina.com.cn/voip/api/json.php/IndexService.getInnervoipDailyKLine?symbol=";
 
 	//k线图
 	public static String loadJson (FutureTypeEnum futureTypeEnum,String code) {

@@ -1,4 +1,4 @@
-package com.xmszit.futures.web.utils;
+package com.xmxnkj.voip.web.utils;
 
 import org.apache.http.*;
 import org.apache.http.client.HttpClient;

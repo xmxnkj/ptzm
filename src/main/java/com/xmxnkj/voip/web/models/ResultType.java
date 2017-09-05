@@ -1,7 +1,7 @@
-package com.xmszit.voip.web.models;
+package com.xmxnkj.voip.web.models;
 
 /**
- * @ProjectName:voip
+ * @ProjectName:lightning
  * @ClassName: ResultType
  * @Description: 
  * @UpdateUser: 

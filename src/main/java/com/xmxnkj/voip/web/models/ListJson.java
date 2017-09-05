@@ -1,10 +1,10 @@
-package com.xmszit.voip.web.models;
+package com.xmxnkj.voip.web.models;
 
 import com.hsit.common.exceptions.ApplicationException;
 import com.hsit.common.kfbase.entity.Paging;
 
 /**
- * @ProjectName:voip
+ * @ProjectName:lightning
  * @ClassName: JsonObject
  * @Description: 
  * @UpdateUser: 
@@ -46,16 +46,6 @@ public class ListJson extends ResultJson{
 	
 	
 	private Object rows;
-	private Object footer;
-
-	
-	public Object getFooter() {
-		return footer;
-	}
-
-	public void setFooter(Object footer) {
-		this.footer = footer;
-	}
 
 	public Object getRows() {
 		return rows;

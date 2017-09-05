@@ -8,7 +8,7 @@
 */
 
 
-package com.xmszit.futures.web.utils;
+package com.xmxnkj.voip.web.utils;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;

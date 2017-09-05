@@ -1,4 +1,4 @@
-package com.xmszit.futures.web.uac.user;
+package com.xmxnkj.voip.web.uac.user;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -13,8 +13,8 @@ import com.hsit.common.uac.dao.UserDao;
 import com.hsit.common.uac.entity.User;
 import com.hsit.common.uac.entity.queryparam.UserQuery;
 import com.hsit.common.uac.service.UserService;
-import com.xmszit.futures.web.BaseController;
-import com.xmszit.futures.web.models.ResultJson;
+import com.xmxnkj.voip.web.BaseController;
+import com.xmxnkj.voip.web.models.ResultJson;
 
 /**
  * @ProjectName:lightning
@@ -23,7 +23,7 @@ import com.xmszit.futures.web.models.ResultJson;
  * @UpdateUser: 
  * @UpdateDate: 
  * @UpdateRemark: 
- * @Copyright: 2017 厦门晟中信息技术有限公司
+ * @Copyright: 2017 厦门西牛科技有限公司
  * @versions:1.0
  */
 @Controller
