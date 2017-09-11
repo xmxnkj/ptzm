@@ -1,4 +1,4 @@
-package com.xmszit.voip.web;
+package com.xmxnkj.voip.web;
 
 import java.io.IOException;
 import java.lang.reflect.ParameterizedType;
@@ -16,11 +16,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.hsit.common.utils.DateUtil;
-import com.xmszit.voip.client.entity.Operate;
-import com.xmszit.voip.client.service.ClientService;
-import com.xmszit.voip.system.entity.PublishNotice;
-import com.xmszit.voip.system.service.RemindService;
-import com.xmszit.voip.web.utils.ExportExcel;
+import com.xmxnkj.voip.client.entity.Operate;
+import com.xmxnkj.voip.client.service.ClientService;
+import com.xmxnkj.voip.system.entity.PublishNotice;
+import com.xmxnkj.voip.system.service.RemindService;
+import com.xmxnkj.voip.web.utils.ExportExcel;
 
 
 /**

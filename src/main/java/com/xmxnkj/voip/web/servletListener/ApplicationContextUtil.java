@@ -1,4 +1,4 @@
-package com.xmszit.voip.web.servletListener;
+package com.xmxnkj.voip.web.servletListener;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;

@@ -1,4 +1,4 @@
-package com.xmszit.voip.client.web;
+package com.xmxnkj.voip.client.web;
 
 import java.util.List;
 
@@ -7,11 +7,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.xmszit.voip.client.entity.OperateRole;
-import com.xmszit.voip.client.entity.query.OperateRoleQuery;
-import com.xmszit.voip.client.service.OperateRoleService;
-import com.xmszit.voip.web.BaseController;
-import com.xmszit.voip.web.models.ListJson;
+import com.xmxnkj.voip.client.entity.OperateRole;
+import com.xmxnkj.voip.client.entity.query.OperateRoleQuery;
+import com.xmxnkj.voip.client.service.OperateRoleService;
+import com.xmxnkj.voip.web.BaseController;
+import com.xmxnkj.voip.web.models.ListJson;
 
 @Controller
 @RequestMapping(value="client/operateRole")

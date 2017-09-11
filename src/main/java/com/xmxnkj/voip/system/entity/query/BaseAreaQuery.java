@@ -1,6 +1,6 @@
-package com.xmszit.voip.system.entity.query;
+package com.xmxnkj.voip.system.entity.query;
 
-import com.xmszit.voip.common.entity.query.VoipQuery;
+import com.xmxnkj.voip.common.entity.query.VoipQuery;
 
 /**
  * @ProjectName:voip

@@ -1,12 +1,12 @@
-package com.xmszit.voip.system.web;
+package com.xmxnkj.voip.system.web;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import com.xmszit.voip.system.entity.ModifyClientRecord;
-import com.xmszit.voip.system.entity.query.ModifyClientRecordQuery;
-import com.xmszit.voip.system.service.ModifyClientRecordService;
-import com.xmszit.voip.web.SystemBaseController;
+import com.xmxnkj.voip.system.entity.ModifyClientRecord;
+import com.xmxnkj.voip.system.entity.query.ModifyClientRecordQuery;
+import com.xmxnkj.voip.system.service.ModifyClientRecordService;
+import com.xmxnkj.voip.web.SystemBaseController;
 
 /**
  * @ProjectName:voip

@@ -1,13 +1,13 @@
-package com.xmszit.voip.customer.service.impl;
+package com.xmxnkj.voip.customer.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.hsit.common.service.BusinessBaseServiceImpl;
-import com.xmszit.voip.customer.dao.CallPlanDao;
-import com.xmszit.voip.customer.entity.CallPlan;
-import com.xmszit.voip.customer.entity.query.CallPlanQuery;
-import com.xmszit.voip.customer.service.CallPlanService;
+import com.xmxnkj.voip.customer.dao.CallPlanDao;
+import com.xmxnkj.voip.customer.entity.CallPlan;
+import com.xmxnkj.voip.customer.entity.query.CallPlanQuery;
+import com.xmxnkj.voip.customer.service.CallPlanService;
 
 @Service
 public class CallPlanServiceImpl extends BusinessBaseServiceImpl<CallPlan, CallPlanQuery> implements CallPlanService {

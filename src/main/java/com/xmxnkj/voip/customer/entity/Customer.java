@@ -1,4 +1,4 @@
-package com.xmszit.voip.customer.entity;
+package com.xmxnkj.voip.customer.entity;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -8,9 +8,9 @@ import org.apache.commons.lang3.StringUtils;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.hsit.common.annotations.CopyNullProperty;
 import com.hsit.common.utils.DateDiff;
-import com.xmszit.voip.client.entity.ClientUser;
-import com.xmszit.voip.common.entity.VoipEntity;
-import com.xmszit.voip.voice.entity.VoiceTemplate;
+import com.xmxnkj.voip.client.entity.ClientUser;
+import com.xmxnkj.voip.common.entity.VoipEntity;
+import com.xmxnkj.voip.voice.entity.VoiceTemplate;
 
 /**
  * 公海/私海客户

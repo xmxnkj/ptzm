@@ -1,4 +1,4 @@
-package com.xmszit.voip.client.web;
+package com.xmxnkj.voip.client.web;
 
 import java.util.List;
 
@@ -9,17 +9,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.hsit.common.exceptions.ApplicationException;
-import com.xmszit.voip.client.entity.OperateRole;
-import com.xmszit.voip.client.entity.UserRole;
-import com.xmszit.voip.client.entity.query.ClientAndRoleQuery;
-import com.xmszit.voip.client.entity.query.OperateRoleQuery;
-import com.xmszit.voip.client.entity.query.UserRoleQuery;
-import com.xmszit.voip.client.service.ClientAndRoleService;
-import com.xmszit.voip.client.service.OperateRoleService;
-import com.xmszit.voip.client.service.UserRoleService;
-import com.xmszit.voip.web.BaseController;
-import com.xmszit.voip.web.models.ListJson;
-import com.xmszit.voip.web.models.ResultJson;
+import com.xmxnkj.voip.client.entity.OperateRole;
+import com.xmxnkj.voip.client.entity.UserRole;
+import com.xmxnkj.voip.client.entity.query.ClientAndRoleQuery;
+import com.xmxnkj.voip.client.entity.query.OperateRoleQuery;
+import com.xmxnkj.voip.client.entity.query.UserRoleQuery;
+import com.xmxnkj.voip.client.service.ClientAndRoleService;
+import com.xmxnkj.voip.client.service.OperateRoleService;
+import com.xmxnkj.voip.client.service.UserRoleService;
+import com.xmxnkj.voip.web.BaseController;
+import com.xmxnkj.voip.web.models.ListJson;
+import com.xmxnkj.voip.web.models.ResultJson;
 
 @Controller
 @RequestMapping(value="client/userRole")

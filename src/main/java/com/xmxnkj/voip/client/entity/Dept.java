@@ -1,8 +1,8 @@
-package com.xmszit.voip.client.entity;
+package com.xmxnkj.voip.client.entity;
 
 import java.util.List;
 
-import com.xmszit.voip.common.entity.VoipEntity;
+import com.xmxnkj.voip.common.entity.VoipEntity;
 
 public class Dept extends VoipEntity{
 	

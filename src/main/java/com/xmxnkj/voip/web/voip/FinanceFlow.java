@@ -1,4 +1,4 @@
-package com.xmszit.voip.web.voip;
+package com.xmxnkj.voip.web.voip;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -15,20 +15,20 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
-import com.xmszit.voip.customer.entity.CallRecord;
-import com.xmszit.voip.customer.entity.CallRecordDetail;
-import com.xmszit.voip.customer.entity.Customer;
-import com.xmszit.voip.customer.service.CallRecordDetailService;
-import com.xmszit.voip.customer.service.CallRecordService;
-import com.xmszit.voip.customer.service.CustomerService;
-import com.xmszit.voip.ivr.entity.AiResponse;
-import com.xmszit.voip.ivr.entity.Flow;
-import com.xmszit.voip.ivr.entity.query.AiResponseQuery;
-import com.xmszit.voip.ivr.entity.query.FlowQuery;
-import com.xmszit.voip.ivr.service.AiResponseService;
-import com.xmszit.voip.ivr.service.FlowService;
-import com.xmszit.voip.outBound.entity.AutodialerTask;
-import com.xmszit.voip.outBound.service.AutodialerTaskService;
+import com.xmxnkj.voip.customer.entity.CallRecord;
+import com.xmxnkj.voip.customer.entity.CallRecordDetail;
+import com.xmxnkj.voip.customer.entity.Customer;
+import com.xmxnkj.voip.customer.service.CallRecordDetailService;
+import com.xmxnkj.voip.customer.service.CallRecordService;
+import com.xmxnkj.voip.customer.service.CustomerService;
+import com.xmxnkj.voip.ivr.entity.AiResponse;
+import com.xmxnkj.voip.ivr.entity.Flow;
+import com.xmxnkj.voip.ivr.entity.query.AiResponseQuery;
+import com.xmxnkj.voip.ivr.entity.query.FlowQuery;
+import com.xmxnkj.voip.ivr.service.AiResponseService;
+import com.xmxnkj.voip.ivr.service.FlowService;
+import com.xmxnkj.voip.outBound.entity.AutodialerTask;
+import com.xmxnkj.voip.outBound.service.AutodialerTaskService;
 
 import net.sf.json.JSONObject;
 

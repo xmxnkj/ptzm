@@ -1,4 +1,4 @@
-package com.xmszit.voip.voice.dao.impl;
+package com.xmxnkj.voip.voice.dao.impl;
 
 import java.math.BigInteger;
 import java.text.SimpleDateFormat;
@@ -15,12 +15,12 @@ import com.hsit.common.dao.QueryParam;
 import com.hsit.common.dao.hibernate.SimpleHibernate4Dao;
 import com.hsit.common.kfbase.entity.Paging;
 import com.hsit.common.kfbase.entity.RelaParam;
-import com.xmszit.voip.voice.dao.ICallTimeSetDao;
-import com.xmszit.voip.voice.dao.IVoiceTemplateDao;
-import com.xmszit.voip.voice.entity.CallTimeSet;
-import com.xmszit.voip.voice.entity.VoiceTemplate;
-import com.xmszit.voip.voice.entity.query.CallTimeSetQuery;
-import com.xmszit.voip.voice.entity.query.VoiceTemplateQuery;
+import com.xmxnkj.voip.voice.dao.ICallTimeSetDao;
+import com.xmxnkj.voip.voice.dao.IVoiceTemplateDao;
+import com.xmxnkj.voip.voice.entity.CallTimeSet;
+import com.xmxnkj.voip.voice.entity.VoiceTemplate;
+import com.xmxnkj.voip.voice.entity.query.CallTimeSetQuery;
+import com.xmxnkj.voip.voice.entity.query.VoiceTemplateQuery;
 
 @Repository
 public class CallTimeSetDaoImpl extends SimpleHibernate4Dao<CallTimeSet, CallTimeSetQuery> implements ICallTimeSetDao {

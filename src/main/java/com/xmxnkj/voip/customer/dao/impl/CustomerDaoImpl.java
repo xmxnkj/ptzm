@@ -1,4 +1,4 @@
-package com.xmszit.voip.customer.dao.impl;
+package com.xmxnkj.voip.customer.dao.impl;
 
 
 import java.math.BigInteger;
@@ -15,12 +15,12 @@ import org.springframework.stereotype.Repository;
 
 import com.hsit.common.dao.hibernate.SimpleHibernate4Dao;
 import com.hsit.common.utils.DateUtil;
-import com.xmszit.voip.customer.dao.CustomerDao;
-import com.xmszit.voip.customer.entity.ContactState;
-import com.xmszit.voip.customer.entity.Customer;
-import com.xmszit.voip.customer.entity.CustomerType;
-import com.xmszit.voip.customer.entity.query.CustomerQuery;
-import com.xmszit.voip.customer.web.models.CountCustomerType;
+import com.xmxnkj.voip.customer.dao.CustomerDao;
+import com.xmxnkj.voip.customer.entity.ContactState;
+import com.xmxnkj.voip.customer.entity.Customer;
+import com.xmxnkj.voip.customer.entity.CustomerType;
+import com.xmxnkj.voip.customer.entity.query.CustomerQuery;
+import com.xmxnkj.voip.customer.web.models.CountCustomerType;
 
 @Repository
 public class CustomerDaoImpl extends SimpleHibernate4Dao<Customer, CustomerQuery> implements CustomerDao{

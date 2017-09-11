@@ -1,4 +1,4 @@
-package com.xmszit.voip.client.entity.query;
+package com.xmxnkj.voip.client.entity.query;
 
 import com.hsit.common.annotations.QueryParamAnnotation;
 import com.hsit.common.dao.QueryParam.ParamCompareType;

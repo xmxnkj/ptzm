@@ -4,7 +4,7 @@ import com.hsit.common.exceptions.ApplicationException;
 import com.hsit.common.kfbase.entity.Paging;
 
 /**
- * @ProjectName:lightning
+ * @ProjectName:voip
  * @ClassName: JsonObject
  * @Description: 
  * @UpdateUser: 
@@ -46,6 +46,16 @@ public class ListJson extends ResultJson{
 	
 	
 	private Object rows;
+	private Object footer;
+
+	
+	public Object getFooter() {
+		return footer;
+	}
+
+	public void setFooter(Object footer) {
+		this.footer = footer;
+	}
 
 	public Object getRows() {
 		return rows;

@@ -1,4 +1,4 @@
-package com.xmszit.voip.customer.entity.query;
+package com.xmxnkj.voip.customer.entity.query;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -9,12 +9,12 @@ import org.apache.commons.lang3.StringUtils;
 import com.hsit.common.annotations.EntityOrderAnnotation;
 import com.hsit.common.annotations.QueryParamAnnotation;
 import com.hsit.common.dao.QueryParam.ParamCompareType;
-import com.xmszit.voip.client.entity.ClientUser;
-import com.xmszit.voip.common.entity.query.VoipQuery;
-import com.xmszit.voip.customer.entity.ContactState;
-import com.xmszit.voip.customer.entity.CustomerType;
-import com.xmszit.voip.customer.entity.PlanState;
-import com.xmszit.voip.customer.entity.ReceivingState;
+import com.xmxnkj.voip.client.entity.ClientUser;
+import com.xmxnkj.voip.common.entity.query.VoipQuery;
+import com.xmxnkj.voip.customer.entity.ContactState;
+import com.xmxnkj.voip.customer.entity.CustomerType;
+import com.xmxnkj.voip.customer.entity.PlanState;
+import com.xmxnkj.voip.customer.entity.ReceivingState;
 
 public class CustomerQuery extends VoipQuery {
 	private Integer type;

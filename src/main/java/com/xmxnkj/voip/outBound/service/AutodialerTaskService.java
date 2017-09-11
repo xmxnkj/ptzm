@@ -1,11 +1,11 @@
-package com.xmszit.voip.outBound.service;
+package com.xmxnkj.voip.outBound.service;
 
 import java.util.List;
 
 import com.hsit.common.service.BusinessBaseService;
-import com.xmszit.voip.customer.entity.Customer;
-import com.xmszit.voip.outBound.entity.AutodialerTask;
-import com.xmszit.voip.outBound.entity.query.AutodialerTaskQuery;
+import com.xmxnkj.voip.customer.entity.Customer;
+import com.xmxnkj.voip.outBound.entity.AutodialerTask;
+import com.xmxnkj.voip.outBound.entity.query.AutodialerTaskQuery;
 
 public interface AutodialerTaskService extends BusinessBaseService<AutodialerTask, AutodialerTaskQuery>{
 	

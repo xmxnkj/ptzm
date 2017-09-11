@@ -1,12 +1,12 @@
-package com.xmszit.voip.voice.service;
+package com.xmxnkj.voip.voice.service;
 
 import java.util.Date;
 import java.util.List;
 
 import com.hsit.common.service.BusinessBaseService;
-import com.xmszit.voip.voice.entity.CallTimeSet;
-import com.xmszit.voip.voice.entity.VoiceTemplate;
-import com.xmszit.voip.voice.entity.query.CallTimeSetQuery;
+import com.xmxnkj.voip.voice.entity.CallTimeSet;
+import com.xmxnkj.voip.voice.entity.VoiceTemplate;
+import com.xmxnkj.voip.voice.entity.query.CallTimeSetQuery;
 
 public interface ICallTimeSetService extends BusinessBaseService<CallTimeSet, CallTimeSetQuery>{
 	/** 根据id获取结果 */

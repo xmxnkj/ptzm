@@ -2,7 +2,7 @@
 <!DOCTYPE hibernate-mapping PUBLIC  
     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
-<hibernate-mapping package="com.xmszit.voip.system.entity">
+<hibernate-mapping package="com.xmxnkj.voip.system.entity">
     <class name="PublishNotice" table="UAC_PUBLIC_NOTICE">
         <id name="id" column="ID">
             <generator class="uuid2"/>
@@ -15,7 +15,7 @@
         <property name="clientId" column="CLIENT_ID"/>
         <property name="showDays" column="SHOW_DAYS"/>
         <many-to-one name="noticeArea" column="NOTICE_AREA" fetch="select"
-          class="com.xmszit.voip.system.entity.BaseArea" lazy="false" not-found="ignore">
+          class="com.xmxnkj.voip.system.entity.BaseArea" lazy="false" not-found="ignore">
         </many-to-one>
         <many-to-one name="user" column="UAC_USER" fetch="select"
           class="com.hsit.common.uac.entity.User" lazy="false" not-found="ignore">

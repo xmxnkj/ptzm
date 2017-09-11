@@ -2,7 +2,7 @@
 <!DOCTYPE hibernate-mapping PUBLIC  
     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
-<hibernate-mapping package="com.xmszit.voip.customer.entity">
+<hibernate-mapping package="com.xmxnkj.voip.customer.entity">
 
     <class name="CallPlan" table="CUT_CALL_PLAN">
         <id name="id" column="ID">
@@ -15,27 +15,27 @@
         <property name="inUse" column="IN_USE"/>
         
         <many-to-one name="clientUser" column="CLIENT_USER_ID" fetch="select" 
-        	class="com.xmszit.voip.client.entity.ClientUser" lazy="false" not-found="ignore"  insert="false" update="false"/> 
+        	class="com.xmxnkj.voip.client.entity.ClientUser" lazy="false" not-found="ignore"  insert="false" update="false"/> 
         
         
        <property name="callState" column="CALL_STATE" >
         	<type name="org.hibernate.type.EnumType">
-        		<param name="enumClass">com.xmszit.voip.customer.entity.CallState</param>
+        		<param name="enumClass">com.xmxnkj.voip.customer.entity.CallState</param>
         		<param name="type">4</param>
         	</type>
         </property>
         <many-to-one name="voiceTemplate" column="VOICE_TEMPLATE" fetch="select" 
-        	class="com.xmszit.voip.voice.entity.VoiceTemplate" lazy="false" not-found="ignore"
+        	class="com.xmxnkj.voip.voice.entity.VoiceTemplate" lazy="false" not-found="ignore"
         	/>
       	
       	<property name="lineId" column="LINE_ID"/>
       	 <many-to-one name="line" column="LINE_ID" fetch="select" 
-        	class="com.xmszit.voip.client.entity.Line" lazy="false" not-found="ignore"  insert="false" update="false"/> 
+        	class="com.xmxnkj.voip.client.entity.Line" lazy="false" not-found="ignore"  insert="false" update="false"/> 
         	
         	
         <set name="callTimeSet" table="CALLPLAN_CALLTIME" lazy="false">  
             <key column="CALLPLAN_ID"/>  
-            <many-to-many class="com.xmszit.voip.voice.entity.CallTimeSet" column="CALLTIME_ID"/>  
+            <many-to-many class="com.xmxnkj.voip.voice.entity.CallTimeSet" column="CALLTIME_ID"/>  
         </set>
 	</class>
 

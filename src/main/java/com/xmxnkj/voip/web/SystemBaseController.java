@@ -1,4 +1,4 @@
-package com.xmszit.voip.web;
+package com.xmxnkj.voip.web;
 
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
@@ -28,14 +28,14 @@ import com.hsit.common.kfbase.entity.DomainEntity;
 import com.hsit.common.kfbase.entity.EntityQueryParam;
 import com.hsit.common.service.AppBaseService;
 import com.hsit.common.uac.entity.UserRoleType;
-import com.xmszit.voip.client.entity.ClientUser;
-import com.xmszit.voip.common.entity.VoipEntity;
-import com.xmszit.voip.common.entity.query.VoipQuery;
-import com.xmszit.voip.customer.web.editor.DateEditor;
-import com.xmszit.voip.global.Constants;
-import com.xmszit.voip.web.models.ListJson;
-import com.xmszit.voip.web.models.ResultJson;
-import com.xmszit.voip.web.utils.CommonExport;
+import com.xmxnkj.voip.client.entity.ClientUser;
+import com.xmxnkj.voip.common.entity.VoipEntity;
+import com.xmxnkj.voip.common.entity.query.VoipQuery;
+import com.xmxnkj.voip.customer.web.editor.DateEditor;
+import com.xmxnkj.voip.global.Constants;
+import com.xmxnkj.voip.web.models.ListJson;
+import com.xmxnkj.voip.web.models.ResultJson;
+import com.xmxnkj.voip.web.utils.CommonExport;
 
 import bsh.StringUtil;
 

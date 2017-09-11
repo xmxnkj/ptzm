@@ -1,17 +1,17 @@
-package com.xmszit.voip.customer.service;
+package com.xmxnkj.voip.customer.service;
 
 import java.math.BigInteger;
 
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 
 import com.hsit.common.service.BusinessBaseService;
-import com.xmszit.voip.client.entity.ClientUser;
-import com.xmszit.voip.customer.entity.ContactState;
-import com.xmszit.voip.customer.entity.Customer;
-import com.xmszit.voip.customer.entity.CustomerType;
-import com.xmszit.voip.customer.entity.ReceivingState;
-import com.xmszit.voip.customer.entity.query.CustomerQuery;
-import com.xmszit.voip.customer.web.models.CountCustomerType;
+import com.xmxnkj.voip.client.entity.ClientUser;
+import com.xmxnkj.voip.customer.entity.ContactState;
+import com.xmxnkj.voip.customer.entity.Customer;
+import com.xmxnkj.voip.customer.entity.CustomerType;
+import com.xmxnkj.voip.customer.entity.ReceivingState;
+import com.xmxnkj.voip.customer.entity.query.CustomerQuery;
+import com.xmxnkj.voip.customer.web.models.CountCustomerType;
 
 public interface CustomerService extends BusinessBaseService<Customer, CustomerQuery> {
 

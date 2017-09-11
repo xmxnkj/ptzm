@@ -1,10 +1,10 @@
-package com.xmszit.voip.system.service;
+package com.xmxnkj.voip.system.service;
 
 
 
 import com.hsit.common.service.BusinessBaseService;
-import com.xmszit.voip.system.entity.BaseArea;
-import com.xmszit.voip.system.entity.query.BaseAreaQuery;
+import com.xmxnkj.voip.system.entity.BaseArea;
+import com.xmxnkj.voip.system.entity.query.BaseAreaQuery;
 
 /**
  * @ProjectName:voip

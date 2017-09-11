@@ -1,4 +1,4 @@
-package com.xmszit.voip.system.dao.imp;
+package com.xmxnkj.voip.system.dao.imp;
 
 import java.math.BigInteger;
 import java.util.HashMap;
@@ -7,9 +7,9 @@ import java.util.Map;
 import org.springframework.stereotype.Repository;
 
 import com.hsit.common.dao.hibernate.SimpleHibernate4Dao;
-import com.xmszit.voip.system.dao.ClientMealDao;
-import com.xmszit.voip.system.entity.ClientMeal;
-import com.xmszit.voip.system.entity.query.ClientMealQuery;
+import com.xmxnkj.voip.system.dao.ClientMealDao;
+import com.xmxnkj.voip.system.entity.ClientMeal;
+import com.xmxnkj.voip.system.entity.query.ClientMealQuery;
 /**
  * ClientMealDaoImp
  * @author Administrator

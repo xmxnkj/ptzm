@@ -1,4 +1,4 @@
-package com.xmszit.voip.outBound.service.impl;
+package com.xmxnkj.voip.outBound.service.impl;
 
 import java.util.List;
 import java.util.Map;
@@ -9,12 +9,12 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 
 import com.hsit.common.service.BusinessBaseServiceImpl;
-import com.xmszit.voip.customer.entity.Customer;
-import com.xmszit.voip.customer.service.CustomerService;
-import com.xmszit.voip.outBound.dao.AutodialerTaskDao;
-import com.xmszit.voip.outBound.entity.AutodialerTask;
-import com.xmszit.voip.outBound.entity.query.AutodialerTaskQuery;
-import com.xmszit.voip.outBound.service.AutodialerTaskService;
+import com.xmxnkj.voip.customer.entity.Customer;
+import com.xmxnkj.voip.customer.service.CustomerService;
+import com.xmxnkj.voip.outBound.dao.AutodialerTaskDao;
+import com.xmxnkj.voip.outBound.entity.AutodialerTask;
+import com.xmxnkj.voip.outBound.entity.query.AutodialerTaskQuery;
+import com.xmxnkj.voip.outBound.service.AutodialerTaskService;
 
 import net.sf.json.JSONObject;
 

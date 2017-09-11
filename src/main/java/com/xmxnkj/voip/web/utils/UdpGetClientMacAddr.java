@@ -1,4 +1,4 @@
-package com.xmszit.voip.web.utils;
+package com.xmxnkj.voip.web.utils;
 
 import java.io.IOException;
 import java.net.DatagramPacket;

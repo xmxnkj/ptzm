@@ -1,4 +1,4 @@
-package com.xmszit.voip.system.web;
+package com.xmxnkj.voip.system.web;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -8,14 +8,14 @@ import java.util.Date;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
-import com.xmszit.voip.client.entity.Client;
-import com.xmszit.voip.client.service.ClientService;
-import com.xmszit.voip.system.entity.PayType;
-import com.xmszit.voip.system.entity.ClientPayRecord;
-import com.xmszit.voip.system.entity.query.ClientPayRecordQuery;
-import com.xmszit.voip.system.service.ClientPayRecordService;
-import com.xmszit.voip.web.SystemBaseController;
-import com.xmszit.voip.web.models.ResultJson;
+import com.xmxnkj.voip.client.entity.Client;
+import com.xmxnkj.voip.client.service.ClientService;
+import com.xmxnkj.voip.system.entity.PayType;
+import com.xmxnkj.voip.system.entity.ClientPayRecord;
+import com.xmxnkj.voip.system.entity.query.ClientPayRecordQuery;
+import com.xmxnkj.voip.system.service.ClientPayRecordService;
+import com.xmxnkj.voip.web.SystemBaseController;
+import com.xmxnkj.voip.web.models.ResultJson;
 
 /**
  * @ProjectName:voip

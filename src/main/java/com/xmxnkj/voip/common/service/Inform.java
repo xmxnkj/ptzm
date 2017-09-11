@@ -1,4 +1,4 @@
-package com.xmszit.voip.common.service;
+package com.xmxnkj.voip.common.service;
 
 import com.hsit.common.uac.entity.User;
 

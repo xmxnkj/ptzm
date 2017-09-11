@@ -1,4 +1,4 @@
-package com.xmszit.voip.web.models;
+package com.xmxnkj.voip.web.models;
 
 /**
  * @ProjectName:voip

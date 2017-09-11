@@ -10,11 +10,11 @@
 	http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd" >
 	
 	<!-- 注解扫描包 -->
-	<context:component-scan base-package="com.xmszit,com.szit,com.hsit" use-default-filters="false">
+	<context:component-scan base-package="com.xmxnkj,com.szit,com.hsit" use-default-filters="false">
 		<context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
 	</context:component-scan>
 	
-	<bean id="szInterceptor" class="com.xmszit.voip.web.interceptor.SzInterceptor">
+	<bean id="szInterceptor" class="com.xmxnkj.voip.web.interceptor.SzInterceptor">
 	    <property name="clientExcludeUrl">
 	        <list>
 	            <value>/client/clientUser/login</value>
@@ -71,7 +71,7 @@
 	
 	
 	
-	<bean id="exceptionResolver" class="com.xmszit.voip.web.interceptor.SzExceptionHandler">
+	<bean id="exceptionResolver" class="com.xmxnkj.voip.web.interceptor.SzExceptionHandler">
 		<!-- <property name="defaultErrorView">
 			<value>/error/error</value>
 		</property>
@@ -101,14 +101,14 @@
 <!-- 	<bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping">
 		<property name="interceptors">
 			<list>
-				<bean class="com.xmszit.lightning.web.interceptor.SzInterceptor"></bean>
+				<bean class="com.xmxnkj.lightning.web.interceptor.SzInterceptor"></bean>
 			</list>
 		</property>
 	</bean> -->
 
 <!-- 	<mvc:interceptors>
 	
-		<bean class="com.xmszit.lightning.web.interceptor.SzInterceptor" />
+		<bean class="com.xmxnkj.lightning.web.interceptor.SzInterceptor" />
 	</mvc:interceptors> -->
 	
 

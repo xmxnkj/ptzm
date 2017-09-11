@@ -1,4 +1,4 @@
-package com.xmszit.voip.customer.entity;
+package com.xmxnkj.voip.customer.entity;
 
 public enum PlanState {
 	//未入计划

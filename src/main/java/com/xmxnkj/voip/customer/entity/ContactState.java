@@ -1,4 +1,4 @@
-package com.xmszit.voip.customer.entity;
+package com.xmxnkj.voip.customer.entity;
 
 public enum ContactState {
 	//未联系

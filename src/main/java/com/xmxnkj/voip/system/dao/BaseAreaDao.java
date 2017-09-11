@@ -1,8 +1,8 @@
-package com.xmszit.voip.system.dao;
+package com.xmxnkj.voip.system.dao;
 
 import com.hsit.common.dao.Dao;
-import com.xmszit.voip.system.entity.BaseArea;
-import com.xmszit.voip.system.entity.query.BaseAreaQuery;
+import com.xmxnkj.voip.system.entity.BaseArea;
+import com.xmxnkj.voip.system.entity.query.BaseAreaQuery;
 /**
  * 
  * @author Administrator

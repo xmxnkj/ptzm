@@ -20,7 +20,7 @@
     <!-- 指定使用cglib -->
     <aop:aspectj-autoproxy proxy-target-class="true" />
     
-    <context:component-scan base-package="com.xmszit,com.hsit,com.szit">
+    <context:component-scan base-package="com.xmxnkj,com.hsit,com.szit">
     	<context:exclude-filter expression="org.springframework.stereotype.Controller" type="annotation" />
     </context:component-scan>
     
@@ -100,7 +100,7 @@
             </list>
         </property>
     </bean>
-    <!-- <bean id="taskSchedule" class="com.xmszit.voip.web.timerFuntion.TaskSchedule"/> -->
+    <!-- <bean id="taskSchedule" class="com.xmxnkj.voip.web.timerFuntion.TaskSchedule"/> -->
 	<!-- <task:scheduled-tasks>
 		<task:scheduled ref="taskSchedule" method="tessss" cron="0/5 * * * * ?"/>
 		<task:scheduled ref="taskSchedule" method="tessss" cron="0 48 22 ? * *"/> 
@@ -120,7 +120,7 @@
     <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver"/>
 
 	<bean id="SpringApplicationContext" class="com.hsit.common.spring.ApplicationContextHelper"></bean>  
-	<bean id ="applicationContextUtil"  class ="com.xmszit.voip.web.servletListener.ApplicationContextUtil" ></bean>
+	<bean id ="applicationContextUtil"  class ="com.xmxnkj.voip.web.servletListener.ApplicationContextUtil" ></bean>
 	
 	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">  
         <property name = "dataSource" ref="dataSource" /> 

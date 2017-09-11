@@ -1,4 +1,4 @@
-package com.xmszit.voip.common.entity;
+package com.xmxnkj.voip.common.entity;
 
 /**
  * 

@@ -1,13 +1,13 @@
-package com.xmszit.voip.customer.service.impl;
+package com.xmxnkj.voip.customer.service.impl;
 
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.hsit.common.service.BusinessBaseServiceImpl;
-import com.xmszit.voip.customer.dao.CallRecordDao;
-import com.xmszit.voip.customer.entity.CallRecord;
-import com.xmszit.voip.customer.entity.query.CallRecordQuery;
-import com.xmszit.voip.customer.service.CallRecordService;
+import com.xmxnkj.voip.customer.dao.CallRecordDao;
+import com.xmxnkj.voip.customer.entity.CallRecord;
+import com.xmxnkj.voip.customer.entity.query.CallRecordQuery;
+import com.xmxnkj.voip.customer.service.CallRecordService;
 
 @Service
 public class CallRecordServiceImpl extends BusinessBaseServiceImpl<CallRecord, CallRecordQuery> implements CallRecordService {

@@ -1,6 +1,6 @@
-package com.xmszit.voip.ivr.entity;
+package com.xmxnkj.voip.ivr.entity;
 
-import com.xmszit.voip.common.entity.VoipEntity;
+import com.xmxnkj.voip.common.entity.VoipEntity;
 
 /**	流程模板
  * @ProjectName:voip

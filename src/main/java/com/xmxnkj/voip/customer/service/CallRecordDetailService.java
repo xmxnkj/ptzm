@@ -1,8 +1,8 @@
-package com.xmszit.voip.customer.service;
+package com.xmxnkj.voip.customer.service;
 
 import com.hsit.common.service.BusinessBaseService;
-import com.xmszit.voip.customer.entity.CallRecordDetail;
-import com.xmszit.voip.customer.entity.query.CallRecordDetailQuery;
+import com.xmxnkj.voip.customer.entity.CallRecordDetail;
+import com.xmxnkj.voip.customer.entity.query.CallRecordDetailQuery;
 
 public interface CallRecordDetailService extends BusinessBaseService<CallRecordDetail, CallRecordDetailQuery> {
 

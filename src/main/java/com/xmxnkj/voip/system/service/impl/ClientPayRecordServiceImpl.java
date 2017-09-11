@@ -1,4 +1,4 @@
-package com.xmszit.voip.system.service.impl;
+package com.xmxnkj.voip.system.service.impl;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -12,17 +12,17 @@ import com.hsit.common.exceptions.ApplicationException;
 import com.hsit.common.service.BusinessBaseServiceImpl;
 import com.hsit.common.uac.entity.User;
 import com.hsit.common.utils.DateUtil;
-import com.xmszit.voip.client.entity.Client;
-import com.xmszit.voip.client.service.ClientService;
-import com.xmszit.voip.system.entity.PayType;
-import com.xmszit.voip.system.dao.ClientMealDao;
-import com.xmszit.voip.system.dao.ClientPayRecordDao;
-import com.xmszit.voip.system.entity.ClientMeal;
-import com.xmszit.voip.system.entity.ClientPayRecord;
-import com.xmszit.voip.system.entity.query.ClientMealQuery;
-import com.xmszit.voip.system.entity.query.ClientPayRecordQuery;
-import com.xmszit.voip.system.service.ClientMealService;
-import com.xmszit.voip.system.service.ClientPayRecordService;
+import com.xmxnkj.voip.client.entity.Client;
+import com.xmxnkj.voip.client.service.ClientService;
+import com.xmxnkj.voip.system.entity.PayType;
+import com.xmxnkj.voip.system.dao.ClientMealDao;
+import com.xmxnkj.voip.system.dao.ClientPayRecordDao;
+import com.xmxnkj.voip.system.entity.ClientMeal;
+import com.xmxnkj.voip.system.entity.ClientPayRecord;
+import com.xmxnkj.voip.system.entity.query.ClientMealQuery;
+import com.xmxnkj.voip.system.entity.query.ClientPayRecordQuery;
+import com.xmxnkj.voip.system.service.ClientMealService;
+import com.xmxnkj.voip.system.service.ClientPayRecordService;
 
 /**
  * @ProjectName:voip

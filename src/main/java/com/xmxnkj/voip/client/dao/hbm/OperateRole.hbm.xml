@@ -2,7 +2,7 @@
 <!DOCTYPE hibernate-mapping PUBLIC  
     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
-<hibernate-mapping package="com.xmszit.voip.client.entity">
+<hibernate-mapping package="com.xmxnkj.voip.client.entity">
 
     <class name="OperateRole" table="CT_OPERATE_ROLE">
         <id name="id" column="ID">
@@ -12,10 +12,10 @@
          <property name="clientMealId" column="CLIENT_MEAL_ID"></property>
         <property name="checkState" column="CHECK_STATE"></property>
         <many-to-one name="userRole" column="USER_ROLE" fetch="select" 
-        	class="com.xmszit.voip.client.entity.UserRole" lazy="false" not-found="ignore"
+        	class="com.xmxnkj.voip.client.entity.UserRole" lazy="false" not-found="ignore"
         	/>
        <many-to-one name="operate" column="OPERATE" fetch="select" 
-        	class="com.xmszit.voip.client.entity.Operate" lazy="false" not-found="ignore"
+        	class="com.xmxnkj.voip.client.entity.Operate" lazy="false" not-found="ignore"
         	/>
         <property name="deleted" column="DELETED"/>        
     </class>

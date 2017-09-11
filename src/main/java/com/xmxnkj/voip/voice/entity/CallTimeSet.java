@@ -1,13 +1,13 @@
-package com.xmszit.voip.voice.entity;
+package com.xmxnkj.voip.voice.entity;
 
 import java.util.Date;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.xmszit.voip.client.entity.ClientUser;
-import com.xmszit.voip.common.entity.VoipEntity;
-import com.xmszit.voip.voice.entity.emun.CallTimeState;
-import com.xmszit.voip.voice.entity.emun.OperationState;
+import com.xmxnkj.voip.client.entity.ClientUser;
+import com.xmxnkj.voip.common.entity.VoipEntity;
+import com.xmxnkj.voip.voice.entity.emun.CallTimeState;
+import com.xmxnkj.voip.voice.entity.emun.OperationState;
 
 /**
  * 拨打时间设置

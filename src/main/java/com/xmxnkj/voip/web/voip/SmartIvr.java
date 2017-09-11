@@ -1,4 +1,4 @@
-package com.xmszit.voip.web.voip;
+package com.xmxnkj.voip.web.voip;
 
 import java.io.InputStream;
 import java.util.HashMap;
@@ -15,8 +15,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.xmszit.voip.web.BaseAction;
-import com.xmszit.voip.web.servletListener.ApplicationContextUtil;
+import com.xmxnkj.voip.web.BaseAction;
+import com.xmxnkj.voip.web.servletListener.ApplicationContextUtil;
 
 import net.sf.json.JSONObject;
 

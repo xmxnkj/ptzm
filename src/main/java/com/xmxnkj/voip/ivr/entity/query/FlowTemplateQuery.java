@@ -1,8 +1,8 @@
-package com.xmszit.voip.ivr.entity.query;
+package com.xmxnkj.voip.ivr.entity.query;
 
 import com.hsit.common.annotations.QueryParamAnnotation;
 import com.hsit.common.dao.QueryParam.ParamCompareType;
-import com.xmszit.voip.common.entity.query.VoipQuery;
+import com.xmxnkj.voip.common.entity.query.VoipQuery;
 
 public class FlowTemplateQuery extends VoipQuery{
 

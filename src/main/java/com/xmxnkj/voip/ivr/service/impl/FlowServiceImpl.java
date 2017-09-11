@@ -1,14 +1,14 @@
-package com.xmszit.voip.ivr.service.impl;
+package com.xmxnkj.voip.ivr.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.hsit.common.service.BusinessBaseServiceImpl;
-import com.xmszit.voip.ivr.dao.FlowDao;
-import com.xmszit.voip.ivr.entity.Flow;
-import com.xmszit.voip.ivr.entity.query.FlowQuery;
-import com.xmszit.voip.ivr.service.FlowService;
+import com.xmxnkj.voip.ivr.dao.FlowDao;
+import com.xmxnkj.voip.ivr.entity.Flow;
+import com.xmxnkj.voip.ivr.entity.query.FlowQuery;
+import com.xmxnkj.voip.ivr.service.FlowService;
 
 @Service
 @Transactional

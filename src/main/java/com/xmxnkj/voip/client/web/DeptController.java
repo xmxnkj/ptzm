@@ -1,4 +1,4 @@
-package com.xmszit.voip.client.web;
+package com.xmxnkj.voip.client.web;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -12,16 +12,16 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.xmszit.voip.client.dao.DeptDao;
-import com.xmszit.voip.client.entity.ClientUser;
-import com.xmszit.voip.client.entity.Dept;
-import com.xmszit.voip.client.entity.en.IsOnSeatGroup;
-import com.xmszit.voip.client.entity.query.ClientUserQuery;
-import com.xmszit.voip.client.entity.query.DeptQuery;
-import com.xmszit.voip.client.service.ClientUserService;
-import com.xmszit.voip.client.service.DeptService;
-import com.xmszit.voip.web.BaseController;
-import com.xmszit.voip.web.models.ListJson;
+import com.xmxnkj.voip.client.dao.DeptDao;
+import com.xmxnkj.voip.client.entity.ClientUser;
+import com.xmxnkj.voip.client.entity.Dept;
+import com.xmxnkj.voip.client.entity.en.IsOnSeatGroup;
+import com.xmxnkj.voip.client.entity.query.ClientUserQuery;
+import com.xmxnkj.voip.client.entity.query.DeptQuery;
+import com.xmxnkj.voip.client.service.ClientUserService;
+import com.xmxnkj.voip.client.service.DeptService;
+import com.xmxnkj.voip.web.BaseController;
+import com.xmxnkj.voip.web.models.ListJson;
 
 import net.sf.json.JSONArray;
 

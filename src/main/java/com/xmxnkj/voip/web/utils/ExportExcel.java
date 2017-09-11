@@ -1,4 +1,4 @@
-package com.xmszit.voip.web.utils;
+package com.xmxnkj.voip.web.utils;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -32,7 +32,7 @@ import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
 import com.hsit.common.exceptions.ApplicationException;
-import com.xmszit.voip.global.Constants;
+import com.xmxnkj.voip.global.Constants;
 
 
 

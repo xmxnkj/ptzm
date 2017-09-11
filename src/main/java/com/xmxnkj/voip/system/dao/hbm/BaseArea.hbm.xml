@@ -2,7 +2,7 @@
 <!DOCTYPE hibernate-mapping PUBLIC  
     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
-<hibernate-mapping package="com.xmszit.voip.system.entity">
+<hibernate-mapping package="com.xmxnkj.voip.system.entity">
     <class name="BaseArea" table="UAC_BASE_AREA">
         <id name="id" column="ID">
             <generator class="uuid2"/>

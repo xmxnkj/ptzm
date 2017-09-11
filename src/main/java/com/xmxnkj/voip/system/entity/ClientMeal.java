@@ -1,13 +1,13 @@
-package com.xmszit.voip.system.entity;
+package com.xmxnkj.voip.system.entity;
 
 import java.util.Date;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.hsit.common.uac.entity.User;
-import com.xmszit.voip.client.entity.Operate;
-import com.xmszit.voip.client.entity.OperateRole;
-import com.xmszit.voip.common.entity.VoipEntity;
+import com.xmxnkj.voip.client.entity.Operate;
+import com.xmxnkj.voip.client.entity.OperateRole;
+import com.xmxnkj.voip.common.entity.VoipEntity;
 
 /**
  * @ProjectName:voip

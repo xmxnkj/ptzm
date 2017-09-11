@@ -1,4 +1,4 @@
-package com.xmszit.voip.global;
+package com.xmxnkj.voip.global;
 
 import java.util.Date;
 import java.util.HashMap;
@@ -15,9 +15,9 @@ import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
 import com.hsit.common.spring.ApplicationContextUtils;
-import com.xmszit.voip.client.entity.Client;
-import com.xmszit.voip.client.entity.ClientUser;
-import com.xmszit.voip.client.service.ClientService;
+import com.xmxnkj.voip.client.entity.Client;
+import com.xmxnkj.voip.client.entity.ClientUser;
+import com.xmxnkj.voip.client.service.ClientService;
 
 /**
  * @ProjectName:voip

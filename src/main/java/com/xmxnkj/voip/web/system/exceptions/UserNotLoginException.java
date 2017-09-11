@@ -1,4 +1,4 @@
-package com.xmszit.voip.web.system.exceptions;
+package com.xmxnkj.voip.web.system.exceptions;
 
 import com.hsit.common.exceptions.ApplicationException;
 

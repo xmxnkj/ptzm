@@ -1,4 +1,4 @@
-package com.xmszit.voip.common.entity.query;
+package com.xmxnkj.voip.common.entity.query;
 
 import com.hsit.common.annotations.QueryParamAnnotation;
 import com.hsit.common.kfbase.entity.BusinessObjectQueryParam;

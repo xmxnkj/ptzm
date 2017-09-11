@@ -1,4 +1,4 @@
-package com.xmszit.voip.voice.util;
+package com.xmxnkj.voip.voice.util;
 
 import java.io.File;
 import java.io.InputStream;

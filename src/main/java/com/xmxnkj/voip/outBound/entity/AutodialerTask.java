@@ -1,11 +1,11 @@
-package com.xmszit.voip.outBound.entity;
+package com.xmxnkj.voip.outBound.entity;
 
 import java.util.Date;
 
 import org.apache.commons.lang.StringUtils;
 
-import com.xmszit.voip.common.entity.VoipEntity;
-import com.xmszit.voip.customer.entity.CallPlan;
+import com.xmxnkj.voip.common.entity.VoipEntity;
+import com.xmxnkj.voip.customer.entity.CallPlan;
 
 /**
  * 任务表

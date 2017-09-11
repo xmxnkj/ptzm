@@ -1,4 +1,4 @@
-package com.xmszit.voip.client.service.impl;
+package com.xmxnkj.voip.client.service.impl;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -17,27 +17,27 @@ import com.hsit.common.service.BusinessBaseServiceImpl;
 import com.hsit.common.uac.entity.User;
 import com.hsit.common.uac.service.UserService;
 import com.hsit.common.utils.Utils;
-import com.xmszit.voip.client.entity.ClientAndRole;
-import com.xmszit.voip.client.entity.Operate;
-import com.xmszit.voip.client.entity.UserRole;
-import com.xmszit.voip.client.entity.query.OperateQuery;
-import com.xmszit.voip.system.entity.ClientMeal;
-import com.xmszit.voip.client.entity.OperateRole;
-import com.xmszit.voip.client.entity.query.UserRoleQuery;
-import com.xmszit.voip.system.entity.ModifyClientRecord;
-import com.xmszit.voip.client.dao.ClientDao;
-import com.xmszit.voip.client.entity.Client;
-import com.xmszit.voip.client.entity.ClientUser;
-import com.xmszit.voip.client.entity.query.ClientQuery;
-import com.xmszit.voip.client.service.ClientAndRoleService;
-import com.xmszit.voip.client.service.ClientService;
-import com.xmszit.voip.client.service.ClientUserService;
-import com.xmszit.voip.client.service.OperateRoleService;
-import com.xmszit.voip.client.service.OperateService;
-import com.xmszit.voip.client.service.UserRoleService;
-import com.xmszit.voip.system.service.BaseAreaService;
-import com.xmszit.voip.system.service.ClientMealService;
-import com.xmszit.voip.system.service.ModifyClientRecordService;
+import com.xmxnkj.voip.client.entity.ClientAndRole;
+import com.xmxnkj.voip.client.entity.Operate;
+import com.xmxnkj.voip.client.entity.UserRole;
+import com.xmxnkj.voip.client.entity.query.OperateQuery;
+import com.xmxnkj.voip.system.entity.ClientMeal;
+import com.xmxnkj.voip.client.entity.OperateRole;
+import com.xmxnkj.voip.client.entity.query.UserRoleQuery;
+import com.xmxnkj.voip.system.entity.ModifyClientRecord;
+import com.xmxnkj.voip.client.dao.ClientDao;
+import com.xmxnkj.voip.client.entity.Client;
+import com.xmxnkj.voip.client.entity.ClientUser;
+import com.xmxnkj.voip.client.entity.query.ClientQuery;
+import com.xmxnkj.voip.client.service.ClientAndRoleService;
+import com.xmxnkj.voip.client.service.ClientService;
+import com.xmxnkj.voip.client.service.ClientUserService;
+import com.xmxnkj.voip.client.service.OperateRoleService;
+import com.xmxnkj.voip.client.service.OperateService;
+import com.xmxnkj.voip.client.service.UserRoleService;
+import com.xmxnkj.voip.system.service.BaseAreaService;
+import com.xmxnkj.voip.system.service.ClientMealService;
+import com.xmxnkj.voip.system.service.ModifyClientRecordService;
 
  
 @Service("clientService")

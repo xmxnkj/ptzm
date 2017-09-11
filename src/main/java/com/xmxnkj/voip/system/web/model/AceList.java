@@ -1,4 +1,4 @@
-package com.xmszit.voip.system.web.model;
+package com.xmxnkj.voip.system.web.model;
 
 import java.util.List;
 

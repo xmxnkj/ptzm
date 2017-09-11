@@ -1,8 +1,8 @@
-package com.xmszit.voip.global;
+package com.xmxnkj.voip.global;
 
 import java.util.Date;
 
-import com.xmszit.voip.client.entity.ClientUser;
+import com.xmxnkj.voip.client.entity.ClientUser;
 
 /**
  * @ProjectName:voip

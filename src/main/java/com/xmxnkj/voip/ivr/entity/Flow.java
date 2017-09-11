@@ -1,9 +1,9 @@
-package com.xmszit.voip.ivr.entity;
+package com.xmxnkj.voip.ivr.entity;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.xmszit.voip.common.entity.VoipEntity;
+import com.xmxnkj.voip.common.entity.VoipEntity;
 
 /**	流程
  * @ProjectName:voip

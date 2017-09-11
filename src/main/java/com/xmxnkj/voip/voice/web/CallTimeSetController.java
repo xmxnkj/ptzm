@@ -1,4 +1,4 @@
-package com.xmszit.voip.voice.web;
+package com.xmxnkj.voip.voice.web;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -12,16 +12,16 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.hsit.common.service.AppBaseService;
-import com.xmszit.voip.voice.entity.CallTimeSet;
-import com.xmszit.voip.voice.entity.VoiceTemplate;
-import com.xmszit.voip.voice.entity.emun.CallTimeState;
-import com.xmszit.voip.voice.entity.emun.OperationState;
-import com.xmszit.voip.voice.entity.query.CallTimeSetQuery;
-import com.xmszit.voip.voice.entity.query.VoiceTemplateQuery;
-import com.xmszit.voip.voice.service.ICallTimeSetService;
-import com.xmszit.voip.voice.service.IVoiceTemplateService;
-import com.xmszit.voip.web.BaseController;
-import com.xmszit.voip.web.models.ResultJson;
+import com.xmxnkj.voip.voice.entity.CallTimeSet;
+import com.xmxnkj.voip.voice.entity.VoiceTemplate;
+import com.xmxnkj.voip.voice.entity.emun.CallTimeState;
+import com.xmxnkj.voip.voice.entity.emun.OperationState;
+import com.xmxnkj.voip.voice.entity.query.CallTimeSetQuery;
+import com.xmxnkj.voip.voice.entity.query.VoiceTemplateQuery;
+import com.xmxnkj.voip.voice.service.ICallTimeSetService;
+import com.xmxnkj.voip.voice.service.IVoiceTemplateService;
+import com.xmxnkj.voip.web.BaseController;
+import com.xmxnkj.voip.web.models.ResultJson;
 
 @Controller
 @RequestMapping("/voice/calltime")

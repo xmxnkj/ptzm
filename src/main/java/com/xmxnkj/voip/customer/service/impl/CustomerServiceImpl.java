@@ -1,4 +1,4 @@
-package com.xmszit.voip.customer.service.impl;
+package com.xmxnkj.voip.customer.service.impl;
 
 import java.math.BigInteger;
 import java.util.ArrayList;
@@ -14,17 +14,17 @@ import org.springframework.stereotype.Service;
 
 import com.hsit.common.exceptions.ApplicationException;
 import com.hsit.common.service.BusinessBaseServiceImpl;
-import com.xmszit.voip.global.PoiHelper;
-import com.xmszit.voip.web.utils.WebContextHolder;
-import com.xmszit.voip.client.entity.ClientUser;
-import com.xmszit.voip.customer.dao.CustomerDao;
-import com.xmszit.voip.customer.entity.ContactState;
-import com.xmszit.voip.customer.entity.Customer;
-import com.xmszit.voip.customer.entity.CustomerType;
-import com.xmszit.voip.customer.entity.ReceivingState;
-import com.xmszit.voip.customer.entity.query.CustomerQuery;
-import com.xmszit.voip.customer.service.CustomerService;
-import com.xmszit.voip.customer.web.models.CountCustomerType;
+import com.xmxnkj.voip.global.PoiHelper;
+import com.xmxnkj.voip.web.utils.WebContextHolder;
+import com.xmxnkj.voip.client.entity.ClientUser;
+import com.xmxnkj.voip.customer.dao.CustomerDao;
+import com.xmxnkj.voip.customer.entity.ContactState;
+import com.xmxnkj.voip.customer.entity.Customer;
+import com.xmxnkj.voip.customer.entity.CustomerType;
+import com.xmxnkj.voip.customer.entity.ReceivingState;
+import com.xmxnkj.voip.customer.entity.query.CustomerQuery;
+import com.xmxnkj.voip.customer.service.CustomerService;
+import com.xmxnkj.voip.customer.web.models.CountCustomerType;
 
 @Service
 public class CustomerServiceImpl extends BusinessBaseServiceImpl<Customer, CustomerQuery> implements CustomerService {

@@ -1,4 +1,4 @@
-package com.xmszit.voip.client.service.impl;
+package com.xmxnkj.voip.client.service.impl;
 
 import java.util.List;
 
@@ -8,11 +8,11 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.hsit.common.service.BusinessBaseServiceImpl;
-import com.xmszit.voip.client.dao.OperateDao;
-import com.xmszit.voip.client.entity.ClientUser;
-import com.xmszit.voip.client.entity.Operate;
-import com.xmszit.voip.client.entity.query.OperateQuery;
-import com.xmszit.voip.client.service.OperateService;
+import com.xmxnkj.voip.client.dao.OperateDao;
+import com.xmxnkj.voip.client.entity.ClientUser;
+import com.xmxnkj.voip.client.entity.Operate;
+import com.xmxnkj.voip.client.entity.query.OperateQuery;
+import com.xmxnkj.voip.client.service.OperateService;
 
 @Service
 @Transactional

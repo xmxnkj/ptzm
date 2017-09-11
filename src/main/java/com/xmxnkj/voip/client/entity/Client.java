@@ -1,12 +1,12 @@
-package com.xmszit.voip.client.entity;
+package com.xmxnkj.voip.client.entity;
 
 import java.util.Date;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.hsit.common.kfbase.entity.BusinessObject;
 import com.hsit.common.uac.entity.User;
-import com.xmszit.voip.system.entity.BaseArea;
-import com.xmszit.voip.system.entity.ClientMeal;
+import com.xmxnkj.voip.system.entity.BaseArea;
+import com.xmxnkj.voip.system.entity.ClientMeal;
 
 /**
  * @ProjectName:voip

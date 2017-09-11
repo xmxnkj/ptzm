@@ -8,7 +8,7 @@
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>
     <!-- <listener>
-        <listener-class>com.xmszit.car.web.servletListener.TimerListener</listener-class>
+        <listener-class>com.xmxnkj.car.web.servletListener.TimerListener</listener-class>
     </listener> -->
     <servlet>
         <servlet-name>spring</servlet-name>

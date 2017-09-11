@@ -1,8 +1,8 @@
-package com.xmszit.voip.client.service;
+package com.xmxnkj.voip.client.service;
 
 import com.hsit.common.service.BusinessBaseService;
-import com.xmszit.voip.client.entity.OperateRole;
-import com.xmszit.voip.client.entity.query.OperateRoleQuery;
+import com.xmxnkj.voip.client.entity.OperateRole;
+import com.xmxnkj.voip.client.entity.query.OperateRoleQuery;
 
 public interface OperateRoleService extends BusinessBaseService<OperateRole, OperateRoleQuery> {
 	public void deleteOperateRole(String roleId);

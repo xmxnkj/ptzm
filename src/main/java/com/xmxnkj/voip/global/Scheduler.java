@@ -1,4 +1,4 @@
-package com.xmszit.voip.global;
+package com.xmxnkj.voip.global;
 
 import org.springframework.stereotype.Service;
 

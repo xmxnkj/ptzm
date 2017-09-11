@@ -2,7 +2,7 @@
 <!DOCTYPE hibernate-mapping PUBLIC  
     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
-<hibernate-mapping package="com.xmszit.voip.customer.entity">
+<hibernate-mapping package="com.xmxnkj.voip.customer.entity">
 
     <class name="CallRecord" table="CUT_CALL_RECORD">
         <id name="id" column="ID">
@@ -22,12 +22,12 @@
         
        <!--  <property name="receivingState" column="RECEIVING_STATE" >
         	<type name="org.hibernate.type.EnumType">
-        		<param name="enumClass">com.xmszit.voip.customer.entity.ReceivingState</param>
+        		<param name="enumClass">com.xmxnkj.voip.customer.entity.ReceivingState</param>
         		<param name="type">4</param>
         	</type>
         </property>-->
         <many-to-one name="customer" column="CUSTOMER" fetch="select" 
-        	class="com.xmszit.voip.customer.entity.Customer" lazy="false" not-found="ignore"
+        	class="com.xmxnkj.voip.customer.entity.Customer" lazy="false" not-found="ignore"
         	/> 
       
 	</class>

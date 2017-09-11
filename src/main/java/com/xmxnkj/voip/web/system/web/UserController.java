@@ -1,4 +1,4 @@
-package com.xmszit.voip.web.system.web;
+package com.xmxnkj.voip.web.system.web;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -33,12 +33,12 @@ import com.hsit.common.uac.entity.queryparam.UserQuery;
 import com.hsit.common.uac.service.AceService;
 import com.hsit.common.uac.service.OperationService;
 import com.hsit.common.uac.service.UserService;
-import com.xmszit.voip.client.entity.ClientUser;
-import com.xmszit.voip.client.entity.Operate;
-import com.xmszit.voip.system.web.model.AceList;
-import com.xmszit.voip.web.SystemBaseController;
-import com.xmszit.voip.web.models.ListJson;
-import com.xmszit.voip.web.models.ResultJson;
+import com.xmxnkj.voip.client.entity.ClientUser;
+import com.xmxnkj.voip.client.entity.Operate;
+import com.xmxnkj.voip.system.web.model.AceList;
+import com.xmxnkj.voip.web.SystemBaseController;
+import com.xmxnkj.voip.web.models.ListJson;
+import com.xmxnkj.voip.web.models.ResultJson;
 
 
 /**

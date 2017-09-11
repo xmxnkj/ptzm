@@ -1,4 +1,4 @@
-package com.xmszit.voip.customer.web;
+package com.xmxnkj.voip.customer.web;
 
 import java.io.IOException;
 import java.math.BigInteger;
@@ -19,29 +19,29 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.hsit.common.exceptions.ApplicationException;
-import com.xmszit.voip.client.entity.ClientUser;
-import com.xmszit.voip.client.entity.Dept;
-import com.xmszit.voip.client.entity.UserRole;
-import com.xmszit.voip.client.entity.query.ClientUserQuery;
-import com.xmszit.voip.client.entity.query.UserRoleQuery;
-import com.xmszit.voip.client.service.ClientUserService;
-import com.xmszit.voip.client.service.UserRoleService;
-import com.xmszit.voip.customer.entity.CallPlan;
-import com.xmszit.voip.customer.entity.ContactState;
-import com.xmszit.voip.customer.entity.Customer;
-import com.xmszit.voip.customer.entity.PlanState;
-import com.xmszit.voip.customer.entity.query.CustomerQuery;
-import com.xmszit.voip.customer.service.CallPlanService;
-import com.xmszit.voip.customer.service.CallRecordService;
-import com.xmszit.voip.customer.service.CustomerService;
-import com.xmszit.voip.customer.web.models.CountCustomerType;
-import com.xmszit.voip.customer.web.models.CustomerList;
-import com.xmszit.voip.outBound.entity.AutodialerTask;
-import com.xmszit.voip.outBound.entity.query.AutodialerTaskQuery;
-import com.xmszit.voip.outBound.service.AutodialerTaskService;
-import com.xmszit.voip.web.BaseController;
-import com.xmszit.voip.web.models.ListJson;
-import com.xmszit.voip.web.models.ResultJson;
+import com.xmxnkj.voip.client.entity.ClientUser;
+import com.xmxnkj.voip.client.entity.Dept;
+import com.xmxnkj.voip.client.entity.UserRole;
+import com.xmxnkj.voip.client.entity.query.ClientUserQuery;
+import com.xmxnkj.voip.client.entity.query.UserRoleQuery;
+import com.xmxnkj.voip.client.service.ClientUserService;
+import com.xmxnkj.voip.client.service.UserRoleService;
+import com.xmxnkj.voip.customer.entity.CallPlan;
+import com.xmxnkj.voip.customer.entity.ContactState;
+import com.xmxnkj.voip.customer.entity.Customer;
+import com.xmxnkj.voip.customer.entity.PlanState;
+import com.xmxnkj.voip.customer.entity.query.CustomerQuery;
+import com.xmxnkj.voip.customer.service.CallPlanService;
+import com.xmxnkj.voip.customer.service.CallRecordService;
+import com.xmxnkj.voip.customer.service.CustomerService;
+import com.xmxnkj.voip.customer.web.models.CountCustomerType;
+import com.xmxnkj.voip.customer.web.models.CustomerList;
+import com.xmxnkj.voip.outBound.entity.AutodialerTask;
+import com.xmxnkj.voip.outBound.entity.query.AutodialerTaskQuery;
+import com.xmxnkj.voip.outBound.service.AutodialerTaskService;
+import com.xmxnkj.voip.web.BaseController;
+import com.xmxnkj.voip.web.models.ListJson;
+import com.xmxnkj.voip.web.models.ResultJson;
 
 /**
  * 

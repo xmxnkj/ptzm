@@ -2,7 +2,7 @@
 <!DOCTYPE hibernate-mapping PUBLIC  
     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-<hibernate-mapping package="com.xmszit.voip.voice.entity">
+<hibernate-mapping package="com.xmxnkj.voip.voice.entity">
 	<class name="VoiceTemplate" table="CS_Voice_Template">
 		<id name="id" column="ID">
 			<generator class="uuid2" />
@@ -12,7 +12,7 @@
 		<property name="name" column="NAME" />
 		<property name="path" column="PATH" />
 		<property name="description" column="DESCRIPTION" />
-		<many-to-one name="person" class="com.xmszit.voip.client.entity.ClientUser" column="PERSON" lazy="false" >
+		<many-to-one name="person" class="com.xmxnkj.voip.client.entity.ClientUser" column="PERSON" lazy="false" >
 			
 		</many-to-one>
 		<property name="uploadDate" column="UPLOAD_DATE"/>

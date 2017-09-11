@@ -1,4 +1,4 @@
-package com.xmszit.voip.system.service.impl;
+package com.xmxnkj.voip.system.service.impl;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -11,14 +11,14 @@ import org.springframework.stereotype.Service;
 import com.hsit.common.exceptions.ApplicationException;
 import com.hsit.common.service.BusinessBaseServiceImpl;
 import com.hsit.common.utils.DateUtil;
-import com.xmszit.voip.client.entity.Client;
-import com.xmszit.voip.system.dao.RemindDao;
-import com.xmszit.voip.system.entity.PublishNotice;
-import com.xmszit.voip.system.entity.Remind;
-import com.xmszit.voip.system.entity.query.PublishNoticeQuery;
-import com.xmszit.voip.system.entity.query.RemindQuery;
-import com.xmszit.voip.system.service.PublishNoticeService;
-import com.xmszit.voip.system.service.RemindService;
+import com.xmxnkj.voip.client.entity.Client;
+import com.xmxnkj.voip.system.dao.RemindDao;
+import com.xmxnkj.voip.system.entity.PublishNotice;
+import com.xmxnkj.voip.system.entity.Remind;
+import com.xmxnkj.voip.system.entity.query.PublishNoticeQuery;
+import com.xmxnkj.voip.system.entity.query.RemindQuery;
+import com.xmxnkj.voip.system.service.PublishNoticeService;
+import com.xmxnkj.voip.system.service.RemindService;
 
 /**
  * @ProjectName:voip

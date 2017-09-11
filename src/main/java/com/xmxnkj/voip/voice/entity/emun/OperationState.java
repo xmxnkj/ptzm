@@ -1,4 +1,4 @@
-package com.xmszit.voip.voice.entity.emun;
+package com.xmxnkj.voip.voice.entity.emun;
 
 /**
  * 拨打时间设置 使用状态

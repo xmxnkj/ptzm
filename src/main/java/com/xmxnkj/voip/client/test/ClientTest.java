@@ -1,4 +1,4 @@
-/*package com.xmszit.voip.client.test;
+/*package com.xmxnkj.voip.client.test;
 
 import java.util.Date;
 import java.util.List;
@@ -11,22 +11,22 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import com.xmszit.voip.client.entity.ClientRole;
-import com.xmszit.voip.client.entity.ClientUser;
-import com.xmszit.voip.client.entity.ClientUserRole;
-import com.xmszit.voip.client.entity.Dept;
-import com.xmszit.voip.client.entity.Operate;
-import com.xmszit.voip.client.entity.query.ClientRoleQuery;
-import com.xmszit.voip.client.entity.query.ClientUserQuery;
-import com.xmszit.voip.client.entity.query.ClientUserRoleQuery;
-import com.xmszit.voip.client.entity.query.DeptQuery;
-import com.xmszit.voip.client.entity.query.OperateQuery;
-import com.xmszit.voip.client.service.ClientRoleService;
-import com.xmszit.voip.client.service.ClientUserRoleService;
-import com.xmszit.voip.client.service.ClientUserService;
-import com.xmszit.voip.client.service.DeptService;
-import com.xmszit.voip.client.service.OperateRoleService;
-import com.xmszit.voip.client.service.OperateService;
+import com.xmxnkj.voip.client.entity.ClientRole;
+import com.xmxnkj.voip.client.entity.ClientUser;
+import com.xmxnkj.voip.client.entity.ClientUserRole;
+import com.xmxnkj.voip.client.entity.Dept;
+import com.xmxnkj.voip.client.entity.Operate;
+import com.xmxnkj.voip.client.entity.query.ClientRoleQuery;
+import com.xmxnkj.voip.client.entity.query.ClientUserQuery;
+import com.xmxnkj.voip.client.entity.query.ClientUserRoleQuery;
+import com.xmxnkj.voip.client.entity.query.DeptQuery;
+import com.xmxnkj.voip.client.entity.query.OperateQuery;
+import com.xmxnkj.voip.client.service.ClientRoleService;
+import com.xmxnkj.voip.client.service.ClientUserRoleService;
+import com.xmxnkj.voip.client.service.ClientUserService;
+import com.xmxnkj.voip.client.service.DeptService;
+import com.xmxnkj.voip.client.service.OperateRoleService;
+import com.xmxnkj.voip.client.service.OperateService;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("classpath:applicationContext.xml")

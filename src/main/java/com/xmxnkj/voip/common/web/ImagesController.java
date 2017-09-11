@@ -1,4 +1,4 @@
-package com.xmszit.voip.common.web;
+package com.xmxnkj.voip.common.web;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.multipart.MultipartFile;
@@ -9,10 +9,10 @@ import java.io.IOException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
-import com.xmszit.voip.common.entity.Images;
-import com.xmszit.voip.common.entity.query.ImagesQuery;
-import com.xmszit.voip.common.service.ImagesService;
-import com.xmszit.voip.web.BaseController;
+import com.xmxnkj.voip.common.entity.Images;
+import com.xmxnkj.voip.common.entity.query.ImagesQuery;
+import com.xmxnkj.voip.common.service.ImagesService;
+import com.xmxnkj.voip.web.BaseController;
 
 /**
  * 

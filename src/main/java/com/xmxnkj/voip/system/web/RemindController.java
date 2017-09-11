@@ -1,4 +1,4 @@
-package com.xmszit.voip.system.web;
+package com.xmxnkj.voip.system.web;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -7,11 +7,11 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import com.xmszit.voip.system.entity.Remind;
-import com.xmszit.voip.system.entity.query.RemindQuery;
-import com.xmszit.voip.system.service.RemindService;
-import com.xmszit.voip.web.SystemBaseController;
-import com.xmszit.voip.web.models.ListJson;
+import com.xmxnkj.voip.system.entity.Remind;
+import com.xmxnkj.voip.system.entity.query.RemindQuery;
+import com.xmxnkj.voip.system.service.RemindService;
+import com.xmxnkj.voip.web.SystemBaseController;
+import com.xmxnkj.voip.web.models.ListJson;
 
 /**
  * @ProjectName:voip

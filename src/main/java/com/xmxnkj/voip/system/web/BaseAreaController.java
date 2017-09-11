@@ -1,16 +1,16 @@
-package com.xmszit.voip.system.web;
+package com.xmxnkj.voip.system.web;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
 import com.hsit.common.exceptions.ApplicationException;
-import com.xmszit.voip.system.entity.BaseArea;
-import com.xmszit.voip.system.entity.query.BaseAreaQuery;
-import com.xmszit.voip.system.service.BaseAreaService;
-import com.xmszit.voip.web.BaseController;
-import com.xmszit.voip.web.SystemBaseController;
-import com.xmszit.voip.web.models.ResultJson;
+import com.xmxnkj.voip.system.entity.BaseArea;
+import com.xmxnkj.voip.system.entity.query.BaseAreaQuery;
+import com.xmxnkj.voip.system.service.BaseAreaService;
+import com.xmxnkj.voip.web.BaseController;
+import com.xmxnkj.voip.web.SystemBaseController;
+import com.xmxnkj.voip.web.models.ResultJson;
 
 /**
  * @ProjectName:voip

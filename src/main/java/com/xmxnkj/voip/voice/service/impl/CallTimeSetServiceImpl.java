@@ -1,4 +1,4 @@
-package com.xmszit.voip.voice.service.impl;
+package com.xmxnkj.voip.voice.service.impl;
 
 import java.util.Date;
 import java.util.List;
@@ -7,10 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.hsit.common.service.BusinessBaseServiceImpl;
-import com.xmszit.voip.voice.dao.ICallTimeSetDao;
-import com.xmszit.voip.voice.entity.CallTimeSet;
-import com.xmszit.voip.voice.entity.query.CallTimeSetQuery;
-import com.xmszit.voip.voice.service.ICallTimeSetService;
+import com.xmxnkj.voip.voice.dao.ICallTimeSetDao;
+import com.xmxnkj.voip.voice.entity.CallTimeSet;
+import com.xmxnkj.voip.voice.entity.query.CallTimeSetQuery;
+import com.xmxnkj.voip.voice.service.ICallTimeSetService;
 
 @Service
 public class CallTimeSetServiceImpl extends BusinessBaseServiceImpl<CallTimeSet, CallTimeSetQuery> implements ICallTimeSetService {

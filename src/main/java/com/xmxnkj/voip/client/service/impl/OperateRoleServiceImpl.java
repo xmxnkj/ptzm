@@ -1,14 +1,14 @@
-package com.xmszit.voip.client.service.impl;
+package com.xmxnkj.voip.client.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.hsit.common.service.BusinessBaseServiceImpl;
-import com.xmszit.voip.client.dao.OperateRoleDao;
-import com.xmszit.voip.client.entity.OperateRole;
-import com.xmszit.voip.client.entity.query.OperateRoleQuery;
-import com.xmszit.voip.client.service.OperateRoleService;
+import com.xmxnkj.voip.client.dao.OperateRoleDao;
+import com.xmxnkj.voip.client.entity.OperateRole;
+import com.xmxnkj.voip.client.entity.query.OperateRoleQuery;
+import com.xmxnkj.voip.client.service.OperateRoleService;
 
 @Service
 @Transactional

@@ -1,4 +1,4 @@
-package com.xmszit.voip.customer.web.models;
+package com.xmxnkj.voip.customer.web.models;
 
 import java.math.BigInteger;
 

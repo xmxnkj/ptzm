@@ -2,7 +2,7 @@
 <!DOCTYPE hibernate-mapping PUBLIC  
     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
-<hibernate-mapping package="com.xmszit.voip.customer.entity">
+<hibernate-mapping package="com.xmxnkj.voip.customer.entity">
 
     <class name="CallRecordDetail" table="CUT_CALL_RECORD_DETAIL">
         <id name="id" column="ID">
@@ -20,12 +20,12 @@
         <property name="callRecordId" column="CALL_RECORD_ID"/>
        <!--  
              <many-to-one name="callRecord" column="CALL_RECORD_ID" fetch="select" 
-        	class="com.xmszit.voip.customer.entity.CallRecord" lazy="false" insert="false" update="false" not-found="ignore"
+        	class="com.xmxnkj.voip.customer.entity.CallRecord" lazy="false" insert="false" update="false" not-found="ignore"
         	/> -->
 
         <property name="flowId" column="FLOW_ID"/>
         <many-to-one name="autodialerTask" column="FLOW_ID" fetch="select" 
-        	class="com.xmszit.voip.outBound.entity.AutodialerTask" lazy="false" insert="false" update="false" not-found="ignore"
+        	class="com.xmxnkj.voip.outBound.entity.AutodialerTask" lazy="false" insert="false" update="false" not-found="ignore"
         	/>
 
         <property name="displayOrder" column="DISPLAY_ORDER"/>
@@ -52,12 +52,12 @@
         
        <!--  <property name="receivingState" column="RECEIVING_STATE" >
         	<type name="org.hibernate.type.EnumType">
-        		<param name="enumClass">com.xmszit.voip.customer.entity.ReceivingState</param>
+        		<param name="enumClass">com.xmxnkj.voip.customer.entity.ReceivingState</param>
         		<param name="type">4</param>
         	</type>
         </property>-->
         <many-to-one name="customer" column="CUSTOMER" fetch="select" 
-        	class="com.xmszit.voip.customer.entity.Customer" lazy="false" not-found="ignore"
+        	class="com.xmxnkj.voip.customer.entity.Customer" lazy="false" not-found="ignore"
         	/>
         	
    

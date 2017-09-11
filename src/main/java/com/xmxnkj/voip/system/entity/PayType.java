@@ -1,4 +1,4 @@
-package com.xmszit.voip.system.entity;
+package com.xmxnkj.voip.system.entity;
 
 /**
  * @ProjectName:voip

@@ -1,4 +1,4 @@
-package com.xmszit.voip.client.web;
+package com.xmxnkj.voip.client.web;
 
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -6,16 +6,16 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.xmszit.voip.client.entity.ClientUser;
-import com.xmszit.voip.client.entity.SeatGroup;
-import com.xmszit.voip.client.entity.en.IsOnSeatGroup;
-import com.xmszit.voip.client.entity.query.ClientUserQuery;
-import com.xmszit.voip.client.entity.query.SeatGroupQuery;
-import com.xmszit.voip.client.service.ClientUserService;
-import com.xmszit.voip.client.service.LineService;
-import com.xmszit.voip.client.service.SeatGroupService;
-import com.xmszit.voip.web.BaseController;
-import com.xmszit.voip.web.models.ListJson;
+import com.xmxnkj.voip.client.entity.ClientUser;
+import com.xmxnkj.voip.client.entity.SeatGroup;
+import com.xmxnkj.voip.client.entity.en.IsOnSeatGroup;
+import com.xmxnkj.voip.client.entity.query.ClientUserQuery;
+import com.xmxnkj.voip.client.entity.query.SeatGroupQuery;
+import com.xmxnkj.voip.client.service.ClientUserService;
+import com.xmxnkj.voip.client.service.LineService;
+import com.xmxnkj.voip.client.service.SeatGroupService;
+import com.xmxnkj.voip.web.BaseController;
+import com.xmxnkj.voip.web.models.ListJson;
 
 @Controller
 @RequestMapping(value="client/seatGroup")

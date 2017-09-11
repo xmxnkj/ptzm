@@ -2,17 +2,17 @@
 <!DOCTYPE hibernate-mapping PUBLIC  
     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
-<hibernate-mapping package="com.xmszit.voip.client.entity">
+<hibernate-mapping package="com.xmxnkj.voip.client.entity">
 
     <class name="ClientAndRole" table="CT_CLIENT_AND_ROLE">
         <id name="id" column="ID">
             <generator class="uuid2"/>
         </id>
         <many-to-one name="clientUser" column="CLIENT_USER" fetch="select" 
-        	class="com.xmszit.voip.client.entity.ClientUser" lazy="false" not-found="ignore"
+        	class="com.xmxnkj.voip.client.entity.ClientUser" lazy="false" not-found="ignore"
         	/>
        <many-to-one name="userRole" column="USER_ROLE" fetch="select" 
-        	class="com.xmszit.voip.client.entity.UserRole" lazy="false" not-found="ignore"
+        	class="com.xmxnkj.voip.client.entity.UserRole" lazy="false" not-found="ignore"
         	/>
         <property name="deleted" column="DELETED"/>
         

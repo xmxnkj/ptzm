@@ -1,4 +1,4 @@
-package com.xmszit.voip.client.web;
+package com.xmxnkj.voip.client.web;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -12,16 +12,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.hsit.common.exceptions.ApplicationException;
-import com.xmszit.voip.client.entity.ClientUser;
-import com.xmszit.voip.client.entity.Operate;
-import com.xmszit.voip.client.entity.OperateRole;
-import com.xmszit.voip.client.entity.query.OperateQuery;
-import com.xmszit.voip.client.entity.query.OperateRoleQuery;
-import com.xmszit.voip.client.service.OperateRoleService;
-import com.xmszit.voip.client.service.OperateService;
-import com.xmszit.voip.web.BaseController;
-import com.xmszit.voip.web.models.ListJson;
-import com.xmszit.voip.web.models.ResultJson;
+import com.xmxnkj.voip.client.entity.ClientUser;
+import com.xmxnkj.voip.client.entity.Operate;
+import com.xmxnkj.voip.client.entity.OperateRole;
+import com.xmxnkj.voip.client.entity.query.OperateQuery;
+import com.xmxnkj.voip.client.entity.query.OperateRoleQuery;
+import com.xmxnkj.voip.client.service.OperateRoleService;
+import com.xmxnkj.voip.client.service.OperateService;
+import com.xmxnkj.voip.web.BaseController;
+import com.xmxnkj.voip.web.models.ListJson;
+import com.xmxnkj.voip.web.models.ResultJson;
 
 @Controller
 @RequestMapping(value="client/operate")

@@ -1,4 +1,4 @@
-package com.xmszit.voip.system.web;
+package com.xmxnkj.voip.system.web;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -12,15 +12,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
 import com.hsit.common.exceptions.ApplicationException;
-import com.xmszit.voip.client.entity.OperateRole;
-import com.xmszit.voip.client.entity.UserRole;
-import com.xmszit.voip.client.entity.query.UserRoleQuery;
-import com.xmszit.voip.client.service.OperateRoleService;
-import com.xmszit.voip.system.entity.ClientMeal;
-import com.xmszit.voip.system.entity.query.ClientMealQuery;
-import com.xmszit.voip.system.service.ClientMealService;
-import com.xmszit.voip.web.SystemBaseController;
-import com.xmszit.voip.web.models.ResultJson;
+import com.xmxnkj.voip.client.entity.OperateRole;
+import com.xmxnkj.voip.client.entity.UserRole;
+import com.xmxnkj.voip.client.entity.query.UserRoleQuery;
+import com.xmxnkj.voip.client.service.OperateRoleService;
+import com.xmxnkj.voip.system.entity.ClientMeal;
+import com.xmxnkj.voip.system.entity.query.ClientMealQuery;
+import com.xmxnkj.voip.system.service.ClientMealService;
+import com.xmxnkj.voip.web.SystemBaseController;
+import com.xmxnkj.voip.web.models.ResultJson;
 
 /**
  * @ProjectName:voip

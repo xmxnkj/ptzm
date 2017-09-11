@@ -1,6 +1,6 @@
 <%@page import="java.util.List"%>
 <%@page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@page import="com.xmszit.voip.system.entity.PublishNotice"%>
+<%@page import="com.xmxnkj.voip.system.entity.PublishNotice"%>
 <%@page import="org.apache.commons.lang3.StringUtils"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="java.util.List"%>

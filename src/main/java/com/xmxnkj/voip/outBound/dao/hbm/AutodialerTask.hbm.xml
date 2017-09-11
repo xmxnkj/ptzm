@@ -2,7 +2,7 @@
 <!DOCTYPE hibernate-mapping PUBLIC  
     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
-<hibernate-mapping package="com.xmszit.voip.outBound.entity">
+<hibernate-mapping package="com.xmxnkj.voip.outBound.entity">
     <class name="AutodialerTask" table="autodialer_task">
         <id name="uuid" column="UUID">
             <generator class="uuid.hex"/>
@@ -10,7 +10,7 @@
         
         <property name="callPlanId" column="CALL_PLAN_ID"/>
         
-        <many-to-one name="callPlan" class="com.xmszit.voip.customer.entity.CallPlan" column="CALL_PLAN_ID" insert="false" lazy="false" update="false" unique="true"></many-to-one>
+        <many-to-one name="callPlan" class="com.xmxnkj.voip.customer.entity.CallPlan" column="CALL_PLAN_ID" insert="false" lazy="false" update="false" unique="true"></many-to-one>
         
         <property name="name" column="name"/>
 		<property name="createDatetime" column="create_datetime"/>

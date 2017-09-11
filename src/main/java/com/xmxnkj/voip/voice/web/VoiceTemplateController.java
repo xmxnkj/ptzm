@@ -1,4 +1,4 @@
-package com.xmszit.voip.voice.web;
+package com.xmxnkj.voip.voice.web;
 
 import java.io.File;
 import java.io.IOException;
@@ -19,12 +19,12 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.hsit.common.service.AppBaseService;
-import com.xmszit.voip.voice.entity.VoiceTemplate;
-import com.xmszit.voip.voice.entity.query.VoiceTemplateQuery;
-import com.xmszit.voip.voice.service.IVoiceTemplateService;
-import com.xmszit.voip.web.BaseController;
-import com.xmszit.voip.web.models.ResultJson;
-import com.xmszit.voip.web.models.ResultType;
+import com.xmxnkj.voip.voice.entity.VoiceTemplate;
+import com.xmxnkj.voip.voice.entity.query.VoiceTemplateQuery;
+import com.xmxnkj.voip.voice.service.IVoiceTemplateService;
+import com.xmxnkj.voip.web.BaseController;
+import com.xmxnkj.voip.web.models.ResultJson;
+import com.xmxnkj.voip.web.models.ResultType;
 
 @Controller
 @RequestMapping("/voice/template")

@@ -1,6 +1,6 @@
-package com.xmszit.voip.system.entity;
+package com.xmxnkj.voip.system.entity;
 
-import com.xmszit.voip.common.entity.VoipEntity;
+import com.xmxnkj.voip.common.entity.VoipEntity;
 
 /**
  * @ProjectName:voip

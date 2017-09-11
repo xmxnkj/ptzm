@@ -1,9 +1,9 @@
-package com.xmszit.voip.customer.entity.query;
+package com.xmxnkj.voip.customer.entity.query;
 
 import com.hsit.common.annotations.QueryParamAnnotation;
 import com.hsit.common.dao.QueryParam.ParamCompareType;
-import com.xmszit.voip.common.entity.query.VoipQuery;
-import com.xmszit.voip.customer.entity.CallRecord;
+import com.xmxnkj.voip.common.entity.query.VoipQuery;
+import com.xmxnkj.voip.customer.entity.CallRecord;
 
 public class CallRecordDetailQuery extends VoipQuery {
 

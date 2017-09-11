@@ -1,4 +1,4 @@
-package com.xmszit.voip.client.entity.en;
+package com.xmxnkj.voip.client.entity.en;
 
 /**
  * 是否在坐席组

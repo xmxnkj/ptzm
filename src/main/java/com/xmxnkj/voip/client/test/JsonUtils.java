@@ -1,4 +1,4 @@
-package com.xmszit.voip.client.test;
+package com.xmxnkj.voip.client.test;
 
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;

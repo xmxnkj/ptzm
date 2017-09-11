@@ -1,8 +1,8 @@
-package com.xmszit.voip.voice.entity.query;
+package com.xmxnkj.voip.voice.entity.query;
 
 import com.hsit.common.annotations.QueryParamAnnotation;
-import com.xmszit.voip.client.entity.ClientUser;
-import com.xmszit.voip.common.entity.query.VoipQuery;
+import com.xmxnkj.voip.client.entity.ClientUser;
+import com.xmxnkj.voip.common.entity.query.VoipQuery;
 
 public class CallTimeSetQuery extends VoipQuery {
 	

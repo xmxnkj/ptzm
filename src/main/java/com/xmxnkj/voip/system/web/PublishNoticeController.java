@@ -1,4 +1,4 @@
-package com.xmszit.voip.system.web;
+package com.xmxnkj.voip.system.web;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.testng.annotations.IFactoryAnnotation;
@@ -11,14 +11,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
 import com.hsit.common.exceptions.ApplicationException;
-import com.xmszit.voip.client.entity.Client;
-import com.xmszit.voip.client.entity.query.ClientQuery;
-import com.xmszit.voip.client.service.ClientService;
-import com.xmszit.voip.system.entity.PublishNotice;
-import com.xmszit.voip.system.entity.query.PublishNoticeQuery;
-import com.xmszit.voip.system.service.PublishNoticeService;
-import com.xmszit.voip.web.SystemBaseController;
-import com.xmszit.voip.web.models.ResultJson;
+import com.xmxnkj.voip.client.entity.Client;
+import com.xmxnkj.voip.client.entity.query.ClientQuery;
+import com.xmxnkj.voip.client.service.ClientService;
+import com.xmxnkj.voip.system.entity.PublishNotice;
+import com.xmxnkj.voip.system.entity.query.PublishNoticeQuery;
+import com.xmxnkj.voip.system.service.PublishNoticeService;
+import com.xmxnkj.voip.web.SystemBaseController;
+import com.xmxnkj.voip.web.models.ResultJson;
 
 /**
  * @ProjectName:voip
@@ -49,7 +49,7 @@ public class PublishNoticeController extends SystemBaseController<PublishNotice,
 			String areaId = entity.getNoticeArea().getId();
 			ClientQuery clientQuery = new ClientQuery();
 //			if (1==1) {
-//				throw new ApplicationException("待完善---com/xmszit/voip/system/web/PublishNoticeController.java");
+//				throw new ApplicationException("待完善---com/xmxnkj/voip/system/web/PublishNoticeController.java");
 //			}
 			clientQuery.setAreaId(areaId);
 			List<Client> clients = clientService.getEntities(clientQuery);

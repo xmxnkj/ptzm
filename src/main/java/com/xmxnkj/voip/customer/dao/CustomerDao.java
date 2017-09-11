@@ -1,11 +1,11 @@
-package com.xmszit.voip.customer.dao;
+package com.xmxnkj.voip.customer.dao;
 
 import java.math.BigInteger;
 
 import com.hsit.common.dao.Dao;
-import com.xmszit.voip.customer.entity.Customer;
-import com.xmszit.voip.customer.entity.query.CustomerQuery;
-import com.xmszit.voip.customer.web.models.CountCustomerType;
+import com.xmxnkj.voip.customer.entity.Customer;
+import com.xmxnkj.voip.customer.entity.query.CustomerQuery;
+import com.xmxnkj.voip.customer.web.models.CountCustomerType;
 
 public interface CustomerDao  extends Dao<Customer, CustomerQuery>{
 

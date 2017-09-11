@@ -1,11 +1,11 @@
-package com.xmszit.voip.system.service;
+package com.xmxnkj.voip.system.service;
 
 
 
 import com.hsit.common.service.BusinessBaseService;
 import com.hsit.common.uac.entity.User;
-import com.xmszit.voip.system.entity.ClientPayRecord;
-import com.xmszit.voip.system.entity.query.ClientPayRecordQuery;
+import com.xmxnkj.voip.system.entity.ClientPayRecord;
+import com.xmxnkj.voip.system.entity.query.ClientPayRecordQuery;
 
 /**
  * @ProjectName:voip

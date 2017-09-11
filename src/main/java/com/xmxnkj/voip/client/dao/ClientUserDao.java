@@ -1,8 +1,8 @@
-package com.xmszit.voip.client.dao;
+package com.xmxnkj.voip.client.dao;
 
 import com.hsit.common.dao.Dao;
-import com.xmszit.voip.client.entity.ClientUser;
-import com.xmszit.voip.client.entity.query.ClientUserQuery;
+import com.xmxnkj.voip.client.entity.ClientUser;
+import com.xmxnkj.voip.client.entity.query.ClientUserQuery;
 
 /**
  * 

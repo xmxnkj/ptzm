@@ -1,4 +1,4 @@
-package com.xmszit.voip.outBound.controller;
+package com.xmxnkj.voip.outBound.controller;
 
 import java.util.List;
 import java.util.Map;
@@ -11,10 +11,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.xmszit.voip.outBound.entity.AutodialerTask;
-import com.xmszit.voip.outBound.entity.query.AutodialerTaskQuery;
-import com.xmszit.voip.outBound.service.AutodialerTaskService;
-import com.xmszit.voip.web.BaseController;
+import com.xmxnkj.voip.outBound.entity.AutodialerTask;
+import com.xmxnkj.voip.outBound.entity.query.AutodialerTaskQuery;
+import com.xmxnkj.voip.outBound.service.AutodialerTaskService;
+import com.xmxnkj.voip.web.BaseController;
 
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;

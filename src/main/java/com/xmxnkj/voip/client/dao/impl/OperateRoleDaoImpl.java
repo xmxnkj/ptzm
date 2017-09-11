@@ -1,4 +1,4 @@
-package com.xmszit.voip.client.dao.impl;
+package com.xmxnkj.voip.client.dao.impl;
 
 
 import java.util.HashMap;
@@ -8,10 +8,10 @@ import java.util.Map;
 import org.springframework.stereotype.Repository;
 
 import com.hsit.common.dao.hibernate.SimpleHibernate4Dao;
-import com.xmszit.voip.client.dao.OperateRoleDao;
-import com.xmszit.voip.client.entity.Operate;
-import com.xmszit.voip.client.entity.OperateRole;
-import com.xmszit.voip.client.entity.query.OperateRoleQuery;
+import com.xmxnkj.voip.client.dao.OperateRoleDao;
+import com.xmxnkj.voip.client.entity.Operate;
+import com.xmxnkj.voip.client.entity.OperateRole;
+import com.xmxnkj.voip.client.entity.query.OperateRoleQuery;
 
 @Repository
 public class OperateRoleDaoImpl  extends SimpleHibernate4Dao<OperateRole, OperateRoleQuery> implements OperateRoleDao {

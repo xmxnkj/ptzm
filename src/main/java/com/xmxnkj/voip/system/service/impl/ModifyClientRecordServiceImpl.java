@@ -1,12 +1,12 @@
-package com.xmszit.voip.system.service.impl;
+package com.xmxnkj.voip.system.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.hsit.common.service.BusinessBaseServiceImpl;
-import com.xmszit.voip.system.dao.ModifyClientRecordDao;
-import com.xmszit.voip.system.entity.ModifyClientRecord;
-import com.xmszit.voip.system.entity.query.ModifyClientRecordQuery;
-import com.xmszit.voip.system.service.ModifyClientRecordService;
+import com.xmxnkj.voip.system.dao.ModifyClientRecordDao;
+import com.xmxnkj.voip.system.entity.ModifyClientRecord;
+import com.xmxnkj.voip.system.entity.query.ModifyClientRecordQuery;
+import com.xmxnkj.voip.system.service.ModifyClientRecordService;
 
 /**
  * @ProjectName:voip

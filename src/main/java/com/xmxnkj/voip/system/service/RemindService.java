@@ -1,14 +1,14 @@
-package com.xmszit.voip.system.service;
+package com.xmxnkj.voip.system.service;
 
 
 
 import java.util.List;
 
 import com.hsit.common.service.BusinessBaseService;
-import com.xmszit.voip.client.entity.Client;
-import com.xmszit.voip.system.entity.PublishNotice;
-import com.xmszit.voip.system.entity.Remind;
-import com.xmszit.voip.system.entity.query.RemindQuery;
+import com.xmxnkj.voip.client.entity.Client;
+import com.xmxnkj.voip.system.entity.PublishNotice;
+import com.xmxnkj.voip.system.entity.Remind;
+import com.xmxnkj.voip.system.entity.query.RemindQuery;
 
 /**
  * @ProjectName:voip

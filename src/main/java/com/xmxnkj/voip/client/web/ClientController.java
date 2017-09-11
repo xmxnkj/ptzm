@@ -1,4 +1,4 @@
-package com.xmszit.voip.client.web;
+package com.xmxnkj.voip.client.web;
 
 import java.util.List;
 
@@ -14,23 +14,23 @@ import com.hsit.common.exceptions.ApplicationException;
 import com.hsit.common.uac.entity.User;
 import com.hsit.common.uac.entity.queryparam.UserQuery;
 import com.hsit.common.uac.service.UserService;
-import com.xmszit.voip.system.entity.BaseArea;
-import com.xmszit.voip.system.entity.ClientMeal;
-import com.xmszit.voip.system.entity.PublishNotice;
-import com.xmszit.voip.system.entity.query.BaseAreaQuery;
-import com.xmszit.voip.system.entity.query.ClientMealQuery;
-import com.xmszit.voip.system.entity.query.PublishNoticeQuery;
-import com.xmszit.voip.system.service.BaseAreaService;
-import com.xmszit.voip.system.service.ClientMealService;
-import com.xmszit.voip.system.service.PublishNoticeService;
-import com.xmszit.voip.system.entity.ClientPayRecord;
-import com.xmszit.voip.client.entity.Client;
-import com.xmszit.voip.client.entity.query.ClientQuery;
-import com.xmszit.voip.client.service.ClientService;
-import com.xmszit.voip.global.Constants;
-import com.xmszit.voip.web.BaseController;
-import com.xmszit.voip.web.models.ListJson;
-import com.xmszit.voip.web.models.ResultJson;
+import com.xmxnkj.voip.system.entity.BaseArea;
+import com.xmxnkj.voip.system.entity.ClientMeal;
+import com.xmxnkj.voip.system.entity.PublishNotice;
+import com.xmxnkj.voip.system.entity.query.BaseAreaQuery;
+import com.xmxnkj.voip.system.entity.query.ClientMealQuery;
+import com.xmxnkj.voip.system.entity.query.PublishNoticeQuery;
+import com.xmxnkj.voip.system.service.BaseAreaService;
+import com.xmxnkj.voip.system.service.ClientMealService;
+import com.xmxnkj.voip.system.service.PublishNoticeService;
+import com.xmxnkj.voip.system.entity.ClientPayRecord;
+import com.xmxnkj.voip.client.entity.Client;
+import com.xmxnkj.voip.client.entity.query.ClientQuery;
+import com.xmxnkj.voip.client.service.ClientService;
+import com.xmxnkj.voip.global.Constants;
+import com.xmxnkj.voip.web.BaseController;
+import com.xmxnkj.voip.web.models.ListJson;
+import com.xmxnkj.voip.web.models.ResultJson;
 
 /**
  * @ProjectName:voip

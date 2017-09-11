@@ -1,4 +1,4 @@
-package com.xmszit.voip.client.dao.impl;
+package com.xmxnkj.voip.client.dao.impl;
 
 
 import java.util.HashMap;
@@ -7,9 +7,9 @@ import java.util.Map;
 import org.springframework.stereotype.Repository;
 
 import com.hsit.common.dao.hibernate.SimpleHibernate4Dao;
-import com.xmszit.voip.client.dao.ClientAndRoleDao;
-import com.xmszit.voip.client.entity.ClientAndRole;
-import com.xmszit.voip.client.entity.query.ClientAndRoleQuery;
+import com.xmxnkj.voip.client.dao.ClientAndRoleDao;
+import com.xmxnkj.voip.client.entity.ClientAndRole;
+import com.xmxnkj.voip.client.entity.query.ClientAndRoleQuery;
 
 @Repository
 public class ClientAndRoleDaoImpl  extends SimpleHibernate4Dao<ClientAndRole, ClientAndRoleQuery> implements ClientAndRoleDao {

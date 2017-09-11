@@ -1,12 +1,12 @@
-package com.xmszit.voip.system.service.impl;
+package com.xmxnkj.voip.system.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.hsit.common.service.BusinessBaseServiceImpl;
-import com.xmszit.voip.system.dao.PublishNoticeDao;
-import com.xmszit.voip.system.entity.PublishNotice;
-import com.xmszit.voip.system.entity.query.PublishNoticeQuery;
-import com.xmszit.voip.system.service.PublishNoticeService;
+import com.xmxnkj.voip.system.dao.PublishNoticeDao;
+import com.xmxnkj.voip.system.entity.PublishNotice;
+import com.xmxnkj.voip.system.entity.query.PublishNoticeQuery;
+import com.xmxnkj.voip.system.service.PublishNoticeService;
 
 /**
  * @ProjectName:voip

@@ -1,8 +1,8 @@
-package com.xmszit.voip.client.service;
+package com.xmxnkj.voip.client.service;
 
 import com.hsit.common.service.BusinessBaseService;
-import com.xmszit.voip.client.entity.SeatGroup;
-import com.xmszit.voip.client.entity.query.SeatGroupQuery;
+import com.xmxnkj.voip.client.entity.SeatGroup;
+import com.xmxnkj.voip.client.entity.query.SeatGroupQuery;
 
 public interface SeatGroupService  extends BusinessBaseService<SeatGroup, SeatGroupQuery>{
 

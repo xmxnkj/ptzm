@@ -2,7 +2,7 @@
 <!DOCTYPE hibernate-mapping PUBLIC  
     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
-<hibernate-mapping package="com.xmszit.voip.client.entity">
+<hibernate-mapping package="com.xmxnkj.voip.client.entity">
 
     <class name="Client" table="CT_CLIENT">
         <id name="id" column="ID">
@@ -35,11 +35,11 @@
           class="com.hsit.common.uac.entity.User" lazy="false" not-found="ignore">
         </many-to-one>
         <many-to-one name="clientMeal" column="CLIENT_MEAL" fetch="select"
-          class="com.xmszit.voip.system.entity.ClientMeal" lazy="false" not-found="ignore">
+          class="com.xmxnkj.voip.system.entity.ClientMeal" lazy="false" not-found="ignore">
         </many-to-one>
         
          <many-to-one name="area" column="AREA" fetch="select"
-          class="com.xmszit.voip.system.entity.BaseArea" lazy="false" not-found="ignore">
+          class="com.xmxnkj.voip.system.entity.BaseArea" lazy="false" not-found="ignore">
         </many-to-one>
     </class>
 

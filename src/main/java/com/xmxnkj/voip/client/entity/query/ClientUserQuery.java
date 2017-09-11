@@ -1,12 +1,12 @@
-package com.xmszit.voip.client.entity.query;
+package com.xmxnkj.voip.client.entity.query;
 
 import java.util.List;
 
 import com.hsit.common.annotations.EntityOrderAnnotation;
 import com.hsit.common.annotations.QueryParamAnnotation;
 import com.hsit.common.dao.QueryParam.ParamCompareType;
-import com.xmszit.voip.client.entity.en.IsOnSeatGroup;
-import com.xmszit.voip.common.entity.query.VoipQuery;
+import com.xmxnkj.voip.client.entity.en.IsOnSeatGroup;
+import com.xmxnkj.voip.common.entity.query.VoipQuery;
 /**
  * 
  * @author zjx

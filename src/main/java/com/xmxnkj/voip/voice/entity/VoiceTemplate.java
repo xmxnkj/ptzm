@@ -1,10 +1,10 @@
-package com.xmszit.voip.voice.entity;
+package com.xmxnkj.voip.voice.entity;
 
 import java.util.Date;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.xmszit.voip.client.entity.ClientUser;
-import com.xmszit.voip.common.entity.VoipEntity;
+import com.xmxnkj.voip.client.entity.ClientUser;
+import com.xmxnkj.voip.common.entity.VoipEntity;
 
 /**
  * 语音模板

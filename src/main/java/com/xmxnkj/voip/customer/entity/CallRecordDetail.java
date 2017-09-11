@@ -1,9 +1,9 @@
-package com.xmszit.voip.customer.entity;
+package com.xmxnkj.voip.customer.entity;
 
 import java.util.Date;
 
-import com.xmszit.voip.common.entity.VoipEntity;
-import com.xmszit.voip.outBound.entity.AutodialerTask;
+import com.xmxnkj.voip.common.entity.VoipEntity;
+import com.xmxnkj.voip.outBound.entity.AutodialerTask;
 
 /**
  * 通话记录

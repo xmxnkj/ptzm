@@ -1,10 +1,10 @@
-package com.xmszit.voip.system.service;
+package com.xmxnkj.voip.system.service;
 
 
 
 import com.hsit.common.service.BusinessBaseService;
-import com.xmszit.voip.system.entity.ModifyClientRecord;
-import com.xmszit.voip.system.entity.query.ModifyClientRecordQuery;
+import com.xmxnkj.voip.system.entity.ModifyClientRecord;
+import com.xmxnkj.voip.system.entity.query.ModifyClientRecordQuery;
 
 /**
  * @ProjectName:voip

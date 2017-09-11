@@ -1,4 +1,4 @@
-package com.xmszit.voip.client.service.impl;
+package com.xmxnkj.voip.client.service.impl;
 
 import java.util.List;
 
@@ -10,15 +10,15 @@ import org.springframework.transaction.annotation.Transactional;
 import com.hsit.common.MD5Util;
 import com.hsit.common.exceptions.ApplicationException;
 import com.hsit.common.service.BusinessBaseServiceImpl;
-import com.xmszit.voip.client.entity.Client;
-import com.xmszit.voip.client.dao.ClientUserDao;
-import com.xmszit.voip.client.entity.ClientUser;
-import com.xmszit.voip.client.entity.query.ClientAndRoleQuery;
-import com.xmszit.voip.client.entity.query.ClientUserQuery;
-import com.xmszit.voip.client.service.ClientAndRoleService;
-import com.xmszit.voip.client.service.ClientService;
-import com.xmszit.voip.client.service.ClientUserService;
-import com.xmszit.voip.web.models.ListJson;
+import com.xmxnkj.voip.client.entity.Client;
+import com.xmxnkj.voip.client.dao.ClientUserDao;
+import com.xmxnkj.voip.client.entity.ClientUser;
+import com.xmxnkj.voip.client.entity.query.ClientAndRoleQuery;
+import com.xmxnkj.voip.client.entity.query.ClientUserQuery;
+import com.xmxnkj.voip.client.service.ClientAndRoleService;
+import com.xmxnkj.voip.client.service.ClientService;
+import com.xmxnkj.voip.client.service.ClientUserService;
+import com.xmxnkj.voip.web.models.ListJson;
 
 @Service("clientUserService")
 @Transactional

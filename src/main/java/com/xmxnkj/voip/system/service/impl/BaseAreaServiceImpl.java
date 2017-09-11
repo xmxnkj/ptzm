@@ -1,12 +1,12 @@
-package com.xmszit.voip.system.service.impl;
+package com.xmxnkj.voip.system.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.hsit.common.service.BusinessBaseServiceImpl;
-import com.xmszit.voip.system.dao.BaseAreaDao;
-import com.xmszit.voip.system.entity.BaseArea;
-import com.xmszit.voip.system.entity.query.BaseAreaQuery;
-import com.xmszit.voip.system.service.BaseAreaService;
+import com.xmxnkj.voip.system.dao.BaseAreaDao;
+import com.xmxnkj.voip.system.entity.BaseArea;
+import com.xmxnkj.voip.system.entity.query.BaseAreaQuery;
+import com.xmxnkj.voip.system.service.BaseAreaService;
 
 /**
  * @ProjectName:voip

@@ -1,10 +1,10 @@
-package com.xmszit.voip.voice.dao;
+package com.xmxnkj.voip.voice.dao;
 
 import java.util.List;
 
 import com.hsit.common.dao.Dao;
-import com.xmszit.voip.voice.entity.VoiceTemplate;
-import com.xmszit.voip.voice.entity.query.VoiceTemplateQuery;
+import com.xmxnkj.voip.voice.entity.VoiceTemplate;
+import com.xmxnkj.voip.voice.entity.query.VoiceTemplateQuery;
 
 public interface IVoiceTemplateDao extends Dao<VoiceTemplate, VoiceTemplateQuery> {
 

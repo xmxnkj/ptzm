@@ -1,4 +1,4 @@
-package com.xmszit.voip.customer.web;
+package com.xmxnkj.voip.customer.web;
 
 import java.util.List;
 
@@ -7,18 +7,18 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.xmszit.voip.customer.entity.CallRecord;
-import com.xmszit.voip.customer.entity.CallRecordDetail;
-import com.xmszit.voip.customer.entity.Customer;
-import com.xmszit.voip.customer.entity.query.CallRecordDetailQuery;
-import com.xmszit.voip.customer.entity.query.CallRecordQuery;
-import com.xmszit.voip.customer.entity.query.CustomerQuery;
-import com.xmszit.voip.customer.service.CallPlanService;
-import com.xmszit.voip.customer.service.CallRecordDetailService;
-import com.xmszit.voip.customer.service.CallRecordService;
-import com.xmszit.voip.customer.service.CustomerService;
-import com.xmszit.voip.web.BaseController;
-import com.xmszit.voip.web.models.ListJson;
+import com.xmxnkj.voip.customer.entity.CallRecord;
+import com.xmxnkj.voip.customer.entity.CallRecordDetail;
+import com.xmxnkj.voip.customer.entity.Customer;
+import com.xmxnkj.voip.customer.entity.query.CallRecordDetailQuery;
+import com.xmxnkj.voip.customer.entity.query.CallRecordQuery;
+import com.xmxnkj.voip.customer.entity.query.CustomerQuery;
+import com.xmxnkj.voip.customer.service.CallPlanService;
+import com.xmxnkj.voip.customer.service.CallRecordDetailService;
+import com.xmxnkj.voip.customer.service.CallRecordService;
+import com.xmxnkj.voip.customer.service.CustomerService;
+import com.xmxnkj.voip.web.BaseController;
+import com.xmxnkj.voip.web.models.ListJson;
 
 import net.sf.json.JSONObject;
 

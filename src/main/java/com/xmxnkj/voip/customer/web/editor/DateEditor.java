@@ -1,4 +1,4 @@
-package com.xmszit.voip.customer.web.editor;
+package com.xmxnkj.voip.customer.web.editor;
 
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.propertyeditors.PropertiesEditor;

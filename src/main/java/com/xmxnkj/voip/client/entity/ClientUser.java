@@ -1,11 +1,11 @@
-package com.xmszit.voip.client.entity;
+package com.xmxnkj.voip.client.entity;
 
 import java.util.Date;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.xmszit.voip.client.entity.en.IsOnSeatGroup;
-import com.xmszit.voip.common.entity.VoipEntity;
+import com.xmxnkj.voip.client.entity.en.IsOnSeatGroup;
+import com.xmxnkj.voip.common.entity.VoipEntity;
 
 /**
  * @ProjectName:voip

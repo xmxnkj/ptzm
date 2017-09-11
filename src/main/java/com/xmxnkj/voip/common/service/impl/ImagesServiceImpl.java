@@ -1,4 +1,4 @@
-package com.xmszit.voip.common.service.impl;
+package com.xmxnkj.voip.common.service.impl;
 
 import java.io.File;
 import java.io.IOException;
@@ -14,10 +14,10 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.hsit.common.service.BusinessBaseServiceImpl;
-import com.xmszit.voip.common.dao.ImagesDao;
-import com.xmszit.voip.common.entity.Images;
-import com.xmszit.voip.common.entity.query.ImagesQuery;
-import com.xmszit.voip.common.service.ImagesService;
+import com.xmxnkj.voip.common.dao.ImagesDao;
+import com.xmxnkj.voip.common.entity.Images;
+import com.xmxnkj.voip.common.entity.query.ImagesQuery;
+import com.xmxnkj.voip.common.service.ImagesService;
 
 /**
  * 

@@ -1,4 +1,4 @@
-package com.xmszit.voip.client.web;
+package com.xmxnkj.voip.client.web;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -22,21 +22,21 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.hsit.common.exceptions.ApplicationException;
 import com.hsit.common.utils.DateUtil;
-import com.xmszit.voip.client.entity.Client;
-import com.xmszit.voip.client.entity.ClientUser;
-import com.xmszit.voip.client.entity.Dept;
-import com.xmszit.voip.client.entity.Operate;
-import com.xmszit.voip.client.entity.query.ClientUserQuery;
-import com.xmszit.voip.client.service.ClientAndRoleService;
-import com.xmszit.voip.client.service.ClientService;
-import com.xmszit.voip.client.service.ClientUserService;
-import com.xmszit.voip.client.service.DeptService;
-import com.xmszit.voip.client.service.OperateService;
-import com.xmszit.voip.common.entity.Terminal;
-import com.xmszit.voip.global.UserSessionService;
-import com.xmszit.voip.web.BaseController;
-import com.xmszit.voip.web.models.ListJson;
-import com.xmszit.voip.web.models.ResultJson;
+import com.xmxnkj.voip.client.entity.Client;
+import com.xmxnkj.voip.client.entity.ClientUser;
+import com.xmxnkj.voip.client.entity.Dept;
+import com.xmxnkj.voip.client.entity.Operate;
+import com.xmxnkj.voip.client.entity.query.ClientUserQuery;
+import com.xmxnkj.voip.client.service.ClientAndRoleService;
+import com.xmxnkj.voip.client.service.ClientService;
+import com.xmxnkj.voip.client.service.ClientUserService;
+import com.xmxnkj.voip.client.service.DeptService;
+import com.xmxnkj.voip.client.service.OperateService;
+import com.xmxnkj.voip.common.entity.Terminal;
+import com.xmxnkj.voip.global.UserSessionService;
+import com.xmxnkj.voip.web.BaseController;
+import com.xmxnkj.voip.web.models.ListJson;
+import com.xmxnkj.voip.web.models.ResultJson;
 
 /**
  * 

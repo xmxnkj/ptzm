@@ -1,11 +1,11 @@
-package com.xmszit.voip.system.dao.imp;
+package com.xmxnkj.voip.system.dao.imp;
 
 import org.springframework.stereotype.Repository;
 
 import com.hsit.common.dao.hibernate.SimpleHibernate4Dao;
-import com.xmszit.voip.system.dao.RemindDao;
-import com.xmszit.voip.system.entity.Remind;
-import com.xmszit.voip.system.entity.query.RemindQuery;
+import com.xmxnkj.voip.system.dao.RemindDao;
+import com.xmxnkj.voip.system.entity.Remind;
+import com.xmxnkj.voip.system.entity.query.RemindQuery;
 /**
  * RemindDaoImp
  * @author Administrator

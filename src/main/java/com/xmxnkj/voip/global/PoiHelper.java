@@ -4,7 +4,7 @@
  * Version: 1.0
  * History:
  */
-package com.xmszit.voip.global;
+package com.xmxnkj.voip.global;
 
 import java.text.DecimalFormat;
 import java.util.Date;

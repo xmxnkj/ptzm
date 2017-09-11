@@ -1,4 +1,4 @@
-package com.xmszit.voip.client.web;
+package com.xmxnkj.voip.client.web;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -11,14 +11,14 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.xmszit.voip.client.entity.ClientUser;
-import com.xmszit.voip.client.entity.Dept;
-import com.xmszit.voip.client.entity.Line;
-import com.xmszit.voip.client.entity.query.LineQuery;
-import com.xmszit.voip.client.service.ClientUserService;
-import com.xmszit.voip.client.service.DeptService;
-import com.xmszit.voip.client.service.LineService;
-import com.xmszit.voip.web.BaseController;
+import com.xmxnkj.voip.client.entity.ClientUser;
+import com.xmxnkj.voip.client.entity.Dept;
+import com.xmxnkj.voip.client.entity.Line;
+import com.xmxnkj.voip.client.entity.query.LineQuery;
+import com.xmxnkj.voip.client.service.ClientUserService;
+import com.xmxnkj.voip.client.service.DeptService;
+import com.xmxnkj.voip.client.service.LineService;
+import com.xmxnkj.voip.web.BaseController;
 
 import net.sf.json.JSONObject;
 

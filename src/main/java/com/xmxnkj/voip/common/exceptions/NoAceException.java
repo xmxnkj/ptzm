@@ -1,4 +1,4 @@
-package com.xmszit.voip.common.exceptions;
+package com.xmxnkj.voip.common.exceptions;
 
 import com.hsit.common.exceptions.ApplicationException;
 

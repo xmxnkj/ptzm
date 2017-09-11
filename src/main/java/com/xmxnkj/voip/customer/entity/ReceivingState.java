@@ -1,4 +1,4 @@
-package com.xmszit.voip.customer.entity;
+package com.xmxnkj.voip.customer.entity;
 
 public enum ReceivingState {
 	//线路忙（占线）

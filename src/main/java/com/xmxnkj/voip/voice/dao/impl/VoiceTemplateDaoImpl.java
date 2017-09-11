@@ -1,4 +1,4 @@
-package com.xmszit.voip.voice.dao.impl;
+package com.xmxnkj.voip.voice.dao.impl;
 
 import java.math.BigInteger;
 import java.util.List;
@@ -11,9 +11,9 @@ import com.hsit.common.dao.QueryParam;
 import com.hsit.common.dao.hibernate.SimpleHibernate4Dao;
 import com.hsit.common.kfbase.entity.Paging;
 import com.hsit.common.kfbase.entity.RelaParam;
-import com.xmszit.voip.voice.dao.IVoiceTemplateDao;
-import com.xmszit.voip.voice.entity.VoiceTemplate;
-import com.xmszit.voip.voice.entity.query.VoiceTemplateQuery;
+import com.xmxnkj.voip.voice.dao.IVoiceTemplateDao;
+import com.xmxnkj.voip.voice.entity.VoiceTemplate;
+import com.xmxnkj.voip.voice.entity.query.VoiceTemplateQuery;
 
 @Repository
 public class VoiceTemplateDaoImpl extends SimpleHibernate4Dao<VoiceTemplate, VoiceTemplateQuery> implements IVoiceTemplateDao {

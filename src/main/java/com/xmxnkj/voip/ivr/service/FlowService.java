@@ -1,8 +1,8 @@
-package com.xmszit.voip.ivr.service;
+package com.xmxnkj.voip.ivr.service;
 
 import com.hsit.common.service.BusinessBaseService;
-import com.xmszit.voip.ivr.entity.Flow;
-import com.xmszit.voip.ivr.entity.query.FlowQuery;
+import com.xmxnkj.voip.ivr.entity.Flow;
+import com.xmxnkj.voip.ivr.entity.query.FlowQuery;
 
 public interface FlowService extends BusinessBaseService<Flow, FlowQuery> {
 

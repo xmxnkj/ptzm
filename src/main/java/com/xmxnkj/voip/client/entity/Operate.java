@@ -1,9 +1,9 @@
-package com.xmszit.voip.client.entity;
+package com.xmxnkj.voip.client.entity;
 
 import java.util.List;
 
 import com.fasterxml.jackson.databind.Module;
-import com.xmszit.voip.common.entity.VoipEntity;
+import com.xmxnkj.voip.common.entity.VoipEntity;
 
 /**
  * @ProjectName:voip

@@ -2,7 +2,7 @@
 <!DOCTYPE hibernate-mapping PUBLIC  
     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
-<hibernate-mapping package="com.xmszit.voip.ivr.entity">
+<hibernate-mapping package="com.xmxnkj.voip.ivr.entity">
 
     <class name="Flow" table="AI_FLOW">
         <id name="id" column="ID">
@@ -31,6 +31,6 @@
       	
       	<property name="blockAsr" column="BLOCK_ASR"/>
       	
-      	<many-to-one name="flowTemplate" class="com.xmszit.voip.ivr.entity.FlowTemplate" column="FLOW_TEMPLATE_ID" insert="false" lazy="false" update="false" unique="true"></many-to-one>
+      	<many-to-one name="flowTemplate" class="com.xmxnkj.voip.ivr.entity.FlowTemplate" column="FLOW_TEMPLATE_ID" insert="false" lazy="false" update="false" unique="true"></many-to-one>
     </class>
 </hibernate-mapping>

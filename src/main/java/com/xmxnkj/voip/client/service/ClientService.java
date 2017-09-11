@@ -1,9 +1,9 @@
-package com.xmszit.voip.client.service;
+package com.xmxnkj.voip.client.service;
 
 import com.hsit.common.service.BusinessBaseService;
 import com.hsit.common.uac.entity.User;
-import com.xmszit.voip.client.entity.Client;
-import com.xmszit.voip.client.entity.query.ClientQuery;
+import com.xmxnkj.voip.client.entity.Client;
+import com.xmxnkj.voip.client.entity.query.ClientQuery;
 
 public interface ClientService extends BusinessBaseService<Client, ClientQuery> {
 

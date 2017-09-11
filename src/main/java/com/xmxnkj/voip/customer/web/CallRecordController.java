@@ -1,4 +1,4 @@
-package com.xmszit.voip.customer.web;
+package com.xmxnkj.voip.customer.web;
 
 import java.util.HashMap;
 import java.util.List;
@@ -10,11 +10,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.xmszit.voip.customer.dao.CallRecordDao;
-import com.xmszit.voip.customer.entity.CallRecord;
-import com.xmszit.voip.customer.entity.query.CallRecordQuery;
-import com.xmszit.voip.customer.service.CallRecordService;
-import com.xmszit.voip.web.BaseController;
+import com.xmxnkj.voip.customer.dao.CallRecordDao;
+import com.xmxnkj.voip.customer.entity.CallRecord;
+import com.xmxnkj.voip.customer.entity.query.CallRecordQuery;
+import com.xmxnkj.voip.customer.service.CallRecordService;
+import com.xmxnkj.voip.web.BaseController;
 
 /**
  * 

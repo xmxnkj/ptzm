@@ -1,11 +1,11 @@
-package com.xmszit.voip.voice.dao;
+package com.xmxnkj.voip.voice.dao;
 
 import java.util.Date;
 import java.util.List;
 
 import com.hsit.common.dao.Dao;
-import com.xmszit.voip.voice.entity.CallTimeSet;
-import com.xmszit.voip.voice.entity.query.CallTimeSetQuery;
+import com.xmxnkj.voip.voice.entity.CallTimeSet;
+import com.xmxnkj.voip.voice.entity.query.CallTimeSetQuery;
 
 public interface ICallTimeSetDao extends Dao<CallTimeSet, CallTimeSetQuery> {
 

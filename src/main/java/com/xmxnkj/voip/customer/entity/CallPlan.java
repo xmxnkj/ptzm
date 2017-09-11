@@ -1,13 +1,13 @@
-package com.xmszit.voip.customer.entity;
+package com.xmxnkj.voip.customer.entity;
 
 import java.util.Set;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.xmszit.voip.client.entity.ClientUser;
-import com.xmszit.voip.client.entity.Line;
-import com.xmszit.voip.common.entity.VoipEntity;
-import com.xmszit.voip.voice.entity.CallTimeSet;
-import com.xmszit.voip.voice.entity.VoiceTemplate;
+import com.xmxnkj.voip.client.entity.ClientUser;
+import com.xmxnkj.voip.client.entity.Line;
+import com.xmxnkj.voip.common.entity.VoipEntity;
+import com.xmxnkj.voip.voice.entity.CallTimeSet;
+import com.xmxnkj.voip.voice.entity.VoiceTemplate;
 
 /**
  * 拨打计划

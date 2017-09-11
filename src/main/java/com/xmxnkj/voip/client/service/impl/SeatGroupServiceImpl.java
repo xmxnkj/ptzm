@@ -1,14 +1,14 @@
-package com.xmszit.voip.client.service.impl;
+package com.xmxnkj.voip.client.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.hsit.common.service.BusinessBaseServiceImpl;
-import com.xmszit.voip.client.dao.SeatGroupDao;
-import com.xmszit.voip.client.entity.SeatGroup;
-import com.xmszit.voip.client.entity.query.SeatGroupQuery;
-import com.xmszit.voip.client.service.SeatGroupService;
+import com.xmxnkj.voip.client.dao.SeatGroupDao;
+import com.xmxnkj.voip.client.entity.SeatGroup;
+import com.xmxnkj.voip.client.entity.query.SeatGroupQuery;
+import com.xmxnkj.voip.client.service.SeatGroupService;
 
 @Service
 @Transactional

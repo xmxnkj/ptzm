@@ -1,8 +1,8 @@
-package com.xmszit.voip.common.dao;
+package com.xmxnkj.voip.common.dao;
 
 import com.hsit.common.dao.Dao;
-import com.xmszit.voip.common.entity.Images;
-import com.xmszit.voip.common.entity.query.ImagesQuery;
+import com.xmxnkj.voip.common.entity.Images;
+import com.xmxnkj.voip.common.entity.query.ImagesQuery;
 
 /**
  * 

@@ -2,7 +2,7 @@
 <!DOCTYPE hibernate-mapping PUBLIC  
     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
-<hibernate-mapping package="com.xmszit.voip.client.entity">
+<hibernate-mapping package="com.xmxnkj.voip.client.entity">
 
     <class name="ClientUser" table="CT_CLIENT_USER">
         <id name="id" column="ID">
@@ -29,11 +29,11 @@
 		<property name="isUser" column="IS_USER"/>
         <property name="isManager" column="IS_MANAGER"/>
 		
-		<many-to-one name="dept" class="com.xmszit.voip.client.entity.Dept" insert="false" update="false" column="DEPT_ID" lazy="false"></many-to-one>
+		<many-to-one name="dept" class="com.xmxnkj.voip.client.entity.Dept" insert="false" update="false" column="DEPT_ID" lazy="false"></many-to-one>
 		
 		<property name="isOnSeatGroup" column="IS_ON_SEAT_GROUP"> 
 	        <type name="org.hibernate.type.EnumType">
-	            <param name="enumClass">com.xmszit.voip.client.entity.en.IsOnSeatGroup</param> 
+	            <param name="enumClass">com.xmxnkj.voip.client.entity.en.IsOnSeatGroup</param> 
 	            <param name="type">4</param>
 	        </type>
     	</property>

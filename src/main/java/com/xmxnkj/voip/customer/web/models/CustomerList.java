@@ -1,10 +1,10 @@
-package com.xmszit.voip.customer.web.models;
+package com.xmxnkj.voip.customer.web.models;
 
 import java.util.List;
 
-import com.xmszit.voip.client.entity.ClientUser;
-import com.xmszit.voip.customer.entity.CallPlan;
-import com.xmszit.voip.customer.entity.Customer;
+import com.xmxnkj.voip.client.entity.ClientUser;
+import com.xmxnkj.voip.customer.entity.CallPlan;
+import com.xmxnkj.voip.customer.entity.Customer;
 
 public class CustomerList {
 	private List<Customer> items;

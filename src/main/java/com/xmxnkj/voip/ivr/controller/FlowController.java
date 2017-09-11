@@ -1,14 +1,14 @@
-package com.xmszit.voip.ivr.controller;
+package com.xmxnkj.voip.ivr.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.xmszit.voip.ivr.entity.Flow;
-import com.xmszit.voip.ivr.entity.query.FlowQuery;
-import com.xmszit.voip.ivr.service.FlowService;
-import com.xmszit.voip.web.BaseController;
+import com.xmxnkj.voip.ivr.entity.Flow;
+import com.xmxnkj.voip.ivr.entity.query.FlowQuery;
+import com.xmxnkj.voip.ivr.service.FlowService;
+import com.xmxnkj.voip.web.BaseController;
 
 @Controller
 @RequestMapping(value="ivr/flow")

@@ -1,8 +1,8 @@
-package com.xmszit.voip.client.dao;
+package com.xmxnkj.voip.client.dao;
 
 import com.hsit.common.dao.Dao;
-import com.xmszit.voip.client.entity.OperateRole;
-import com.xmszit.voip.client.entity.query.OperateRoleQuery;
+import com.xmxnkj.voip.client.entity.OperateRole;
+import com.xmxnkj.voip.client.entity.query.OperateRoleQuery;
 
 public interface OperateRoleDao  extends Dao<OperateRole, OperateRoleQuery>{
 	public void deleteOperateRole(String roleId);

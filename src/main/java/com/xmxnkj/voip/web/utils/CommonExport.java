@@ -1,4 +1,4 @@
-package com.xmszit.voip.web.utils;
+package com.xmxnkj.voip.web.utils;
 
 import java.io.IOException;
 import java.util.Date;
@@ -10,11 +10,11 @@ import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
 import com.hsit.common.exceptions.ApplicationException;
-import com.xmszit.voip.customer.entity.ContactState;
-import com.xmszit.voip.customer.entity.Customer;
-import com.xmszit.voip.customer.entity.CustomerType;
-import com.xmszit.voip.customer.entity.PlanState;
-import com.xmszit.voip.customer.entity.ReceivingState;
+import com.xmxnkj.voip.customer.entity.ContactState;
+import com.xmxnkj.voip.customer.entity.Customer;
+import com.xmxnkj.voip.customer.entity.CustomerType;
+import com.xmxnkj.voip.customer.entity.PlanState;
+import com.xmxnkj.voip.customer.entity.ReceivingState;
 
 
 

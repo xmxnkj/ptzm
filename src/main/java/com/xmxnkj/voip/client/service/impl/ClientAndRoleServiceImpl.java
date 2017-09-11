@@ -1,4 +1,4 @@
-package com.xmszit.voip.client.service.impl;
+package com.xmxnkj.voip.client.service.impl;
 
 
 import java.util.List;
@@ -9,13 +9,13 @@ import org.springframework.stereotype.Service;
 
 import com.hsit.common.MD5Util;
 import com.hsit.common.service.BusinessBaseServiceImpl;
-import com.xmszit.voip.client.dao.ClientAndRoleDao;
-import com.xmszit.voip.client.entity.ClientAndRole;
-import com.xmszit.voip.client.entity.ClientUser;
-import com.xmszit.voip.client.entity.UserRole;
-import com.xmszit.voip.client.entity.query.ClientAndRoleQuery;
-import com.xmszit.voip.client.service.ClientAndRoleService;
-import com.xmszit.voip.client.service.ClientUserService;
+import com.xmxnkj.voip.client.dao.ClientAndRoleDao;
+import com.xmxnkj.voip.client.entity.ClientAndRole;
+import com.xmxnkj.voip.client.entity.ClientUser;
+import com.xmxnkj.voip.client.entity.UserRole;
+import com.xmxnkj.voip.client.entity.query.ClientAndRoleQuery;
+import com.xmxnkj.voip.client.service.ClientAndRoleService;
+import com.xmxnkj.voip.client.service.ClientUserService;
 
 @Service
 public class ClientAndRoleServiceImpl extends BusinessBaseServiceImpl<ClientAndRole, ClientAndRoleQuery>  implements ClientAndRoleService{

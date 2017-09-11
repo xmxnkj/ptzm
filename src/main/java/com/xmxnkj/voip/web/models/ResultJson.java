@@ -3,7 +3,7 @@ package com.xmxnkj.voip.web.models;
 import com.hsit.common.exceptions.ApplicationException;
 
 /**
- * @ProjectName:lightning
+ * @ProjectName:voip
  * @ClassName: ErrorJson
  * @Description: 
  * @UpdateUser: 
@@ -58,6 +58,9 @@ public class ResultJson {
 	}
 	public void setSuccess(Boolean success) {
 		this.success = success;
+		if (success) {
+			message="";
+		}
 	}
 
 	public Object getEntity() {

@@ -1,4 +1,4 @@
-package com.xmszit.voip.customer.web;
+package com.xmxnkj.voip.customer.web;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -13,24 +13,24 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.xmszit.voip.client.entity.ClientUser;
-import com.xmszit.voip.client.service.ClientUserService;
-import com.xmszit.voip.customer.entity.CallPlan;
-import com.xmszit.voip.customer.entity.CallState;
-import com.xmszit.voip.customer.entity.ContactState;
-import com.xmszit.voip.customer.entity.Customer;
-import com.xmszit.voip.customer.entity.PlanState;
-import com.xmszit.voip.customer.entity.query.CallPlanQuery;
-import com.xmszit.voip.customer.entity.query.CustomerQuery;
-import com.xmszit.voip.customer.service.CallPlanService;
-import com.xmszit.voip.customer.service.CustomerService;
-import com.xmszit.voip.outBound.entity.AutodialerTask;
-import com.xmszit.voip.outBound.entity.query.AutodialerTaskQuery;
-import com.xmszit.voip.outBound.service.AutodialerTaskService;
-import com.xmszit.voip.voice.entity.CallTimeSet;
-import com.xmszit.voip.voice.service.ICallTimeSetService;
-import com.xmszit.voip.web.BaseController;
-import com.xmszit.voip.web.models.ResultJson;
+import com.xmxnkj.voip.client.entity.ClientUser;
+import com.xmxnkj.voip.client.service.ClientUserService;
+import com.xmxnkj.voip.customer.entity.CallPlan;
+import com.xmxnkj.voip.customer.entity.CallState;
+import com.xmxnkj.voip.customer.entity.ContactState;
+import com.xmxnkj.voip.customer.entity.Customer;
+import com.xmxnkj.voip.customer.entity.PlanState;
+import com.xmxnkj.voip.customer.entity.query.CallPlanQuery;
+import com.xmxnkj.voip.customer.entity.query.CustomerQuery;
+import com.xmxnkj.voip.customer.service.CallPlanService;
+import com.xmxnkj.voip.customer.service.CustomerService;
+import com.xmxnkj.voip.outBound.entity.AutodialerTask;
+import com.xmxnkj.voip.outBound.entity.query.AutodialerTaskQuery;
+import com.xmxnkj.voip.outBound.service.AutodialerTaskService;
+import com.xmxnkj.voip.voice.entity.CallTimeSet;
+import com.xmxnkj.voip.voice.service.ICallTimeSetService;
+import com.xmxnkj.voip.web.BaseController;
+import com.xmxnkj.voip.web.models.ResultJson;
 
 import net.sf.json.JSONObject;
 

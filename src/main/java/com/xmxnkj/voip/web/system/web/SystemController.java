@@ -1,4 +1,4 @@
-package com.xmszit.voip.web.system.web;
+package com.xmxnkj.voip.web.system.web;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,8 +11,8 @@ import org.springframework.web.servlet.ModelAndView;
 import com.hsit.common.uac.entity.Operation;
 import com.hsit.common.uac.entity.queryparam.OperationQuery;
 import com.hsit.common.uac.service.OperationService;
-import com.xmszit.voip.client.entity.Operate;
-import com.xmszit.voip.web.BaseAction;
+import com.xmxnkj.voip.client.entity.Operate;
+import com.xmxnkj.voip.web.BaseAction;
 
 /**
  * @ProjectName:voip

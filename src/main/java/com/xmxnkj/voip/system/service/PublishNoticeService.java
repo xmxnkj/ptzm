@@ -1,10 +1,10 @@
-package com.xmszit.voip.system.service;
+package com.xmxnkj.voip.system.service;
 
 
 
 import com.hsit.common.service.BusinessBaseService;
-import com.xmszit.voip.system.entity.PublishNotice;
-import com.xmszit.voip.system.entity.query.PublishNoticeQuery;
+import com.xmxnkj.voip.system.entity.PublishNotice;
+import com.xmxnkj.voip.system.entity.query.PublishNoticeQuery;
 
 /**
  * @ProjectName:voip

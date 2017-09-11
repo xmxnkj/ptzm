@@ -1,13 +1,13 @@
-package com.xmszit.voip.customer.dao.impl;
+package com.xmxnkj.voip.customer.dao.impl;
 
 
 
 import org.springframework.stereotype.Repository;
 
 import com.hsit.common.dao.hibernate.SimpleHibernate4Dao;
-import com.xmszit.voip.customer.dao.CallRecordDao;
-import com.xmszit.voip.customer.entity.CallRecord;
-import com.xmszit.voip.customer.entity.query.CallRecordQuery;
+import com.xmxnkj.voip.customer.dao.CallRecordDao;
+import com.xmxnkj.voip.customer.entity.CallRecord;
+import com.xmxnkj.voip.customer.entity.query.CallRecordQuery;
 
 @Repository
 public class CallRecordDaoImpl extends SimpleHibernate4Dao<CallRecord, CallRecordQuery> implements CallRecordDao{

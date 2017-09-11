@@ -1,11 +1,11 @@
-package com.xmszit.voip.client.service;
+package com.xmxnkj.voip.client.service;
 
 import java.util.List;
 
 import com.hsit.common.service.BusinessBaseService;
-import com.xmszit.voip.client.entity.Dept;
-import com.xmszit.voip.client.entity.query.DeptQuery;
-import com.xmszit.voip.web.models.ListJson;
+import com.xmxnkj.voip.client.entity.Dept;
+import com.xmxnkj.voip.client.entity.query.DeptQuery;
+import com.xmxnkj.voip.web.models.ListJson;
 
 public interface DeptService extends BusinessBaseService<Dept, DeptQuery>{
 	
