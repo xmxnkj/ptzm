@@ -1,4 +1,4 @@
-package com.xmszit.futures.web.controllers;
+package com.xmxnkj.voip.web.controllers;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
@@ -26,27 +26,27 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.alibaba.fastjson.JSONObject;
 import com.hsit.common.MD5Util;
-import com.xmszit.futures.system.entity.ClientUser;
-import com.xmszit.futures.system.entity.ExitEntry;
-import com.xmszit.futures.system.entity.emun.ClientTypeEnum;
-import com.xmszit.futures.system.entity.emun.EntryStatusEnum;
-import com.xmszit.futures.system.entity.emun.ExitOrEntryEnum;
-import com.xmszit.futures.system.entity.query.ExitEntryQuery;
-import com.xmszit.futures.system.service.ClientUserService;
-import com.xmszit.futures.system.service.ExitEntryService;
-import com.xmszit.futures.web.BaseController;
-import com.xmszit.futures.web.models.ListJson;
-import com.xmszit.futures.web.utils.HttpClientUtils;
-import com.xmszit.futures.web.utils.SignKit;
-import com.xmszit.futures.web.utils.SpringBeanUtil;
-import com.xmszit.yeepay.YeepayService;
+import com.xmxnkj.voip.system.entity.ClientUser;
+import com.xmxnkj.voip.system.entity.ExitEntry;
+import com.xmxnkj.voip.system.entity.emun.ClientTypeEnum;
+import com.xmxnkj.voip.system.entity.emun.EntryStatusEnum;
+import com.xmxnkj.voip.system.entity.emun.ExitOrEntryEnum;
+import com.xmxnkj.voip.system.entity.query.ExitEntryQuery;
+import com.xmxnkj.voip.system.service.ClientUserService;
+import com.xmxnkj.voip.system.service.ExitEntryService;
+import com.xmxnkj.voip.web.BaseController;
+import com.xmxnkj.voip.web.models.ListJson;
+import com.xmxnkj.voip.web.utils.HttpClientUtils;
+import com.xmxnkj.voip.web.utils.SignKit;
+import com.xmxnkj.voip.web.utils.SpringBeanUtil;
+import com.xmxnkj.yeepay.YeepayService;
 
 @Controller
 @RequestMapping("/web/exitEntry")
 public class ExitEntryWebController extends BaseController<ExitEntry, ExitEntryQuery> {
 	
 	public static String payUrl = "http://120.55.16.195/weixin/api.do";//支付
-	//public static String payResultUrl = "http://120.42.90.220:8006/futures/web/exitEntry/payResult";	//回调
+	//public static String payResultUrl = "http://120.42.90.220:8006/voip/web/exitEntry/payResult";	//回调
 	public static String p1_MerchantNo = "PC00000117Y";				//商户编号
 	public static String _key = "bf589a7aecd5fb3f2fc7bb7788a0523b";	//密钥
 	
@@ -54,7 +54,7 @@ public class ExitEntryWebController extends BaseController<ExitEntry, ExitEntryQ
 //	public static String _key = "mf945Ybf01mz174K53Zo201H574oJgP7H2T6Yp9JsdVxoS9a8QH3Ht3i6V6S";	//商城版密钥 
 	
 //	public static String settle = "http://120.55.16.195/settle/systemSettle.do";	//代付
-	//public static String retUrl = "http://120.42.90.220:8006/futures/web/exitEntry/settleResult";//代付回调
+	//public static String retUrl = "http://120.42.90.220:8006/voip/web/exitEntry/settleResult";//代付回调
 	
 //	public static String retUrl = "https://www.yhlhqh.com/web/exitEntry/settleResult";//代付回调
 //	public static String payResultUrl = "https://www.yhlhqh.com/web/exitEntry/payResult";	//回调
@@ -704,10 +704,10 @@ public class ExitEntryWebController extends BaseController<ExitEntry, ExitEntryQ
 	
 	public static String url = "http://wap.unspay.com:8082/quickpay-front/quickPayWap/prePay?";
 	
-	public static String backReUrl = "http://www.zhzbfx.com/futures/web/exitEntry/back";		//后台回调
-	//public static String backReUrl = "http://yangwch.myqnapcloud.com:8023/futures/web/exitEntry/back";
-	public static String reBackReUrl = "http://www.zhzbfx.com/futures/web/exitEntry/reback";		//前台响应
-	//public static String reBackReUrl = "http://yangwch.myqnapcloud.com:8023/futures/web/exitEntry/reback";
+	public static String backReUrl = "http://www.zhzbfx.com/voip/web/exitEntry/back";		//后台回调
+	//public static String backReUrl = "http://yangwch.myqnapcloud.com:8023/voip/web/exitEntry/back";
+	public static String reBackReUrl = "http://www.zhzbfx.com/voip/web/exitEntry/reback";		//前台响应
+	//public static String reBackReUrl = "http://yangwch.myqnapcloud.com:8023/voip/web/exitEntry/reback";
 	//yangwch.myqnapcloud.com:8023
 	
 	public static String key = "xxk115303021";
@@ -851,9 +851,9 @@ public class ExitEntryWebController extends BaseController<ExitEntry, ExitEntryQ
 	}
 	
 	//本地
-	//static String backUrlForRongFu = "http://xmszit.tpddns.cn:8023/futures/web/exitEntry/rebackRongFu";
+	//static String backUrlForRongFu = "http://xmxnkj.tpddns.cn:8023/voip/web/exitEntry/rebackRongFu";
 	//线上
-	static String backUrlForRongFu = "http://www.zhzbfx.com/futures/web/exitEntry/rebackRongFu";
+	static String backUrlForRongFu = "http://www.zhzbfx.com/voip/web/exitEntry/rebackRongFu";
 	
 	//预支付请求（融付宝）步骤1
 	@RequestMapping("payRongFu")

@@ -1,6 +1,6 @@
-package com.xmszit.futures.web.utils.pay.test;
+package com.xmxnkj.voip.web.utils.pay.test;
 
-import com.xmszit.futures.web.utils.pay.search.SingPayOrder;
+import com.xmxnkj.voip.web.utils.pay.search.SingPayOrder;
 
 /**
  * Created by Administrator on 2017-5-7.

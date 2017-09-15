@@ -1,7 +1,7 @@
-package com.xmszit.futures.web.utils.pay.alipay;
+package com.xmxnkj.voip.web.utils.pay.alipay;
 import java.io.IOException;
 
-import com.xmszit.futures.web.utils.pay.util.HttpClientUtil;
+import com.xmxnkj.voip.web.utils.pay.util.HttpClientUtil;
 
 /**
  * Created by user on 17-5-8.

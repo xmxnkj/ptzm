@@ -1,4 +1,4 @@
-package com.xmszit.futures.web.controllers;
+package com.xmxnkj.voip.web.controllers;
 
 import java.io.UnsupportedEncodingException;
 import java.util.HashMap;
@@ -9,12 +9,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.xmszit.futures.web.BaseController;
-import com.xmszit.futures.web.utils.YB.DigestUtil;
-import com.xmszit.futures.web.utils.YB.YeepayService;
-import com.xmszit.lightning.system.entity.Client;
-import com.xmszit.lightning.system.entity.query.ClientQuery;
-import com.xmszit.lightning.system.service.ClientService;
+import com.xmxnkj.voip.web.BaseController;
+import com.xmxnkj.voip.web.utils.YB.DigestUtil;
+import com.xmxnkj.voip.web.utils.YB.YeepayService;
+import com.xmxnkj.lightning.system.entity.Client;
+import com.xmxnkj.lightning.system.entity.query.ClientQuery;
+import com.xmxnkj.lightning.system.service.ClientService;
 
 @Controller
 @RequestMapping("/web/payController")

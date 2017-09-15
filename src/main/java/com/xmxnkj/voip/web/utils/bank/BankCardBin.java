@@ -1,4 +1,4 @@
-package com.xmszit.futures.web.utils.bank;
+package com.xmxnkj.voip.web.utils.bank;
 
 public class BankCardBin {
 	 // 银行卡是由”发卡行标识代码 + 自定义 + 校验码 “等部分组成的  

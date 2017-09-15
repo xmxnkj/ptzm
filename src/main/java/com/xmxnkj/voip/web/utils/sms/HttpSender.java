@@ -1,4 +1,4 @@
-package com.xmszit.futures.web.utils.sms;
+package com.xmxnkj.voip.web.utils.sms;
 
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;

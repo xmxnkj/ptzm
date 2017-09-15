@@ -1,4 +1,4 @@
-package com.xmszit.futures.web.utils.smms.sms.util;
+package com.xmxnkj.voip.web.utils.smms.sms.util;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

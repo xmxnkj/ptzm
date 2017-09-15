@@ -1,4 +1,4 @@
-package com.xmszit.futures.web.utils.pay.search;
+package com.xmxnkj.voip.web.utils.pay.search;
 
 import java.util.Map;
 import java.util.Set;
@@ -8,7 +8,7 @@ import org.apache.commons.codec.digest.DigestUtils;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.xmszit.futures.web.utils.pay.util.HttpClientUtil;
+import com.xmxnkj.voip.web.utils.pay.util.HttpClientUtil;
 
 public class SingPayOrder {
 

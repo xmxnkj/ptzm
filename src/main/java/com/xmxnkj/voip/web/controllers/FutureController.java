@@ -1,4 +1,4 @@
-package com.xmszit.futures.web.controllers;
+package com.xmxnkj.voip.web.controllers;
 
 import java.util.HashMap;
 import java.util.List;
@@ -14,24 +14,24 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.xmszit.futures.system.dao.FutureDao;
-import com.xmszit.futures.system.entity.ClientUser;
-import com.xmszit.futures.system.entity.Future;
-import com.xmszit.futures.system.entity.emun.FutureTypeEnum;
-import com.xmszit.futures.system.entity.query.FutureQuery;
-import com.xmszit.futures.system.service.ClientUserService;
-import com.xmszit.futures.system.service.FutureService;
-import com.xmszit.futures.web.BaseController;
-import com.xmszit.futures.web.models.ListJson;
-import com.xmszit.futures.web.utils.SinaJsonUtil;
-import com.xmszit.futures.web.utils.TimeUtil;
+import com.xmxnkj.voip.system.dao.FutureDao;
+import com.xmxnkj.voip.system.entity.ClientUser;
+import com.xmxnkj.voip.system.entity.Future;
+import com.xmxnkj.voip.system.entity.emun.FutureTypeEnum;
+import com.xmxnkj.voip.system.entity.query.FutureQuery;
+import com.xmxnkj.voip.system.service.ClientUserService;
+import com.xmxnkj.voip.system.service.voipervice;
+import com.xmxnkj.voip.web.BaseController;
+import com.xmxnkj.voip.web.models.ListJson;
+import com.xmxnkj.voip.web.utils.SinaJsonUtil;
+import com.xmxnkj.voip.web.utils.TimeUtil;
 
 @Controller("FutureController")
-@RequestMapping("/web/futures")
+@RequestMapping("/web/voip")
 public class FutureController extends BaseController<Future, FutureQuery> {
 	
 	@Autowired
-	private FutureService service;
+	private voipervice service;
 	
 	@Autowired
 	private ClientUserService clientUserService;
@@ -43,7 +43,7 @@ public class FutureController extends BaseController<Future, FutureQuery> {
 	private JdbcTemplate jdbcTemplate;
 
 	@Override
-	public FutureService getService() {
+	public voipervice getService() {
 		return service;
 	}
 	
@@ -54,9 +54,9 @@ public class FutureController extends BaseController<Future, FutureQuery> {
 			if(cu==null){
 				return "web/login";
 			}
-			req.setAttribute("futuresList", service.getEntities(null));
+			req.setAttribute("voipList", service.getEntities(null));
 			session.setAttribute("requestCount", ((int)session.getAttribute("requestCount"))+1);
-			return "web/futures";
+			return "web/voip";
 		}catch(Exception E){
 			
 		}
@@ -83,9 +83,9 @@ public class FutureController extends BaseController<Future, FutureQuery> {
 	}
 	
 	//获取新浪数据  k 5 30 
-	@RequestMapping(value="/futureSina")
+	@RequestMapping(value="/voipina")
 	@ResponseBody
-	public ListJson futureSina(String futureCode){
+	public ListJson voipina(String futureCode){
 		try{
 			Map<String, Object> data = new HashMap<String,Object>();
 			//获取分时线图
@@ -104,9 +104,9 @@ public class FutureController extends BaseController<Future, FutureQuery> {
 	}
 	
 	//获取新浪实时数据
-	@RequestMapping(value="/futureSinaByTime")
+	@RequestMapping(value="/voipinaByTime")
 	@ResponseBody
-	public ListJson futureSinaByTime(String futureCode){
+	public ListJson voipinaByTime(String futureCode){
 		try{
 			return new ListJson(SinaJsonUtil.loadJson(FutureTypeEnum.ACTUAL,futureCode));
 		}catch(Exception E){
@@ -116,9 +116,9 @@ public class FutureController extends BaseController<Future, FutureQuery> {
 	}
 	
 	//获取新浪实时数据
-	@RequestMapping(value="/futureSinaByTimeAll")
+	@RequestMapping(value="/voipinaByTimeAll")
 	@ResponseBody
-	public ListJson futureSinaByTimeAll(String futureCode){
+	public ListJson voipinaByTimeAll(String futureCode){
 		try{
 			return new ListJson(SinaJsonUtil.loadJson(FutureTypeEnum.ACTUAL,futureCode));
 		}catch(Exception E){

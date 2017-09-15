@@ -1,4 +1,4 @@
-package com.xmszit.futures.web.controllers;
+package com.xmxnkj.voip.web.controllers;
 
 import java.math.BigDecimal;
 import java.text.DecimalFormat;
@@ -26,29 +26,29 @@ import org.springframework.web.servlet.ResourceServlet;
 
 import com.hsit.common.MD5Util;
 import com.hsit.common.uac.entity.User;
-import com.xmszit.futures.system.ctp.MyTrader;
-import com.xmszit.futures.system.dao.OrderItemDao;
-import com.xmszit.futures.system.entity.ClientUser;
-import com.xmszit.futures.system.entity.Future;
-import com.xmszit.futures.system.entity.OrderItem;
-import com.xmszit.futures.system.entity.emun.ClientTypeEnum;
-import com.xmszit.futures.system.entity.emun.EveningUpEnum;
-import com.xmszit.futures.system.entity.emun.FutureTypeEnum;
-import com.xmszit.futures.system.entity.emun.OrderStatus;
-import com.xmszit.futures.system.entity.emun.OrderWayEnum;
-import com.xmszit.futures.system.entity.query.ClientUserQuery;
-import com.xmszit.futures.system.entity.query.FutureQuery;
-import com.xmszit.futures.system.entity.query.OrderItemQuery;
-import com.xmszit.futures.system.service.ClientUserService;
-import com.xmszit.futures.system.service.FutureService;
-import com.xmszit.futures.system.service.OrderItemService;
-import com.xmszit.futures.web.BaseController;
-import com.xmszit.futures.web.models.ListJson;
-import com.xmszit.futures.web.utils.OrderNoUtil;
-import com.xmszit.futures.web.utils.SinaJsonUtil;
-import com.xmszit.jctp.trader.enums.CombOffsetFlag;
-import com.xmszit.jctp.trader.enums.Direction;
-import com.xmszit.jctp.trader.enums.ForceCloseReason;
+import com.xmxnkj.voip.system.ctp.MyTrader;
+import com.xmxnkj.voip.system.dao.OrderItemDao;
+import com.xmxnkj.voip.system.entity.ClientUser;
+import com.xmxnkj.voip.system.entity.Future;
+import com.xmxnkj.voip.system.entity.OrderItem;
+import com.xmxnkj.voip.system.entity.emun.ClientTypeEnum;
+import com.xmxnkj.voip.system.entity.emun.EveningUpEnum;
+import com.xmxnkj.voip.system.entity.emun.FutureTypeEnum;
+import com.xmxnkj.voip.system.entity.emun.OrderStatus;
+import com.xmxnkj.voip.system.entity.emun.OrderWayEnum;
+import com.xmxnkj.voip.system.entity.query.ClientUserQuery;
+import com.xmxnkj.voip.system.entity.query.FutureQuery;
+import com.xmxnkj.voip.system.entity.query.OrderItemQuery;
+import com.xmxnkj.voip.system.service.ClientUserService;
+import com.xmxnkj.voip.system.service.voipervice;
+import com.xmxnkj.voip.system.service.OrderItemService;
+import com.xmxnkj.voip.web.BaseController;
+import com.xmxnkj.voip.web.models.ListJson;
+import com.xmxnkj.voip.web.utils.OrderNoUtil;
+import com.xmxnkj.voip.web.utils.SinaJsonUtil;
+import com.xmxnkj.jctp.trader.enums.CombOffsetFlag;
+import com.xmxnkj.jctp.trader.enums.Direction;
+import com.xmxnkj.jctp.trader.enums.ForceCloseReason;
 
 @Controller
 @RequestMapping("/web/orderControl")
@@ -66,7 +66,7 @@ public class OrderController extends BaseController<OrderItem, OrderItemQuery> {
 	private ClientUserService clientUserService;
 	
 	@Autowired
-	private FutureService futureService;
+	private voipervice voipervice;
 	
 	@Override
 	public OrderItemService getService() {
@@ -101,7 +101,7 @@ public class OrderController extends BaseController<OrderItem, OrderItemQuery> {
 	public String buyOrder(@PathVariable String type,@PathVariable String code,HttpServletRequest req){
 		FutureQuery futureQuery = new FutureQuery();
 		futureQuery.setFutureCode(code);
-		Future future = futureService.getEntity(futureQuery);
+		Future future = voipervice.getEntity(futureQuery);
 		req.setAttribute("orderWay", type);
 		req.setAttribute("future", future);
 		return "web/buyOrder";
@@ -121,7 +121,7 @@ public class OrderController extends BaseController<OrderItem, OrderItemQuery> {
 		
 		FutureQuery fQ = new FutureQuery();
 		fQ.setFutureCode(fCode);
-		Future f = futureService.getEntity(fQ);
+		Future f = voipervice.getEntity(fQ);
 
 		//最新价
 		BigDecimal newPrice = SinaJsonUtil.getNewPrice(fCode);
@@ -212,7 +212,7 @@ public class OrderController extends BaseController<OrderItem, OrderItemQuery> {
 		
 		try{
 			//计算所需的止损保证金  信息服务费  交易手续费
-			Map<String,Object> map = (Map<String,Object>)(totalMoney(orderItem.getFuturesCode(),dang, orderItem.getCount()));
+			Map<String,Object> map = (Map<String,Object>)(totalMoney(orderItem.getvoipCode(),dang, orderItem.getCount()));
 			
 			//止损保证金(冻结)
 			float stopLossMargin = (float) (map).get("stopLossMargin");
@@ -227,7 +227,7 @@ public class OrderController extends BaseController<OrderItem, OrderItemQuery> {
 			orderItem.setExchangeInfomationMoney(exchangeInfomationMoney);
 			
 			//最新价 	获取实时价
-			BigDecimal newPrice = SinaJsonUtil.getNewPrice(orderItem.getFuturesCode());
+			BigDecimal newPrice = SinaJsonUtil.getNewPrice(orderItem.getvoipCode());
 			
 			//止损平仓价
 			if(orderItem.getOrderWay()==OrderWayEnum.MORE){
@@ -320,11 +320,11 @@ public class OrderController extends BaseController<OrderItem, OrderItemQuery> {
 			
 			//clientUserService.save(user);
 			
-			logger.info("开仓：报单号:"+orderItem.getClientOrderNo()+",合约："+orderItem.getFuturesCode()+",手："+orderItem.getCount()+",方向："+orderItem.getOrderWay()+",开仓价："+orderItem.getUnitPrice());
+			logger.info("开仓：报单号:"+orderItem.getClientOrderNo()+",合约："+orderItem.getvoipCode()+",手："+orderItem.getCount()+",方向："+orderItem.getOrderWay()+",开仓价："+orderItem.getUnitPrice());
 			
 			//下单操作
 	    	MyTrader.getInstance().getTraderApi().reqOrderInsert(
-	    			orderItem.getFuturesCode(), 	//合约代码
+	    			orderItem.getvoipCode(), 	//合约代码
 	    			orderItem.getClientOrderNo(), 	//订单号
 	    			orderItem.getOrderWay()==OrderWayEnum.MORE?Direction.BUY:Direction.SELL, 		//买卖方向;0：买，1：卖
 	    			CombOffsetFlag.OPEN, //组合开平标志;0:开仓；1：平仓；2：强平
@@ -415,8 +415,8 @@ public class OrderController extends BaseController<OrderItem, OrderItemQuery> {
 			map.put("isEveningUp", type.equals("FloatingPL")?EveningUpEnum.YES:EveningUpEnum.NO);
 			str.append("FROM OrderItem where account=:account and isEveningUp=:isEveningUp");
 			if(fCode!=null && !fCode.equals("")){
-				str.append(" and futuresCode=:futuresCode");
-				map.put("futuresCode", fCode);
+				str.append(" and voipCode=:voipCode");
+				map.put("voipCode", fCode);
 			}
 			
 			if(type.equals("FloatingPL")){
@@ -462,7 +462,7 @@ public class OrderController extends BaseController<OrderItem, OrderItemQuery> {
 				LJ.setSuccess(false);
 				return LJ;
 			}
-			Map<String, Object> totalMap = jdbcTemplate.queryForMap("select count(*) as total from orderitem where isEveningUp=? and account=? and futuresCode=? ", new Object[]{EveningUpEnum.NO.ordinal(),cu.getPhoneNumber(),fCode});
+			Map<String, Object> totalMap = jdbcTemplate.queryForMap("select count(*) as total from orderitem where isEveningUp=? and account=? and voipCode=? ", new Object[]{EveningUpEnum.NO.ordinal(),cu.getPhoneNumber(),fCode});
 			LJ.setEntity(totalMap);
 			return LJ;
 		}catch(Exception E){
@@ -575,8 +575,8 @@ public class OrderController extends BaseController<OrderItem, OrderItemQuery> {
 			
 			//交易时间内才可以主动撤单
 			FutureQuery futureQuery = new FutureQuery();
-			futureQuery.setFutureCode(OI.getFuturesCode());
-			Future f = futureService.getEntity(futureQuery);
+			futureQuery.setFutureCode(OI.getvoipCode());
+			Future f = voipervice.getEntity(futureQuery);
 			
 			boolean result = service.beforeEvengUp(f);
 			
@@ -590,7 +590,7 @@ public class OrderController extends BaseController<OrderItem, OrderItemQuery> {
 			if(OI.getStatus()==OrderStatus.Request || OI.getStatus()==OrderStatus.RequestFinishing){
 				OI.setCancelOrderNo(OrderNoUtil.getUniqueNumber(jdbcTemplate));
 				MyTrader.getInstance().getTraderApi().reqOrderAction(
-						OI.getFuturesCode(), 
+						OI.getvoipCode(), 
 						OI.getClientOrderNo(),	//撤单
 						OI.getSessionID().toString(),
 						OI.getFrontID(), 
@@ -606,7 +606,7 @@ public class OrderController extends BaseController<OrderItem, OrderItemQuery> {
 			if(OI.getStatus()==OrderStatus.closeRequest){
 				OI.setCancelOrderNo(OrderNoUtil.getUniqueNumber(jdbcTemplate));
 				MyTrader.getInstance().getTraderApi().reqOrderAction(
-						OI.getFuturesCode(), 
+						OI.getvoipCode(), 
 						OI.getCloseOrderNo(),	//撤单
 						OI.getSessionID().toString(),
 						OI.getFrontID(), 

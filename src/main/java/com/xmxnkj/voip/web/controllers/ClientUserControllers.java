@@ -1,4 +1,4 @@
-package com.xmszit.futures.web.controllers;
+package com.xmxnkj.voip.web.controllers;
 
 import java.util.Date;
 import java.util.HashMap;
@@ -21,18 +21,18 @@ import antlr.StringUtils;
 
 import com.hsit.common.MD5Util;
 import com.hsit.common.http.HttpRequest;
-import com.xmszit.futures.system.dao.ClientUserDao;
-import com.xmszit.futures.system.entity.ClientUser;
-import com.xmszit.futures.system.entity.emun.ClientTypeEnum;
-import com.xmszit.futures.system.entity.query.ClientUserQuery;
-import com.xmszit.futures.system.service.ClientUserService;
-import com.xmszit.futures.system.timer.TaskTimer;
-import com.xmszit.futures.web.BaseController;
-import com.xmszit.futures.web.models.ListJson;
-import com.xmszit.futures.web.utils.CommCodeUtil;
-import com.xmszit.futures.web.utils.ZxingUtil;
-import com.xmszit.futures.web.utils.bank.Main;
-import com.xmszit.futures.web.utils.sms.SMSSendUtil;
+import com.xmxnkj.voip.system.dao.ClientUserDao;
+import com.xmxnkj.voip.system.entity.ClientUser;
+import com.xmxnkj.voip.system.entity.emun.ClientTypeEnum;
+import com.xmxnkj.voip.system.entity.query.ClientUserQuery;
+import com.xmxnkj.voip.system.service.ClientUserService;
+import com.xmxnkj.voip.system.timer.TaskTimer;
+import com.xmxnkj.voip.web.BaseController;
+import com.xmxnkj.voip.web.models.ListJson;
+import com.xmxnkj.voip.web.utils.CommCodeUtil;
+import com.xmxnkj.voip.web.utils.ZxingUtil;
+import com.xmxnkj.voip.web.utils.bank.Main;
+import com.xmxnkj.voip.web.utils.sms.SMSSendUtil;
 
 @Controller
 @RequestMapping("/web/clientUser")

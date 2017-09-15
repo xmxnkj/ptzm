@@ -1,4 +1,4 @@
-package com.xmszit.futures.web.utils.smms.sms.request;
+package com.xmxnkj.voip.web.utils.smms.sms.request;
 /**
  * 
  * @author tianyh 

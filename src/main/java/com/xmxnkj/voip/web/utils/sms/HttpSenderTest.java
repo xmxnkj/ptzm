@@ -1,8 +1,8 @@
-package com.xmszit.futures.web.utils.sms;
+package com.xmxnkj.voip.web.utils.sms;
 
 /**   
 *    
-* 项目名称：XMSZIT-COWELL
+* 项目名称：xmxnkj-COWELL
 * 项目说明：运动APP项目
 * 类名称：HttpSenderTest   
 * 类描述：

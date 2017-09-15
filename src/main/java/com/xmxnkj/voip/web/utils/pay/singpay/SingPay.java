@@ -1,4 +1,4 @@
-package com.xmszit.futures.web.utils.pay.singpay;
+package com.xmxnkj.voip.web.utils.pay.singpay;
 
 import java.io.IOException;
 import java.util.Map;
@@ -9,7 +9,7 @@ import org.apache.commons.codec.digest.DigestUtils;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.xmszit.futures.web.utils.pay.util.HttpClientUtil;
+import com.xmxnkj.voip.web.utils.pay.util.HttpClientUtil;
  
 /**
  * Created by Administrator on 2017-5-7.

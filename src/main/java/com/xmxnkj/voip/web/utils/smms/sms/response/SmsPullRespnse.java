@@ -1,4 +1,4 @@
-package com.xmszit.futures.web.utils.smms.sms.response;
+package com.xmxnkj.voip.web.utils.smms.sms.response;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.xmszit.futures.web.utils.bank;
+package com.xmxnkj.voip.web.utils.bank;
 
 public class ABCBankAddr {
 	 

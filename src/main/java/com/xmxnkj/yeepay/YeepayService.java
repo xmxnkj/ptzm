@@ -1,4 +1,4 @@
-package com.xmszit.yeepay;
+package com.xmxnkj.yeepay;
 
 import java.util.Map;
 import java.util.HashMap;
@@ -8,9 +8,9 @@ import java.net.URLEncoder;
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 
-import com.xmszit.yeepay.Configuration;
-import com.xmszit.yeepay.DigestUtil;
-import com.xmszit.yeepay.HttpUtils;
+import com.xmxnkj.yeepay.Configuration;
+import com.xmxnkj.yeepay.DigestUtil;
+import com.xmxnkj.yeepay.HttpUtils;
 
 public class YeepayService {
 

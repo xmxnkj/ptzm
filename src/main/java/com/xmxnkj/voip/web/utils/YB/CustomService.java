@@ -1,4 +1,4 @@
-package com.xmszit.futures.web.utils.YB;
+package com.xmxnkj.voip.web.utils.YB;
 
 import java.net.URLEncoder;
 import java.util.HashMap;

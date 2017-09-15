@@ -1,11 +1,11 @@
-package com.xmszit.futures.web.utils.smms;
+package com.xmxnkj.voip.web.utils.smms;
 
 import java.io.UnsupportedEncodingException;
 
 import com.alibaba.fastjson.JSON;
-import com.xmszit.futures.web.utils.smms.sms.request.SmsSendRequest;
-import com.xmszit.futures.web.utils.smms.sms.response.SmsSendResponse;
-import com.xmszit.futures.web.utils.smms.sms.util.ChuangLanSmsUtil;
+import com.xmxnkj.voip.web.utils.smms.sms.request.SmsSendRequest;
+import com.xmxnkj.voip.web.utils.smms.sms.response.SmsSendResponse;
+import com.xmxnkj.voip.web.utils.smms.sms.util.ChuangLanSmsUtil;
 
 public class Test1 {
 

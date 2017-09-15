@@ -1,4 +1,4 @@
-package com.xmszit.futures.web.utils.sms;
+package com.xmxnkj.voip.web.utils.sms;
 
 import java.net.URLEncoder;
 
@@ -6,13 +6,13 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.alibaba.fastjson.JSON;
-import com.xmszit.futures.web.utils.smms.sms.request.SmsSendRequest;
-import com.xmszit.futures.web.utils.smms.sms.response.SmsSendResponse;
-import com.xmszit.futures.web.utils.smms.sms.util.ChuangLanSmsUtil;
+import com.xmxnkj.voip.web.utils.smms.sms.request.SmsSendRequest;
+import com.xmxnkj.voip.web.utils.smms.sms.response.SmsSendResponse;
+import com.xmxnkj.voip.web.utils.smms.sms.util.ChuangLanSmsUtil;
 
 /**   
 *    
-* 项目名称：XMSZIT-COWELL
+* 项目名称：xmxnkj-COWELL
 * 项目说明：运动APP项目
 * 类名称：SMSSendUtil   
 * 类描述：短信发送工具类

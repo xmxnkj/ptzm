@@ -1,4 +1,4 @@
-package com.xmszit.futures.web.utils.smms.sms.request;
+package com.xmxnkj.voip.web.utils.smms.sms.request;
 /**
  * @author tianyh 
  * @date 2017年4月15日 下午3:26:35
