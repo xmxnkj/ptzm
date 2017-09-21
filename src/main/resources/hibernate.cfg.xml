@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration
+    PUBLIC "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    
+    <session-factory>
+        <property name="connection.driver_class">
+        	<!-- ${jdbc.driver} -->
+            com.mysql.jdbc.Driver
+        </property>
+        <property name="connection.url">
+             jdbc:mysql://localhost:3306/lightning?useUnicode=true&amp;characterEncoding=UTF-8
+        </property>
+        <property name="connection.username">
+        	root
+        </property>
+        <property name="connection.password">
+       		root	 <!-- xmsz2365 -->
+        </property>
+        <property name="dialect">
+            org.hibernate.dialect.MySQLDialect
+        </property> 
+        <!-- <property name="current_session_context_class">thread</property>  -->
+        <!-- <property name="hibernate.connection.autocommit">true</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<property name="hibernate.format_sql">true</property>
+		<property name="hibernate.show_sql">true</property> -->
+		
+		<property name="current_session_context_class">thread</property> 
+        <property name="hibernate.connection.autocommit">true</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<property name="hibernate.format_sql">true</property>
+		<property name="hibernate.show_sql">false</property>
+		<property name="hibernate.default_batch_fetch_size">8</property>
+		<property name="hibernate.jdbc.batch_size">5</property>
+
+		<property name="hibernate.connection.provider_class">org.hibernate.connection.C3P0ConnectionProvider</property> 
+        <property name="hibernate.c3p0.min_size">5</property>
+		<property name="hibernate.c3p0.max_size">30</property>
+		<property name="hibernate.c3p0.timeout">1800</property>
+	    <property name="hibernate.c3p0.max_statements">100</property>
+		<property name="hibernate.c3p0.idle_test_period">121</property>
+		<property name="hibernate.c3p0.acquire_increment">1</property>
+		<property name="hibernate.c3p0.validate">true</property>
+		<property name="hibernate.failOverReadOnly">false</property>
+		<property name="hibernate.characterEncoding">utf-8</property>
+	
+		<!-- <property name="hibernate.connection.provider_class">org.hibernate.connection.C3P0ConnectionProvider</property> 
+        <property name="hibernate.c3p0.min_size">5</property>
+        <property name="hibernate.c3p0.max_size">30</property>
+        <property name="hibernate.c3p0.timeout">1800</property>
+        <property name="hibernate.c3p0.max_statements">100</property>
+        <property name="hibernate.c3p0.idle_test_period">121</property>
+        <property name="hibernate.c3p0.acquire_increment">1</property>
+        <property name="hibernate.c3p0.validate">true</property>
+        <property name="hibernate.failOverReadOnly">false</property>
+        <property name="hibernate.characterEncoding">utf-8</property> -->
+    </session-factory>
+    
+</hibernate-configuration>
