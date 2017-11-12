@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping package="com.xmxnkj.voip.system.entity">
+
+    <class name="Future" table="Future">
+        <id name="id" column="ID">
+            <generator class="uuid2"/>
+        </id>
+        <property name="futureCode" column="futureCode"/>
+        <property name="businessCount" column="businessCount"/>
+        <property name="tiggerStop" column="tiggerStop"/>
+        <property name="tiggerOffset" column="tiggerOffset"/>
+        <property name="name" column="name"/>
+       	<property name="stopOutTimeOne" column="stopOutTimeOne"/>
+        <property name="stopOutTimeTwo" column="stopOutTimeTwo"/>
+        <property name="unit" column="unit"/>
+        
+        <property name="type" column="type"/>
+        <property name="exchangeCommission" column="exchangeCommission"/>
+        <property name="minSandards" column="minSandards"/>
+        <property name="exchangeMarginRatio" column="exchangeMarginRatio"/>
+        <property name="rateOfInformationService" column="rateOfInformationService"/>
+        <property name="minPriceChange" column="minPriceChange"/>
+        
+        <property name="startTime1" column="startTime1"/>
+        <property name="endTime1" column="endTime1"/>
+        <property name="startTime2" column="startTime2"/>
+        <property name="endTime2" column="endTime2"/>
+        <property name="startTime3" column="startTime3"/>
+        <property name="endTime3" column="endTime3"/>
+        <property name="startTime4" column="startTime4"/>
+        <property name="endTime4" column="endTime4"/>
+    </class>
+</hibernate-mapping>

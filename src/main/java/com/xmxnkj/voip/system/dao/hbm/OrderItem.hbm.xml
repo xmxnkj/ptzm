@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping package="com.xmxnkj.voip.system.entity">
+
+    <class name="OrderItem" table="OrderItem">
+        <id name="id" column="ID">
+            <generator class="uuid2"/>
+        </id>
+        <property name="account" column="account"/>
+        <property name="clientOrderNo" column="clientOrderNo"/>
+		<property name="closeOrderNo" column="closeOrderNo"/>
+        <property name="voipCode" column="voipCode"/>
+        <property name="createOrderTime" column="createOrderTime"/>
+        <property name="unitPrice" column="unitPrice"/>
+        <property name="count" column="counts"/>
+        <property name="voipName" column="voipName"/>
+        <property name="closeType" column="closeType"/>
+        
+         <property name="freezeDepositMoney" column="freezeDepositMoney"/>
+         <property name="exchangePoundageMoney" column="exchangePoundageMoney"/>
+         <property name="exchangeInfomationMoney" column="exchangeInfomationMoney"/>
+         
+         <property name="floatingPL" column="floatingPL"/>
+         <property name="offsetGainAndLoss" column="offsetGainAndLoss"/>
+         
+         <property name="stopLoss" column="stopLoss"/>
+         <property name="targetProfit" column="targetProfit"/>
+         
+         <property name="stopLossPrice" column="stopLossPrice"/>
+         <property name="targetProfitPrice" column="targetProfitPrice"/>
+         <property name="closeTime" column="closeTime"/>
+         
+         <property name="payMoney" column="payMoney"/>
+         <property name="eveningUpPrice" column="eveningUpPrice"/>
+         
+         <property name="exchangeId" column="exchangeId"/>
+         <property name="orderSysOpenId" column="orderSysOpenId"/>
+         <property name="orderSysId" column="orderSysId"/>
+         <property name="frontID" column="frontID"/>      
+         <property name="sessionID" column="sessionID"/>    
+         <property name="traderID" column="traderID"/> 
+         <property name="orderLocalID" column="orderLocalID"/> 
+         
+         <property name="failReason" column="failReason"/>
+         <property name="warn" column="warn"/>
+         
+         <property name="openDeal" column="openDeal"/>
+         <property name="notOpenDeal" column="notOpenDeal"/>
+         <property name="closeDeal" column="closeDeal"/>
+         <property name="notCloseDeal" column="notCloseDeal"/>
+         
+         <property name="realOffsetGainAndLoss" column="realOffsetGainAndLoss"/>
+         
+         <property name="OrderWay" column="OrderWay" >
+        	<type name="org.hibernate.type.EnumType">
+        		<param name="enumClass">com.xmxnkj.voip.system.entity.emun.OrderWayEnum</param>
+        		<param name="type">4</param>
+        	</type>
+         </property>
+         
+		 <property name="status" column="status" >
+        	<type name="org.hibernate.type.EnumType">
+        		<param name="enumClass">com.xmxnkj.voip.system.entity.emun.OrderStatus</param>
+        		<param name="type">4</param>
+        	</type>
+         </property>
+         
+         <property name="isEveningUp" column="isEveningUp" >
+          <type name="org.hibernate.type.EnumType">
+        		<param name="enumClass">com.xmxnkj.voip.system.entity.emun.EveningUpEnum</param>
+        		<param name="type">4</param>
+        	</type>
+         </property>
+		
+    </class>
+</hibernate-mapping>

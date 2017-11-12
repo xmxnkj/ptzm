@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping package="com.xmxnkj.voip.system.entity">
+
+    <class name="ClientUser" table="ClientUser">
+        <id name="id" column="ID">
+            <generator class="uuid2"/>
+        </id>
+        <property name="name" column="name"/>
+        <property name="cert" column="cert"/>
+        <property name="phoneNumber" column="phoneNumber"/>
+        <property name="pwd" column="pwd"/>
+        <property name="commendCode" column="commendCode"/>
+        <property name="acount" column="acount"/>
+        
+         <property name="weixinId" column="weixinId"/>
+         <property name="checkCode" column="checkCode"/>
+         <property name="leaderUserID" column="leaderUserID"/>
+         <property name="qrCode" column="qrCode"/>
+		 
+		 <property name="bank" column="bank"/>
+		 <property name="bankAddress" column="bankAddress"/>
+		 <property name="bankCardCode" column="bankCardCode"/>
+		 <property name="enableMoney" column="enableMoney"/>
+		 
+		 <property name="bailCash" column="bailCash"/>
+		 <property name="seatBailCash" column="seatBailCash"/>
+		 <property name="enableBailCash" column="enableBailCash"/>
+		 <property name="agentName" column="agentName"/>
+		 <property name="regTime" column="regTime"/>
+		 <property name="bankCardType" column="bankCardType"/>
+		 
+		 <property name="clientType" column="clientType" >
+        	<type name="org.hibernate.type.EnumType">
+        		<param name="enumClass">com.xmxnkj.voip.system.entity.emun.ClientTypeEnum</param>
+        		<param name="type">4</param>
+        	</type>
+        </property>
+        
+        <many-to-one name="leaderUser" class="ClientUser" column="leaderUserID" unique="true" lazy="false" insert="false" update="false"></many-to-one>
+        
+    </class>
+</hibernate-mapping>

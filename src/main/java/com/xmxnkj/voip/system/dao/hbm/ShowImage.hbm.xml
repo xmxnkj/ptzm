@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping package="com.xmxnkj.voip.system.entity">
+
+    <class name="ShowImage" table="ShowImage">
+        <id name="id" column="ID">
+            <generator class="uuid2"/>
+        </id>
+        <property name="url" column="url"/>
+        <property name="sort_No" column="sort_No"/>
+    </class>
+</hibernate-mapping>

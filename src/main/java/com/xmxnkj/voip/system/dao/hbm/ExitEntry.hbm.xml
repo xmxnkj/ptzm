@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping package="com.xmxnkj.voip.system.entity">
+
+    <class name="ExitEntry" table="ExitEntry">
+        <id name="id" column="ID">
+            <generator class="uuid2"/>
+        </id>
+        <property name="phoneNumber" column="phoneNumber"/>
+        <property name="userId" column="userId"/>
+        <property name="entryTime" column="entryTime"/>
+        <property name="entryMoney" column="entryMoney"/>
+        <property name="exitTime" column="exitTime"/>
+        <property name="exitMoney" column="exitMoney"/>
+        
+        <property name="payOrderNumber" column="payOrderNumber"/>
+        <property name="result" column="result"/>
+        <property name="season" column="season"/>
+        
+        <property name="bankCardNo" column="bankCardNo"/>
+        <property name="name" column="name"/>
+        <property name="bankAddress" column="bankAddress"/>
+        <property name="serials" column="serials"/>
+        
+        <property name="status" column="status" >
+        	<type name="org.hibernate.type.EnumType">
+        		<param name="enumClass">com.xmxnkj.voip.system.entity.emun.EntryStatusEnum</param>
+        		<param name="type">4</param>
+        	</type>
+         </property>
+		 
+		 <property name="exitOrEntry" column="exitOrEntry" >
+        	<type name="org.hibernate.type.EnumType">
+        		<param name="enumClass">com.xmxnkj.voip.system.entity.emun.ExitOrEntryEnum</param>
+        		<param name="type">4</param>
+        	</type>
+        </property>
+        
+        <many-to-one name="clientUser" class="ClientUser" column="userId" unique="true" lazy="false" insert="false" update="false"></many-to-one>
+        
+    </class>
+</hibernate-mapping>

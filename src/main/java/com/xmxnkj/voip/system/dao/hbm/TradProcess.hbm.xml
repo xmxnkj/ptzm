@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping package="com.xmxnkj.voip.system.entity">
+
+    <class name="TradProcess" table="TradProcess">
+        <id name="id" column="ID">
+            <generator class="uuid2"/>
+        </id>
+        <property name="orderNumber" column="orderNumber"/>
+        <property name="localId" column="localId"/>
+        <property name="sysId" column="sysId"/>
+        <property name="traderId" column="traderId"/>
+        <property name="notifySequence" column="notifySequence"/>
+        
+        <property name="settlementId" column="settlementId"/>
+        <property name="exchangeId" column="exchangeId"/>
+        
+         <property name="tradeAmount" column="tradeAmount"/>
+         <property name="leftAmount" column="leftAmount"/>
+	
+    </class>
+</hibernate-mapping>
